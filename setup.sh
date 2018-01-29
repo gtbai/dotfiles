@@ -14,3 +14,5 @@ cp -r ~/dotfiles/.tmux.conf ~/
 cp -r ~/dotfiles/.zshrc ~/
 cp -r ~/dotfiles/.oh-my-zsh ~/
 
+# Enforce .zshrc. Errors might occur. To fix them, just comment/delete lines causing error.
+source ~/.zshrc
