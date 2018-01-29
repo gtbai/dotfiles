@@ -8,14 +8,25 @@ rm -rf ~/dotfiles/.zshrc
 rm -rf ~/dotfiles/.oh-my-zsh
 
 # copy new ones here
-cp -r ~/.vim ~/dotfiles/
-rm -rf ~/dotfiles/.vim/plugged/*
+
+# Vim
+mkdir ~/dotfiles/.vim
+cp -r ~/.vim/autoload ~/dotfiles/.vim/
+mkdir ~/dotfiles/.vim/plugged
+cp -r ~/.vim/plugin.vim ~/dotfiles/.vim/
+cp -r ~/.vim/vimrc ~/dotfiles/.vim/
+
 cp -r ~/.vimrc ~/dotfiles/
 cp -r ~/.viminfo ~/dotfiles/
+
+# Tmux
 cp -r ~/.tmux ~/dotfiles/
 cp -r ~/.tmux.conf ~/dotfiles/ 
+
+# zsh
 cp -r ~/.zshrc ~/dotfiles/
-cp -r ~/.oh-my-zsh ~/dotfiles/
+mkdir ~/dotfiles/.oh-my-zsh
+cp -r ~/.oh-my-zsh/custom ~/dotfiles/.oh-my-zsh/
 
 # remove sub git repos
 find .vim | grep /.git | xargs rm -rf

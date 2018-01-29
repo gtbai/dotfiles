@@ -1,11 +1,9 @@
 # remove old dotfiles
-rm -rf ~/.vim
 rm -rf ~/.vimrc
 rm -rf ~/.viminfo
 rm -rf ~/.tmux
 rm -rf ~/.tmux.conf
 rm -rf ~/.zshrc
-rm -rf ~/.oh-my-zsh
 
 # copy new ones here
 cp -r ~/dotfiles/.vim ~/
