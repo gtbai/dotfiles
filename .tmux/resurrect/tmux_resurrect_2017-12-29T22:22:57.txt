@@ -1,0 +1,3 @@
+pane	2	1	:~	1	:*	1	:/Users/gtbai	1	zsh	:
+window	2	1	1	:*	b0ff,128x31,0,0,2
+state	2	
