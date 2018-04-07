@@ -1,4 +1,5 @@
 source ~/.vim/plugin.vim
+source ~/.vim/bclose.vim
 
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
@@ -127,7 +128,8 @@ let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 " let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
-let NERDTreeWinPos = "right"
+" let NERDTREE always open on the left
+let NERDTreeWinPos = "left"
 
 " nerdcommenter
 let NERDSpaceDelims=1
@@ -211,6 +213,10 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+" easier navigation between buffers
+nnoremap ˙ :bp<CR>
+nnoremap ¬ :bn<CR>
 
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *

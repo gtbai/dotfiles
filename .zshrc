@@ -9,6 +9,9 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+# only show the last directory
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -88,11 +91,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0
-export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH
-export M2_HOME=$HOME/maven/apache-maven-3.5.0
-export PATH=$PATH:$M2_HOME/bin
-export PATH=$PATH:/usr/local/cuda/bin
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
+# 
+# export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0
+# export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH
+# export M2_HOME=$HOME/maven/apache-maven-3.5.0
+# export PATH=$PATH:$M2_HOME/bin
+# export PATH=$PATH:/usr/local/cuda/bin

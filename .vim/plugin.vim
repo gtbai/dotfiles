@@ -78,6 +78,11 @@ Plug 'shougo/vimshell.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'machakann/vim-highlightedyank'
 
+"--------------
+" Swap window
+"--------------
+Plug 'wesQ3/vim-windowswap'
+
 " Add plugins to &runtimepath
 call plug#end()
 

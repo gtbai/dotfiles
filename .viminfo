@@ -11,217 +11,217 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/local
+~MSle0~/easier
 
 # Last Substitute Search Pattern:
 ~MSle0&\.\.
 
 # Last Substitute String:
-$~
+$
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1517208695,,"wq"
-:w
-|2,0,1517208483,,"w"
+|2,0,1523139371,,"wq"
 :q
-|2,0,1517207641,,"q"
-:source %
-|2,0,1517203041,,"source %"
-:2
-|2,0,1517202912,,"2"
-:set wrap
-|2,0,1517200473,,"set wrap"
-:s/\.\./~
-|2,0,1517198672,,"s/\\.\\./~"
-:s
-|2,0,1517198629,,"s"
-:bp
-|2,0,1517195546,,"bp"
-:n
-|2,0,1517195513,,"n"
-:ew
-|2,0,1517196840,,"ew"
-:s/.c//
-|2,0,1517196598,,"s/.c//"
-:set linebreak
-|2,0,1517196061,,"set linebreak"
-:wrap on
-|2,0,1517195999,,"wrap on"
-:bd
-|2,0,1517195758,,"bd"
-:help markd
-|2,0,1517195737,,"help markd"
-:q!
-|2,0,1517195623,,"q!"
-:help
-|2,0,1517092518,,"help"
-:e test.txt
-|2,0,1517091908,,"e test.txt"
-:b
-|2,0,1517091897,,"b"
-:PlugInstall
-|2,0,1517121760,,"PlugInstall"
-:e ~/.vim/plugin.vim
-|2,0,1517121612,,"e ~/.vim/plugin.vim"
-:register 0
-|2,0,1517121516,,"register 0"
-:find
-|2,0,1516999611,,"find"
-:ls
-|2,0,1516999596,,"ls"
-:e my-grep.c
-|2,0,1516999594,,"e my-grep.c"
-:put +
-|2,0,1517044618,,"put +"
-:version
-|2,0,1517043229,,"version"
-:v
-|2,0,1517043226,,"v"
-:set clipboard=unnamed
-|2,0,1517043169,,"set clipboard=unnamed"
-:"+y
-|2,0,1517043035,,"\"+y"
-:set paste
-|2,0,1517042942,,"set paste"
-:h quoteplus
-|2,0,1517042857,,"h quoteplus"
-:so %
-|2,0,1517041313,,"so %"
-:238
-|2,0,1517040999,,"238"
-:;;
-|2,0,1517040769,,";;"
-:help NERDTree
-|2,0,1517040605,,"help NERDTree"
-:b ~/.vim/plugin.vim
-|2,0,1517040205,,"b ~/.vim/plugin.vim"
-:help exchange
-|2,0,1517040167,,"help exchange"
-:;;;;;;;;;;;;;;;;;;;;;
-|2,0,1517040112,,";;;;;;;;;;;;;;;;;;;;;"
+|2,0,1521851812,,"q"
+:wall
+|2,0,1521851807,,"wall"
 :e ~/.vimrc
-|2,0,1517040073,,"e ~/.vimrc"
+|2,0,1519240378,,"e ~/.vimrc"
+:w
+|2,0,1518462191,,"w"
+:Wq
+|2,0,1518387313,,"Wq"
+:sb
+|2,0,1518305278,,"sb"
+:registers
+|2,0,1518301070,,"registers"
+:buffers
+|2,0,1518301066,,"buffers"
+:74
+|2,0,1518298716,,"74"
+:help exchange
+|2,0,1518296703,,"help exchange"
+:bd
+|2,0,1518295686,,"bd"
+:61
+|2,0,1518166006,,"61"
+:bp
+|2,0,1518165845,,"bp"
+:wqall
+|2,0,1517717129,,"wqall"
+:b kernel/sysfile.c
+|2,0,1517716978,,"b kernel/sysfile.c"
+:b kernel/sysfunc.h
+|2,0,1517716869,,"b kernel/sysfunc.h"
+:b kernel/syscall.c
+|2,0,1517716737,,"b kernel/syscall.c"
+:b include/syscall.h
+|2,0,1517716731,,"b include/syscall.h"
+:b user/usys.S
+|2,0,1517716467,,"b user/usys.S"
+:b syscall.h
+|2,0,1517716224,,"b syscall.h"
+:bf
+|2,0,1517715932,,"bf"
+:b2
+|2,0,1517715925,,"b2"
+:sysfunc.h
+|2,0,1517715658,,"sysfunc.h"
+:bn
+|2,0,1517715608,,"bn"
+:blast
+|2,0,1517715601,,"blast"
+:b kernel/trap.c
+|2,0,1517715307,,"b kernel/trap.c"
+:b kernel/main.c
+|2,0,1517713983,,"b kernel/main.c"
+:tvinit
+|2,0,1517713422,,"tvinit"
+:vert sb user/usys.S
+|2,0,1517713152,,"vert sb user/usys.S"
+:vert sb kernel/sysproc.c
+|2,0,1517698823,,"vert sb kernel/sysproc.c"
 :Q
-|2,0,1517040052,,"Q"
-:ev
-|2,0,1517039952,,"ev"
-:!
-|2,0,1517039786,,"!"
-:pluginstall
-|2,0,1517039780,,"pluginstall"
-:e
-|2,0,1517039730,,"e"
-:b my-grep.c
-|2,0,1517029263,,"b my-grep.c"
-:2B
-|2,0,1517029177,,"2B"
-:W
-|2,0,1517027524,,"W"
-:2BV
-|2,0,1517025924,,"2BV"
+|2,0,1517698357,,"Q"
+:qa
+|2,0,1517697827,,"qa"
+:sp
+|2,0,1517697442,,"sp"
+:qall
+|2,0,1517697430,,"qall"
+:PlugInstall
+|2,0,1517697413,,"PlugInstall"
+:PlugUpdate
+|2,0,1517697179,,"PlugUpdate"
+:e ~/.vim/plugin.vim
+|2,0,1517696960,,"e ~/.vim/plugin.vim"
+:vert sb kernel/sysfunc.h
+|2,0,1517696806,,"vert sb kernel/sysfunc.h"
+:sb kernel/sysfunc.h
+|2,0,1517696780,,"sb kernel/sysfunc.h"
+:iret
+|2,0,1517696352,,"iret"
+:b4
+|2,0,1517696333,,"b4"
+:b1
+|2,0,1517696326,,"b1"
+:help 'ctrlp'
+|2,0,1517684216,,"help 'ctrlp'"
+:b"No Name"
+|2,0,1517684016,,"b\"No Name\""
+:ls
+|2,0,1517684002,,"ls"
+:b%a
+|2,0,1517683996,,"b%a"
+:b12
+|2,0,1517683968,,"b12"
+:buffer
+|2,0,1517683869,,"buffer"
+:nerd
+|2,0,1517683546,,"nerd"
 
 # Search String History (newest to oldest):
-?/local
-|2,1,1517203051,47,"local"
-?/plu
-|2,1,1517203027,47,"plu"
-?/syntax
-|2,1,1517202952,47,"syntax"
-? \.\.
-|2,1,1517198672,,"\\.\\."
-?/\.c
-|2,1,1517196671,47,"\\.c"
-?/.c
-|2,1,1517196637,47,".c"
-? .c
-|2,1,1517196598,,".c"
-?/markdown
-|2,1,1517195745,47,"markdown"
-?/window
-|2,1,1517194986,47,"window"
-?/split
-|2,1,1517194613,47,"split"
-?/key binding
-|2,1,1517091371,47,"key binding"
-?/escape
-|2,1,1517091367,47,"escape"
-?/leader
-|2,1,1517040961,47,"leader"
-?/;eader
-|2,1,1517040954,47,";eader"
-?/vimrc
-|2,1,1517040823,47,"vimrc"
-?/exchange
-|2,1,1517039696,47,"exchange"
-? \<buffer\>
-|2,1,1517028586,,"\\<buffer\\>"
-?/nread
-|2,1,1517015007,47,"nread"
-?/parent
-|2,1,1517009866,47,"parent"
+?/easier
+|2,1,1519510956,47,"easier"
+?/source
+|2,1,1519451643,47,"source"
+?/tab
+|2,1,1519240381,47,"tab"
+?/print_err
+|2,1,1518462202,47,"print_err"
+?/strcpy
+|2,1,1518387113,47,"strcpy"
+?/copy_paths
+|2,1,1518387102,47,"copy_paths"
+?/paths
+|2,1,1518387028,47,"paths"
+?/redir
+|2,1,1518386768,47,"redir"
+?/para
+|2,1,1518386183,47,"para"
+?/>
+|2,1,1518337051,47,">"
+?/print_err_and
+|2,1,1518335866,47,"print_err_and"
+?/line_buffer
+|2,1,1518305455,47,"line_buffer"
+?/agr
+|2,1,1518301544,47,"agr"
+?/freopen
+|2,1,1518301039,47,"freopen"
+?/path
+|2,1,1518300039,47,"path"
+?/strtok
+|2,1,1518296466,47,"strtok"
+?/my_exit
+|2,1,1518249933,47,"my_exit"
+?/strrok
+|2,1,1518243890,47,"strrok"
+?/token
+|2,1,1518241762,47,"token"
+?/argv
+|2,1,1518240467,47,"argv"
+?/cancel
+|2,1,1518203128,47,"cancel"
+?/readcount
+|2,1,1517717927,47,"readcount"
+?/read
+|2,1,1517716007,47,"read"
+?/alltraps
+|2,1,1517715069,47,"alltraps"
+?/trapno
+|2,1,1517715011,47,"trapno"
+?/trap
+|2,1,1517714942,47,"trap"
+?/lidt
+|2,1,1517714145,47,"lidt"
+?/idtinit
+|2,1,1517714131,47,"idtinit"
+?/bn
+|2,1,1517714124,47,"bn"
+?/cinit
+|2,1,1517714058,47,"cinit"
+?/mpmain
+|2,1,1517714054,47,"mpmain"
+?/idinit
+|2,1,1517714043,47,"idinit"
+?/tvinit
+|2,1,1517713439,47,"tvinit"
+?/mainc
+|2,1,1517713390,47,"mainc"
+?/tvint
+|2,1,1517713384,47,"tvint"
 ? \$\(cursor\|select\)\$
-|2,1,1517005452,,"\\$\\(cursor\\|select\\)\\$"
-?/pair
-|2,1,1517007212,47,"pair"
-?/ctrlp
-|2,1,1517003223,47,"ctrlp"
-?/keybind
-|2,1,1517001624,47,"keybind"
-?/ctrl
-|2,1,1517000965,47,"ctrl"
-?/ycm
-|2,1,1516951888,47,"ycm"
-?/trail
-|2,1,1516949904,47,"trail"
-?/tra
-|2,1,1516949836,47,"tra"
-?/highli
-|2,1,1516949831,47,"highli"
-?/trai
-|2,1,1516949826,47,"trai"
-?/plug
-|2,1,1516949781,47,"plug"
-?/trailing
-|2,1,1516949770,47,"trailing"
-?/space
-|2,1,1516949393,47,"space"
-?/highlight
-|2,1,1516949306,47,"highlight"
-?/red
-|2,1,1516949289,47,"red"
-?/listchar
-|2,1,1516949273,47,"listchar"
-?/plugin
-|2,1,1514607073,47,"plugin"
-?/mouse
-|2,1,1514607066,47,"mouse"
-?/cpp
-|2,1,1514606333,47,"cpp"
-?/vimproc
-|2,1,1514605633,47,"vimproc"
-?/java
-|2,1,1514594782,47,"java"
-?/syn
-|2,1,1512378981,47,"syn"
-?/pycaffe
-|2,1,1512377848,47,"pycaffe"
-?/folders
-|2,1,1512372002,47,"folders"
-?/lib
-|2,1,1512368861,47,"lib"
-?/boost
-|2,1,1512368851,47,"boost"
-?/CPU
-|2,1,1512364891,47,"CPU"
-?/include
-|2,1,1512363336,47,"include"
-?/compute
-|2,1,1512355984,47,"compute"
-?/cuda
-|2,1,1512355559,47,"cuda"
-?/blas
-|2,1,1512353981,47,"blas"
+|2,1,1517713236,,"\\$\\(cursor\\|select\\)\\$"
+?/proc
+|2,1,1517698765,47,"proc"
+?/sys_read
+|2,1,1517698499,47,"sys_read"
+?/g
+|2,1,1517698271,47,"g"
+?/argfd
+|2,1,1517698217,47,"argfd"
+?/file
+|2,1,1517698043,47,"file"
+?/window
+|2,1,1517697250,47,"window"
+?/widnow
+|2,1,1517697120,47,"widnow"
+?/iret
+|2,1,1517696355,47,"iret"
+?/exit(
+|2,1,1517696269,47,"exit("
+?/syscall(
+|2,1,1517695877,47,"syscall("
+?/syscall
+|2,1,1517695856,47,"syscall"
+?/trapfram
+|2,1,1517695454,47,"trapfram"
+?/hehe
+|2,1,1517684661,47,"hehe"
+?/user
+|2,1,1517684654,47,"user"
 
 # Expression History (newest to oldest):
 
@@ -233,41 +233,37 @@ $~
 
 # Registers:
 "0	LINE	0
-	mkdir ~/dotfiles/.vim
-|3,0,0,1,1,0,1517208354,"mkdir ~/dotfiles/.vim"
-""1	LINE	0
-	rm -rf ~/.vim
-|3,1,1,1,1,0,1517208687,"rm -rf ~/.vim"
+	nnoremap ˙ :bp<CR>
+|3,0,0,1,1,0,1519511023,"nnoremap ˙ :bp<CR>"
+"1	LINE	0
+	python learn_bayes.py 
+|3,0,1,1,1,0,1521851423,"python learn_bayes.py "
 "2	LINE	0
-	rm -rf ~/.oh-my-zsh
-|3,0,2,1,1,0,1517208674,"rm -rf ~/.oh-my-zsh"
+	python learn_bayes.py 
+|3,0,2,1,1,0,1520652050,"python learn_bayes.py "
 "3	LINE	0
-	rm -rf ~/dotfiles/.vim/plugged/*
-|3,0,3,1,1,0,1517208268,"rm -rf ~/dotfiles/.vim/plugged/*"
-"4	LINE	0
+	nnoremap <c-k> <c-w>k
+|3,0,3,1,1,0,1519511037,"nnoremap <c-k> <c-w>k"
+"4	CHAR	0
+	split windows
 	
-|3,0,4,1,1,0,1517208260,""
+|3,0,4,0,2,0,1519510975,"split windows",""
 "5	LINE	0
-	find .vim | grep /.git | xargs rm -rf
-|3,0,5,1,1,0,1517205930,"find .vim | grep /.git | xargs rm -rf"
+	    exit(1);
+|3,0,5,1,1,0,1518462190,"    exit(1);"
 "6	LINE	0
-	find .vim | grep /.git | xargs rm -rf
-|3,0,6,1,1,0,1517205930,"find .vim | grep /.git | xargs rm -rf"
-"7	BLOCK	8
-	/dotfiles
-	/dotfiles
-	/dotfiles
-	/dotfiles
-	/dotfiles
-	/dotfiles
-|3,0,7,2,6,8,1517204217,"/dotfiles","/dotfiles","/dotfiles","/dotfiles","/dotfiles","/dotfiles"
-"8	LINE	0
 	
-|3,0,8,1,1,0,1517204074,""
+|3,0,6,1,1,0,1518387337,""
+"7	LINE	0
+	cat cmds.txt > output2.txt
+	
+|3,0,7,1,2,0,1518387308,"cat cmds.txt > output2.txt",""
+"8	LINE	0
+	                    printf("redir: %s\n", redir);
+|3,0,8,1,1,0,1518386773,"                    printf(\"redir: %s\\n\", redir);"
 "9	LINE	0
-	# sync using github
-	git push
-|3,0,9,1,2,0,1517204072,"# sync using github","git push"
+	                    printf("redir: %s\n", redir);
+|3,0,9,1,1,0,1518386769,"                    printf(\"redir: %s\\n\", redir);"
 "a	CHAR	0
 	xx
 |3,0,10,0,1,0,1512350725,"xx"
@@ -285,235 +281,902 @@ $~
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com",>749
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfCGFUnkPvf5zzPxNhOYf/3Vd9V+AiTcfQY3GICNEvlwBs1tkcOtp/wjp1tH5VdQRQZXUNFamtUYb2T2QjcPszCgOEcfGUZ1GFdDTkwb+mVI4VUTFG3mvbH/1CooPqhq/bN9Smp+/akBgnA3ukB6wkjODJtOt1I72adJG7SqOeolA65cmLsXsRZn1SGBzVQOKelkmi6Vz4/nc/9uTXJLBp2NKan7a3VAvTY8FuJYQRw2GjtLoVGnvPvaGmqvQTCq+A2oVflYn067RuFvCSMWSABTUIZGOs5fguk91LMp3CLqYCL8gS1aRB6XWd4RjSD1O38dRyyWw3WUNewR+549GLXUXkTb1dnDR0OlHB2ky1VIqrn6vp90weusxeaBzwYO1d4mxZm24sGQzpultMBzTwEPGJh8k/WA7ZBgxh396fVFwnGsktHPmGdl3l7aoSipkPN
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com"
-"-	CHAR	0
-	vim
-|3,0,36,0,1,0,1517208367,"vim"
+""-	CHAR	0
+	logistic_regression
+|3,1,36,0,1,0,1521851765,"logistic_regression"
 
 # File marks:
-'0  6  0  ~/dotfiles/setup.sh
-|4,48,6,0,1517208695,"~/dotfiles/setup.sh"
-'1  29  47  ~/dotfiles/update.sh
-|4,49,29,47,1517208578,"~/dotfiles/update.sh"
-'2  16  0  ~/dotfiles/setup.sh
-|4,50,16,0,1517207641,"~/dotfiles/setup.sh"
-'3  18  0  ~/dotfiles/setup.sh
-|4,51,18,0,1517207641,"~/dotfiles/setup.sh"
-'4  34  0  ~/dotfiles/update.sh
-|4,52,34,0,1517207628,"~/dotfiles/update.sh"
-'5  23  0  ~/dotfiles/update.sh
-|4,53,23,0,1517207628,"~/dotfiles/update.sh"
-'6  19  31  ~/dotfiles/update.sh
-|4,54,19,31,1517207176,"~/dotfiles/update.sh"
-'7  19  31  ~/dotfiles/update.sh
-|4,55,19,31,1517207176,"~/dotfiles/update.sh"
-'8  12  31  ~/dotfiles/update.sh
-|4,56,12,31,1517207176,"~/dotfiles/update.sh"
-'9  12  31  ~/dotfiles/update.sh
-|4,57,12,31,1517207176,"~/dotfiles/update.sh"
+'0  94  0  ~/.zshrc
+|4,48,94,0,1523139371,"~/.zshrc"
+'1  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,49,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+'2  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,50,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+'3  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,51,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+'4  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,52,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+'5  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,53,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+'6  1  43  ~/.zshrc
+|4,54,1,43,1519545939,"~/.zshrc"
+'7  1  43  ~/.zshrc
+|4,55,1,43,1519545939,"~/.zshrc"
+'8  220  0  ~/.vimrc
+|4,56,220,0,1519511041,"~/.vimrc"
+'9  3  0  ~/.vimrc
+|4,57,3,0,1519451678,"~/.vimrc"
 
 # Jumplist (newest first):
--'  6  0  ~/dotfiles/setup.sh
-|4,39,6,0,1517208695,"~/dotfiles/setup.sh"
--'  16  0  ~/dotfiles/setup.sh
-|4,39,16,0,1517208582,"~/dotfiles/setup.sh"
--'  29  47  ~/dotfiles/update.sh
-|4,39,29,47,1517208578,"~/dotfiles/update.sh"
--'  29  47  ~/dotfiles/update.sh
-|4,39,29,47,1517208578,"~/dotfiles/update.sh"
--'  20  26  ~/dotfiles/update.sh
-|4,39,20,26,1517208457,"~/dotfiles/update.sh"
--'  20  26  ~/dotfiles/update.sh
-|4,39,20,26,1517208457,"~/dotfiles/update.sh"
--'  16  30  ~/dotfiles/update.sh
-|4,39,16,30,1517208205,"~/dotfiles/update.sh"
--'  16  30  ~/dotfiles/update.sh
-|4,39,16,30,1517208205,"~/dotfiles/update.sh"
--'  19  0  ~/dotfiles/update.sh
-|4,39,19,0,1517208185,"~/dotfiles/update.sh"
--'  19  0  ~/dotfiles/update.sh
-|4,39,19,0,1517208185,"~/dotfiles/update.sh"
--'  13  42  ~/dotfiles/update.sh
-|4,39,13,42,1517208089,"~/dotfiles/update.sh"
--'  13  42  ~/dotfiles/update.sh
-|4,39,13,42,1517208089,"~/dotfiles/update.sh"
--'  34  0  ~/dotfiles/update.sh
-|4,39,34,0,1517207952,"~/dotfiles/update.sh"
--'  34  0  ~/dotfiles/update.sh
-|4,39,34,0,1517207952,"~/dotfiles/update.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517207641,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517207641,"~/dotfiles/setup.sh"
--'  23  0  ~/dotfiles/update.sh
-|4,39,23,0,1517207628,"~/dotfiles/update.sh"
--'  23  0  ~/dotfiles/update.sh
-|4,39,23,0,1517207628,"~/dotfiles/update.sh"
--'  23  0  ~/dotfiles/update.sh
-|4,39,23,0,1517207628,"~/dotfiles/update.sh"
--'  23  0  ~/dotfiles/update.sh
-|4,39,23,0,1517207628,"~/dotfiles/update.sh"
--'  12  0  ~/dotfiles/update.sh
-|4,39,12,0,1517207618,"~/dotfiles/update.sh"
--'  12  0  ~/dotfiles/update.sh
-|4,39,12,0,1517207618,"~/dotfiles/update.sh"
--'  12  0  ~/dotfiles/update.sh
-|4,39,12,0,1517207618,"~/dotfiles/update.sh"
--'  12  0  ~/dotfiles/update.sh
-|4,39,12,0,1517207618,"~/dotfiles/update.sh"
--'  12  31  ~/dotfiles/update.sh
-|4,39,12,31,1517207176,"~/dotfiles/update.sh"
--'  12  31  ~/dotfiles/update.sh
-|4,39,12,31,1517207176,"~/dotfiles/update.sh"
--'  12  31  ~/dotfiles/update.sh
-|4,39,12,31,1517207176,"~/dotfiles/update.sh"
--'  12  31  ~/dotfiles/update.sh
-|4,39,12,31,1517207176,"~/dotfiles/update.sh"
--'  32  0  ~/dotfiles/update.sh
-|4,39,32,0,1517207144,"~/dotfiles/update.sh"
--'  21  0  ~/dotfiles/update.sh
-|4,39,21,0,1517207144,"~/dotfiles/update.sh"
--'  21  0  ~/dotfiles/update.sh
-|4,39,21,0,1517207144,"~/dotfiles/update.sh"
--'  21  0  ~/dotfiles/update.sh
-|4,39,21,0,1517207144,"~/dotfiles/update.sh"
--'  21  0  ~/dotfiles/update.sh
-|4,39,21,0,1517207144,"~/dotfiles/update.sh"
--'  32  0  ~/dotfiles/update.sh
-|4,39,32,0,1517207144,"~/dotfiles/update.sh"
--'  21  0  ~/dotfiles/update.sh
-|4,39,21,0,1517207144,"~/dotfiles/update.sh"
--'  21  0  ~/dotfiles/update.sh
-|4,39,21,0,1517207144,"~/dotfiles/update.sh"
--'  21  0  ~/dotfiles/update.sh
-|4,39,21,0,1517207144,"~/dotfiles/update.sh"
--'  21  0  ~/dotfiles/update.sh
-|4,39,21,0,1517207144,"~/dotfiles/update.sh"
--'  31  0  ~/dotfiles/update.sh
-|4,39,31,0,1517206386,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206386,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206386,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206386,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206386,"~/dotfiles/update.sh"
--'  31  0  ~/dotfiles/update.sh
-|4,39,31,0,1517206386,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206386,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206386,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206386,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206386,"~/dotfiles/update.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  18  0  ~/dotfiles/setup.sh
-|4,39,18,0,1517206132,"~/dotfiles/setup.sh"
--'  7  3  ~/dotfiles/setup.sh
-|4,39,7,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  9  3  ~/dotfiles/setup.sh
-|4,39,9,3,1517206088,"~/dotfiles/setup.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206064,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206064,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206064,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206064,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206064,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206064,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206064,"~/dotfiles/update.sh"
--'  20  0  ~/dotfiles/update.sh
-|4,39,20,0,1517206064,"~/dotfiles/update.sh"
--'  33  0  ~/dotfiles/update.sh
-|4,39,33,0,1517206040,"~/dotfiles/update.sh"
--'  22  0  ~/dotfiles/update.sh
-|4,39,22,0,1517206040,"~/dotfiles/update.sh"
--'  23  0  ~/dotfiles/update.sh
-|4,39,23,0,1517206040,"~/dotfiles/update.sh"
--'  22  0  ~/dotfiles/update.sh
-|4,39,22,0,1517206040,"~/dotfiles/update.sh"
--'  22  0  ~/dotfiles/update.sh
-|4,39,22,0,1517206040,"~/dotfiles/update.sh"
--'  22  0  ~/dotfiles/update.sh
-|4,39,22,0,1517206040,"~/dotfiles/update.sh"
--'  22  0  ~/dotfiles/update.sh
-|4,39,22,0,1517206040,"~/dotfiles/update.sh"
--'  23  0  ~/dotfiles/update.sh
-|4,39,23,0,1517206040,"~/dotfiles/update.sh"
--'  22  0  ~/dotfiles/update.sh
-|4,39,22,0,1517206040,"~/dotfiles/update.sh"
+-'  94  0  ~/.zshrc
+|4,39,94,0,1523139371,"~/.zshrc"
+-'  10  0  ~/.zshrc
+|4,39,10,0,1523139353,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1523139350,"~/.zshrc"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  1  43  ~/.zshrc
+|4,39,1,43,1519545939,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
+-'  12  0  ~/.zshrc
+|4,39,12,0,1519528521,"~/.zshrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.zshrc
+	*	1523139369	0
+	"	94	0
+	^	94	2
+	.	95	0
+	+	97	0
+	+	99	26
+	+	97	19
+	+	97	39
+	+	98	0
+	+	97	19
+	+	10	35
+	+	101	37
+	+	58	7
+	+	59	0
+	+	61	0
+	+	59	17
+	+	97	23
+	+	99	19
+	+	5	15
+	+	93	0
+	+	60	31
+	+	93	0
+	+	11	0
+	+	12	6
+	+	15	0
+	+	14	33
+	+	14	0
+	+	95	0
+
+> ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+	*	1521851810	0
+	"	1	35
+	^	1	36
+	.	1	35
+	+	1	35
+
+> ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+	*	1521851540	0
+	"	1	6
+	^	1	7
+	.	1	6
+	+	2	0
+	+	1	6
+
+> ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+	*	1520652355	0
+	"	1	6
+	^	1	7
+	.	1	6
+	+	1	0
+	+	1	6
+
+> ~/.vimrc
+	*	1519511038	0
+	"	220	0
+	^	219	15
+	.	220	0
+	+	154	0
+	+	206	25
+	+	204	0
+	+	202	22
+	+	204	28
+	+	207	0
+	+	109	0
+	+	196	11
+	+	248	0
+	+	1	0
+	+	248	7
+	+	249	0
+	+	260	0
+	+	256	0
+	+	257	0
+	+	256	0
+	+	279	0
+	+	242	8
+	+	244	0
+	+	243	0
+	+	242	0
+	+	243	11
+	+	244	10
+	+	244	1
+	+	243	2
+	+	265	0
+	+	285	0
+	+	243	0
+	+	133	0
+	+	132	0
+	+	131	0
+	+	132	25
+	+	69	0
+	+	2	23
+	+	3	0
+	+	27	0
+	+	217	0
+	+	220	0
+	+	217	34
+	+	218	19
+	+	219	14
+	+	220	0
+
+> ~/NERD_tree_1
+	*	1519510924	0
+	"	1	1
+	.	1	0
+	+	1	0
+
+> ~/.vim/ControlP
+	*	1519451719	0
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/.vim/NERD_tree_1
+	*	1519451700	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/plugin.vim
+	*	1519451472	0
+	"	35	12
+	^	84	29
+	.	84	4
+	+	69	15
+	+	72	0
+	+	78	0
+	+	73	20
+	+	72	24
+	+	73	25
+	+	72	0
+	+	43	1
+	+	10	30
+	+	11	54
+	+	21	22
+	+	22	0
+	+	19	0
+	+	21	0
+	+	19	40
+	+	20	0
+	+	75	0
+	+	78	0
+	+	86	0
+	+	76	1
+	+	70	1
+	+	76	33
+	+	78	0
+	+	85	0
+	+	78	23
+	+	33	25
+	+	31	0
+	+	33	0
+	+	32	6
+	+	33	0
+	+	86	0
+	+	79	34
+	+	86	0
+	+	79	2
+	+	79	0
+	+	80	0
+	+	81	0
+	+	80	0
+	+	82	13
+	+	84	4
+
+> ~/Documents/codebase/cs537-projs/p2a/wish.c
+	*	1519167578	0
+	"	152	0
+	^	134	0
+	.	59	32
+	+	36	28
+	+	123	7
+	+	126	0
+	+	38	0
+	+	123	0
+	+	122	11
+	+	122	30
+	+	55	0
+	+	122	0
+	+	38	31
+	+	108	38
+	+	124	17
+	+	109	28
+	+	110	0
+	+	124	74
+	+	132	11
+	+	117	23
+	+	118	25
+	+	49	79
+	+	49	0
+	+	45	89
+	+	52	49
+	+	46	0
+	+	45	102
+	+	55	53
+	+	58	89
+	+	28	50
+	+	29	32
+	+	40	0
+	+	40	17
+	+	40	74
+	+	45	44
+	+	78	0
+	+	22	48
+	+	75	58
+	+	76	0
+	+	78	0
+	+	76	59
+	+	86	88
+	+	24	0
+	+	22	60
+	+	74	49
+	+	90	40
+	+	90	61
+	+	94	38
+	+	94	31
+	+	94	0
+	+	94	51
+	+	94	57
+	+	101	0
+	+	94	51
+	+	94	0
+	+	94	89
+	+	95	0
+	+	94	87
+	+	91	68
+	+	92	55
+	+	91	87
+	+	76	44
+	+	101	101
+	+	91	40
+	+	75	0
+	+	76	49
+	+	37	0
+	+	22	39
+	+	37	28
+	+	125	6
+	+	22	28
+	+	23	21
+	+	37	32
+	+	74	43
+	+	75	41
+	+	40	0
+	+	76	0
+	+	14	61
+	+	77	36
+	+	78	40
+	+	14	57
+	+	77	45
+	+	11	14
+	+	130	0
+	+	133	1
+	+	134	14
+	+	137	0
+	+	41	28
+	+	46	37
+	+	53	36
+	+	56	36
+	+	59	36
+	+	92	48
+	+	99	48
+	+	102	48
+	+	92	44
+	+	99	44
+	+	102	44
+	+	117	32
+	+	46	33
+	+	53	32
+	+	56	32
+	+	59	32
+
+> ~/Documents/codebase/intellij-workspace/CS760/HW1-DT-Learn/dt-learn
+	*	1518819172	0
+	"	1	30
+	^	1	31
+	.	1	30
+	+	1	30
+
+> ~/Documents/codebase/cs537-projs/p2a/cmds.txt
+	*	1518388160	0
+	"	1	13
+	^	2	5
+	.	1	13
+	+	1	0
+	+	1	15
+	+	1	24
+	+	2	32
+	+	3	11
+	+	9	0
+	+	2	7
+	+	1	13
+
+> ~/Documents/codebase/cs537-projs/p2a/text.txt
+	*	1518387338	0
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/Documents/codebase/cs537-projs/p2a/wish.s
+	*	1518386714	0
+	"	1	0
+
+> ~/Documents/codebase/cs537-projs/.git/COMMIT_EDITMSG
+	*	1518336987	0
+	"	1	15
+	^	1	16
+	.	1	15
+	+	1	15
+
+> ~/Documents/codebase/cs537-projs/output.txt
+	*	1518301976	0
+	"	5	0
+
+> ~/Documents/codebase/cs537-projs/p2a/output.txt
+	*	1518299228	0
+	"	1	0
+
+> ~/.vim/plugged/vim-exchange/doc/exchange.txt
+	*	1518296707	0
+	"	33	0
+
+> ~/Documents/codebase/cs537-projs/p1a/my-cat.c
+	*	1518295683	0
+	"	25	4
+	.	13	0
+	+	1	18
+	+	2	19
+	+	6	33
+	+	34	0
+	+	7	34
+	+	34	20
+	+	34	34
+	+	34	4
+	+	34	7
+	+	34	0
+	+	34	17
+	+	34	33
+	+	34	18
+	+	34	15
+	+	34	0
+	+	34	9
+	+	34	8
+	+	34	4
+	+	34	29
+	+	34	0
+	+	34	16
+	+	4	23
+	+	34	17
+	+	34	0
+	+	34	19
+	+	34	29
+	+	34	0
+	+	34	11
+	+	34	28
+	+	34	52
+	+	34	29
+	+	34	38
+	+	34	54
+	+	34	60
+	+	34	29
+	+	34	5
+	+	34	0
+	+	34	15
+	+	34	13
+	+	34	12
+	+	34	0
+	+	7	4
+	+	11	0
+	+	8	19
+	+	9	15
+	+	7	33
+	+	13	43
+	+	12	12
+	+	13	68
+	+	13	41
+	+	34	0
+	+	13	37
+	+	12	9
+	+	13	50
+	+	13	67
+	+	7	0
+	+	13	42
+	+	13	41
+	+	13	37
+	+	13	80
+	+	13	94
+	+	12	15
+	+	13	53
+	+	12	0
+	+	13	73
+	+	12	0
+	+	13	37
+	+	12	4
+	+	13	37
+	+	13	54
+	+	13	89
+	+	13	37
+	+	13	41
+	+	13	37
+	+	13	0
+	+	13	37
+	+	13	47
+	+	13	0
+
+> ~/Documents/codebase/cs537-projs/p2a/ControlP
+	*	1518295675	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/codebase/cs537-projs/p2a/wish
+	*	1518249002	0
+	"	1	0
+
+> ~/Documents/codebase/cs537-projs/.git/MERGE_MSG
+	*	1518244050	0
+	"	1	0
+
+> ~/wish.c
+	*	1518166342	0
+	"	1	0
+
+> ~/OneDrive - UW-Madison/2018 Spring/CS537 OS/Project Notes/p2.c
+	*	1517970068	0
+	"	7	3
+	^	7	4
+	.	7	4
+	+	1	16
+	+	2	19
+	+	4	33
+	+	5	28
+	+	6	56
+	+	7	4
+
+> ~/Documents/codebase/ps.snapshot
+	*	1517969249	0
+	"	1	2
+
+> ~/Documents/codebase/cs537-projs/.gitignore
+	*	1517803147	0
+	"	11	4
+	^	11	5
+	.	11	4
+	+	7	1
+	+	3	2
+	+	9	0
+	+	3	0
+	+	2	0
+	+	1	0
+	+	2	2
+	+	3	0
+	+	4	6
+	+	9	5
+	+	12	0
+	+	9	4
+	+	10	4
+	+	11	4
+
+> ~/Documents/codebase/cs537-projs/xv6/user/user.h
+	*	1517718996	0
+	"	12	0
+	^	12	15
+	.	12	14
+	+	29	0
+	+	12	14
+
+> ~/Documents/codebase/cs537-projs/xv6/include/syscall.h
+	*	1517718643	0
+	"	28	0
+	^	26	27
+	.	26	26
+	+	26	26
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/sysproc.c
+	*	1517717932	0
+	"	19	2
+	^	7	0
+	.	8	0
+	+	7	0
+	+	8	0
+
+> ~/Documents/codebase/cs537-projs/xv6/ControlP
+	*	1517717921	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/codebase/cs537-projs/xv6/NERD_tree_1
+	*	1517717915	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/sysfile.c
+	*	1517717126	0
+	"	48	12
+	^	63	19
+	.	61	0
+	+	69	13
+	+	61	27
+	+	63	18
+	+	61	0
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/sysfunc.h
+	*	1517716905	0
+	"	29	0
+	^	5	18
+	.	5	17
+	+	29	19
+	+	5	17
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/syscall.c
+	*	1517716818	0
+	"	106	0
+	^	106	17
+	.	106	24
+	+	105	0
+	+	107	0
+	+	106	0
+	+	107	0
+	+	106	0
+	+	107	0
+	+	106	24
+
+> ~/Documents/codebase/cs537-projs/xv6/user/usys.S
+	*	1517716524	0
+	"	32	0
+	^	32	20
+	.	32	19
+	+	32	19
+
+> /private/var/folders/p3/t6754x9s6m30hdyy25j0k_vh0000gn/T/v2ZNmtr/3.c
+	*	1517715925	0
+	"	1	0
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/trapasm.S
+	*	1517715606	0
+	"	25	3
+
+> ~/Documents/codebase/cs537-projs/xv6/include/x86.h
+	*	1517715547	0
+	"	200	2
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/trap.c
+	*	1517715375	0
+	"	41	2
+	.	47	0
+	+	47	0
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/main.c
+	*	1517714124	0
+	"	5	0
+	.	56	0
+	+	56	0
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/vectors.pl
+	*	1517713736	0
+	"	47	0
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/mmu.h
+	*	1517713562	0
+	"	107	0
+
+> ~/Documents/codebase/cs537-projs/xv6/include/traps.h
+	*	1517713117	0
+	"	30	3
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/proc.h
+	*	1517698789	0
+	"	85	0
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/proc.c
+	*	1517698769	0
+	"	203	0
+
+> ~/Documents/codebase/cs537-projs/xv6/include/param.h
+	*	1517698732	0
+	"	5	0
+
+> ~/Documents/codebase/cs537-projs/xv6/kernel/defs.h
+	*	1517698708	0
+	"	175	0
+
+> ~/Documents/codebase/cs537-projs/xv6/include/types.h
+	*	1517698648	0
+	"	14	0
+
+> ~/Documents/codebase/cs537-projs/xv6/NERD_tree_2
+	*	1517684737	0
+	"	9	4
+	.	1	0
+	+	1	0
+
+> ~/Documents/codebase/cs537-projs/p1a/README
+	*	1517684496	0
+	"	7	0
+	^	1	8
+	.	7	209
+	+	1	8
+	+	1	0
+	+	2	20
+	+	3	115
+	+	3	0
+	+	8	6
+	+	8	0
+	+	5	0
+	+	8	223
+	+	8	0
+	+	7	44
+	+	8	0
+	+	9	5
+	+	11	270
+	+	12	0
+	+	13	4
+	+	15	4
+	+	11	10
+	+	15	60
+	+	16	0
+	+	1	5
+	+	5	6
+	+	9	5
+	+	13	7
+	+	1	0
+	+	7	0
+	+	7	209
+
+> ~/Documents/codebase/cs537-projs/ControlP
+	*	1517684482	0
+	"	2	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/Documents/codebase/cs537-projs/xv6/include/fcntl.h
+	*	1517684249	0
+	"	5	0
+
+> ~/.vim/plugged/ctrlp.vim/doc/ctrlp.txt
+	*	1517684240	0
+	"	163	0
+
+> ~/Documents/codebase/cs537-projs/NERD_tree_5
+	*	1517684058	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/codebase/cs537-projs/NERD_tree_3
+	*	1517683302	0
+	"	13	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/codebase/cs537-projs/NERD_tree_4
+	*	1517683294	0
+	"	3	0
+	.	1	0
+	+	1	0
+
+> ~/OneDrive - UW-Madison/2018 Spring/TA Related/01-29.md
+	*	1517264502	0
+	"	13	0
+	.	14	0
+	+	14	0
 
 > ~/dotfiles/setup.sh
 	*	1517208693	0
@@ -664,168 +1327,9 @@ $~
 	+	14	19
 	+	15	15
 
-> ~/.zshrc
-	*	1517203057	0
-	"	90	0
-	^	57	32
-	.	90	0
-	+	94	0
-	+	96	26
-	+	94	19
-	+	94	39
-	+	95	0
-	+	94	19
-	+	10	35
-	+	98	37
-	+	55	7
-	+	56	0
-	+	58	0
-	+	56	17
-	+	94	23
-	+	96	19
-	+	5	15
-	+	90	0
-	+	57	31
-	+	90	0
-
 > ~/.zsh
 	*	1517202795	0
 	"	1	0
-
-> ~/Documents/codebase/cs537-projs/.git/MERGE_MSG
-	*	1517196917	0
-	"	1	0
-
-> ~/Documents/codebase/cs537-projs/.gitignore
-	*	1517196840	0
-	"	4	6
-	^	4	7
-	.	4	6
-	+	7	1
-	+	3	2
-	+	9	0
-	+	3	0
-	+	2	0
-	+	1	0
-	+	2	2
-	+	3	0
-	+	4	6
-
-> ~/Documents/codebase/cs537-projs/p1a/README
-	*	1517196758	0
-	"	11	215
-	^	1	8
-	.	7	209
-	+	1	8
-	+	1	0
-	+	2	20
-	+	3	115
-	+	3	0
-	+	8	6
-	+	8	0
-	+	5	0
-	+	8	223
-	+	8	0
-	+	7	44
-	+	8	0
-	+	9	5
-	+	11	270
-	+	12	0
-	+	13	4
-	+	15	4
-	+	11	10
-	+	15	60
-	+	16	0
-	+	1	5
-	+	5	6
-	+	9	5
-	+	13	7
-	+	1	0
-	+	7	0
-	+	7	209
-
-> ~/Documents/codebase/cs537-projs/p1a/my-cat.c
-	*	1517196070	0
-	"	12	6
-	.	13	0
-	+	1	18
-	+	2	19
-	+	6	33
-	+	34	0
-	+	7	34
-	+	34	20
-	+	34	34
-	+	34	4
-	+	34	7
-	+	34	0
-	+	34	17
-	+	34	33
-	+	34	18
-	+	34	15
-	+	34	0
-	+	34	9
-	+	34	8
-	+	34	4
-	+	34	29
-	+	34	0
-	+	34	16
-	+	4	23
-	+	34	17
-	+	34	0
-	+	34	19
-	+	34	29
-	+	34	0
-	+	34	11
-	+	34	28
-	+	34	52
-	+	34	29
-	+	34	38
-	+	34	54
-	+	34	60
-	+	34	29
-	+	34	5
-	+	34	0
-	+	34	15
-	+	34	13
-	+	34	12
-	+	34	0
-	+	7	4
-	+	11	0
-	+	8	19
-	+	9	15
-	+	7	33
-	+	13	43
-	+	12	12
-	+	13	68
-	+	13	41
-	+	34	0
-	+	13	37
-	+	12	9
-	+	13	50
-	+	13	67
-	+	7	0
-	+	13	42
-	+	13	41
-	+	13	37
-	+	13	80
-	+	13	94
-	+	12	15
-	+	13	53
-	+	12	0
-	+	13	73
-	+	12	0
-	+	13	37
-	+	12	4
-	+	13	37
-	+	13	54
-	+	13	89
-	+	13	37
-	+	13	41
-	+	13	37
-	+	13	0
-	+	13	37
-	+	13	47
-	+	13	0
 
 > ~/Documents/codebase/cs537-projs/p1a/README.md
 	*	1517195784	0
@@ -1052,83 +1556,9 @@ $~
 	+	1	10
 	+	1	0
 
-> ~/.vim/plugin.vim
-	*	1517121768	0
-	"	80	0
-	^	79	35
-	.	79	0
-	+	69	15
-	+	72	0
-	+	78	0
-	+	73	20
-	+	72	24
-	+	73	25
-	+	72	0
-	+	43	1
-	+	10	30
-	+	11	54
-	+	21	22
-	+	22	0
-	+	19	0
-	+	21	0
-	+	19	40
-	+	20	0
-	+	75	0
-	+	78	0
-	+	81	0
-	+	76	1
-	+	70	1
-	+	76	33
-	+	78	0
-	+	80	0
-	+	78	23
-	+	33	25
-	+	31	0
-	+	33	0
-	+	32	6
-	+	33	0
-	+	81	0
-	+	79	34
-	+	81	0
-	+	79	0
-
 > /usr/local/Cellar/macvim/8.0-144_3/MacVim.app/Contents/Resources/vim/runtime/doc/help.txt
 	*	1517092558	0
 	"	222	1
-
-> ~/.vimrc
-	*	1517091897	0
-	"	291	13
-	^	247	2
-	.	237	0
-	+	152	0
-	+	204	25
-	+	202	0
-	+	200	22
-	+	202	28
-	+	205	0
-	+	108	0
-	+	194	11
-	+	242	0
-	+	1	0
-	+	242	7
-	+	243	0
-	+	254	0
-	+	250	0
-	+	251	0
-	+	250	0
-	+	273	0
-	+	236	8
-	+	238	0
-	+	237	0
-	+	236	0
-	+	237	11
-	+	238	10
-	+	238	1
-	+	237	2
-	+	259	0
-	+	279	0
-	+	237	0
 
 > /usr/share/vim/vim80/doc/gui_x11.txt
 	*	1517042866	0
@@ -1150,10 +1580,6 @@ $~
 	"	7	5
 	.	1	0
 	+	1	0
-
-> ~/.vim/plugged/vim-exchange/doc/exchange.txt
-	*	1517040227	0
-	"	1	0
 
 > ~/Documents/codebase/cs537-projs/p1a/2.txt
 	*	1517029480	0
@@ -1243,22 +1669,9 @@ $~
 	.	1	0
 	+	1	0
 
-> ~/Documents/codebase/cs537-projs/ControlP
-	*	1517002569	0
-	"	1	0
-	.	1	0
-	+	1	0
-
 > ~/.vim/my-cat.c
 	*	1517002089	0
 	"	1	0
-
-> ~/.vim/ControlP
-	*	1517001283	0
-	"	10	0
-	.	2	0
-	+	1	0
-	+	2	0
 
 > ~/.vim/plug.v
 	*	1516951816	0
@@ -1279,12 +1692,6 @@ $~
 > ~/.oh-my-zsh/oh-my-zsh.sh
 	*	1516947337	0
 	"	107	0
-
-> ~/NERD_tree_1
-	*	1516947298	0
-	"	14	0
-	.	1	0
-	+	1	0
 
 > /private/var/folders/p3/t6754x9s6m30hdyy25j0k_vh0000gn/T/tutor7k7sfn
 	*	1516832059	0
@@ -1333,530 +1740,3 @@ $~
 > ~/.vim/plugged/vim-snippets/snippets/java.snippets
 	*	1514605203	0
 	"	61	1
-
-> ~/.ssh/config
-	*	1514585789	0
-	"	12	11
-	^	31	63
-	.	31	62
-	+	3	10
-	+	1	0
-	+	4	19
-	+	42	10
-	+	9	11
-	+	10	26
-	+	38	0
-	+	37	0
-	+	16	34
-	+	18	18
-	+	23	0
-	+	22	32
-	+	36	0
-	+	18	16
-	+	24	27
-	+	18	26
-	+	28	4
-	+	29	0
-	+	25	13
-	+	27	0
-	+	25	61
-	+	30	0
-	+	30	10
-	+	31	61
-	+	34	28
-	+	33	0
-	+	31	61
-	+	25	62
-	+	27	12
-	+	21	14
-	+	27	16
-	+	31	62
-
-> ~/Documents/codebase/cs532-proj/SRCNN-Tensorflow/sample/compute_psnr.py
-	*	1513299046	0
-	"	15	0
-	.	10	0
-	+	10	0
-
-> ~/Documents/codebase/cs532-proj/SRCNN-Tensorflow/test.sh
-	*	1513221273	0
-	"	7	0
-	^	7	22
-	.	7	21
-	+	1	18
-	+	3	54
-	+	3	3
-	+	1	8
-	+	3	47
-	+	3	0
-	+	1	18
-	+	3	43
-	+	3	51
-	+	4	4
-	+	7	21
-
-> ~/Documents/codebase/cs532-proj/SRCNN-Tensorflow/aws_log_15000.txt
-	*	1512979082	0
-	"	170025	0
-
-> ~/Documents/codebase/cs532-proj/SRCNN-Tensorflow/.gitignore
-	*	1512467317	0
-	"	91	10
-	^	91	11
-	.	91	11
-	+	91	11
-
-> ~/python/caffe/proto/caffe_pb2.py
-	*	1512379274	0
-	"	927	4
-	^	5209	3
-	.	5209	2
-	+	22	0
-	+	840	2
-	+	1777	0
-	+	5209	2
-	+	22	0
-	+	840	3
-	+	927	3
-	+	958	3
-	+	1031	3
-	+	1112	3
-	+	1199	3
-	+	1513	3
-	+	1565	3
-	+	1610	3
-	+	1669	3
-	+	1722	3
-	+	2152	3
-	+	2225	3
-	+	2271	3
-	+	2316	3
-	+	2361	3
-	+	2399	3
-	+	2444	3
-	+	2489	3
-	+	2527	3
-	+	2678	3
-	+	2716	3
-	+	2811	3
-	+	2842	4
-	+	2908	3
-	+	2954	3
-	+	2985	3
-	+	3044	3
-	+	3089	4
-	+	3127	3
-	+	3172	3
-	+	3203	3
-	+	3235	3
-	+	3343	3
-	+	3381	3
-	+	3447	2
-	+	3478	2
-	+	3523	2
-	+	3591	2
-	+	3643	2
-	+	3688	3
-	+	3719	2
-	+	3829	2
-	+	3874	2
-	+	3926	2
-	+	3985	2
-	+	4031	2
-	+	4070	2
-	+	4115	2
-	+	4174	2
-	+	4206	2
-	+	4251	2
-	+	4290	2
-	+	4322	2
-	+	4360	3
-	+	4391	2
-	+	4506	2
-	+	4553	2
-	+	4880	2
-	+	5171	2
-	+	5209	2
-
-> ~/Documents/codebase/caffe/cmake_build/Makefile
-	*	1512377860	0
-	"	494	30
-
-> ~/Documents/codebase/caffe/build/Makefile
-	*	1512372516	0
-	"	538	0
-
-> ~/Documents/codebase/caffe/CMakeLists.txt
-	*	1512372394	0
-	"	36	50
-	^	36	51
-	.	36	50
-	+	30	59
-	+	36	50
-
-> ~/Documents/codebase/caffe/matlab/CMakeLists.txt
-	*	1512372022	0
-	"	39	46
-
-> ~/Documents/codebase/caffe/Makefile.config
-	*	1512370130	0
-	"	93	0
-	^	93	91
-	.	93	90
-	+	8	0
-	+	57	0
-	+	58	0
-	+	57	1
-	+	58	0
-	+	57	1
-	+	58	0
-	+	62	0
-	+	63	1
-	+	62	1
-	+	63	0
-	+	68	58
-	+	49	12
-	+	57	0
-	+	58	0
-	+	49	7
-	+	49	11
-	+	57	0
-	+	58	0
-	+	63	40
-	+	68	57
-	+	37	13
-	+	38	0
-	+	37	13
-	+	8	0
-	+	93	86
-	+	94	92
-	+	93	71
-	+	102	15
-	+	93	90
-
-> ~/Documents/codebase/caffe/cmake/Dependencies.cmake
-	*	1512369016	0
-	"	1	0
-
-> ~/Documents/codebase/caffe/Makefile
-	*	1512368866	0
-	"	151	0
-
-> ~/Documents/codebase/caffe/boost.txt
-	*	1512367779	0
-	"	45	0
-
-> ~/Documents/codebase/caffe/cmake/Utils.cmake
-	*	1512364993	0
-	"	358	77
-	^	358	78
-	.	358	77
-	+	357	6
-	+	358	3
-	+	361	3
-	+	358	5
-	+	357	9
-	+	358	77
-	+	357	9
-	+	358	77
-
-> ~/Documents/codebase/caffe/build/CMakeFiles/CMakeOutput.log
-	*	1512359171	0
-	"	513	0
-
-> ~/Documents/codebase/Makefile.config
-	*	1512357509	0
-	"	8	0
-	.	8	0
-	+	8	0
-
-> ~/Documents/codebase/caffe/Makefile.config.example
-	*	1512356328	0
-	"	42	0
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/opencv.rb
-	*	1512352743	0
-	"	88	0
-	^	88	6
-	.	88	5
-	+	45	24
-	+	45	54
-	+	45	4
-	+	45	0
-	+	46	0
-	+	45	4
-	+	45	0
-	+	87	58
-	+	88	5
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/lmdb.rb
-	*	1512352036	0
-	"	18	4
-	.	18	0
-	+	18	0
-	+	18	24
-	+	18	54
-	+	18	4
-	+	18	0
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/boost-python.rb
-	*	1512352031	0
-	"	23	4
-	.	23	0
-	+	23	0
-	+	23	54
-	+	23	3
-	+	23	4
-	+	23	0
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/boost.rb
-	*	1512352024	0
-	"	28	4
-	.	28	0
-	+	28	24
-	+	28	54
-	+	28	4
-	+	28	0
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/szip.rb
-	*	1512352016	0
-	"	17	4
-	.	17	0
-	+	17	0
-	+	17	24
-	+	17	54
-	+	17	4
-	+	17	0
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/glog.rb
-	*	1512352008	0
-	"	19	4
-	.	19	0
-	+	19	0
-	+	19	54
-	+	19	3
-	+	19	0
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/gflags.rb
-	*	1512351992	0
-	"	21	4
-	.	21	0
-	+	21	0
-	+	21	54
-	+	21	4
-	+	21	0
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/protobuf.rb
-	*	1512351971	0
-	"	67	4
-	.	67	4
-	+	67	24
-	+	67	79
-	+	67	8
-	+	67	4
-	+	68	0
-	+	67	4
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/leveldb.rb
-	*	1512351939	0
-	"	22	4
-	.	22	0
-	+	22	24
-	+	22	58
-	+	22	8
-	+	22	0
-
-> /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/snappy.rb
-	*	1512351885	0
-	"	20	4
-	.	20	0
-	+	20	24
-	+	20	54
-	+	20	4
-	+	20	3
-	+	20	4
-	+	20	0
-
-> ~/Documents/codebase/cs744-proj/course_proj/plot_g1.py
-	*	1511924855	0
-	"	5	13
-
-> ~/Documents/codebase/cs744-proj/course_proj/draw.py
-	*	1511924705	0
-	"	13	34
-	^	13	35
-	.	13	34
-	+	20	29
-	+	21	0
-	+	45	0
-	+	66	0
-	+	68	0
-	+	16	4
-	+	22	23
-	+	23	1
-	+	24	8
-	+	13	34
-
-> ~/Documents/codebase/cs744-proj/filenames.txt
-	*	1511836118	0
-	"	1	0
-
-> ~/Desktop/test.py
-	*	1511673433	0
-	"	11	37
-	^	11	38
-	.	11	37
-	+	1	0
-	+	1	24
-	+	1	26
-	+	1	19
-	+	1	29
-	+	6	32
-	+	11	0
-	+	1	20
-	+	11	3
-	+	3	10
-	+	11	39
-	+	12	23
-	+	11	32
-	+	12	0
-	+	6	0
-	+	12	25
-	+	14	32
-	+	14	52
-	+	17	19
-	+	14	13
-	+	8	8
-	+	12	39
-	+	13	0
-	+	14	0
-	+	15	0
-	+	12	0
-	+	11	37
-
-> ~/Desktop/output.txt
-	*	1511669987	0
-	"	128	0
-
-> ~/test.py
-	*	1511147612	0
-	"	6	6
-	^	6	7
-	.	6	7
-	+	3	13
-	+	4	34
-	+	6	7
-	+	4	51
-	+	6	7
-
-> ~/Documents/codebase/coding-problem-notes/py_files/py1.py
-	*	1511065056	0
-	"	1	0
-	^	1	17
-	.	1	16
-	+	1	16
-
-> ~/Documents/codebase/coding-problem-notes/py_files/py2.py
-	*	1511065020	0
-	"	1	16
-	^	1	17
-	.	1	16
-	+	1	16
-
-> ~/Documents/codebase/coding-problem-notes/py_files/py3.py
-	*	1511064999	0
-	"	1	16
-	^	1	17
-	.	1	16
-	+	1	16
-
-> ~/Documents/codebase/coding-problem-notes/test.py
-	*	1511064926	0
-	"	3	36
-	^	3	37
-	.	3	36
-	+	3	48
-	+	4	0
-	+	3	48
-	+	4	31
-	+	3	36
-
-> ~/Documents/codebase/coding-problem-notes/test.
-	*	1511064183	0
-	"	1	0
-
-> ~/Documents/codebase/coding-problem-notes/test.sh
-	*	1511063630	0
-	"	3	46
-	^	3	47
-	.	3	46
-	+	1	11
-	+	4	4
-	+	3	9
-	+	1	14
-	+	1	17
-	+	3	9
-	+	1	14
-	+	3	46
-
-> ~/Documents/codebase/eclipse-workspace/UserIDsMentioned/StreamEmulator.sh
-	"	5	20
-	^	5	21
-	.	5	20
-	+	8	0
-	+	7	27
-	+	5	20
-
-> ~/.ssh/known_hosts
-	"	8	0
-	^	6	3
-	.	9	0
-	+	8	0
-	+	8	0
-	+	6	0
-	+	9	0
-
-> /private/etc/hosts
-	"	11	22
-	^	11	23
-	.	11	22
-	+	13	0
-	+	14	0
-	+	10	23
-	+	12	22
-	+	11	22
-
-> ~/Documents/codebase/eclipse-workspace/AnagramSorter/pom.xml
-	"	30	0
-
-> ~/.m2/setting.xml
-	"	9	1
-	^	9	2
-	.	8	6
-	+	10	0
-	+	9	0
-	+	8	0
-	+	7	0
-	+	6	0
-	+	5	0
-	+	2	0
-	+	3	2
-	+	4	3
-	+	5	6
-	+	7	3
-	+	8	3
-	+	9	2
-	+	8	6
-
-> ~/.profile
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	63
-	+	1	0
-	+	5	0
-	+	2	63
-	+	1	39
-	+	3	52
-	+	4	29
-	+	1	0
