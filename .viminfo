@@ -20,8 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:Q
+|2,0,1523141861,,"Q"
 :wq
-|2,0,1523139371,,"wq"
+|2,0,1523141858,,"wq"
+:2
+|2,0,1523141850,,"2"
 :q
 |2,0,1521851812,,"q"
 :wall
@@ -82,8 +86,6 @@ $
 |2,0,1517713152,,"vert sb user/usys.S"
 :vert sb kernel/sysproc.c
 |2,0,1517698823,,"vert sb kernel/sysproc.c"
-:Q
-|2,0,1517698357,,"Q"
 :qa
 |2,0,1517697827,,"qa"
 :sp
@@ -118,8 +120,6 @@ $
 |2,0,1517683968,,"b12"
 :buffer
 |2,0,1517683869,,"buffer"
-:nerd
-|2,0,1517683546,,"nerd"
 
 # Search String History (newest to oldest):
 ?/easier
@@ -235,35 +235,35 @@ $
 "0	LINE	0
 	nnoremap ˙ :bp<CR>
 |3,0,0,1,1,0,1519511023,"nnoremap ˙ :bp<CR>"
-"1	LINE	0
-	python learn_bayes.py 
-|3,0,1,1,1,0,1521851423,"python learn_bayes.py "
+""1	LINE	0
+	source ~/.vim/bclose.vim
+|3,1,1,1,1,0,1523141856,"source ~/.vim/bclose.vim"
 "2	LINE	0
 	python learn_bayes.py 
-|3,0,2,1,1,0,1520652050,"python learn_bayes.py "
+|3,0,2,1,1,0,1521851423,"python learn_bayes.py "
 "3	LINE	0
+	python learn_bayes.py 
+|3,0,3,1,1,0,1520652050,"python learn_bayes.py "
+"4	LINE	0
 	nnoremap <c-k> <c-w>k
-|3,0,3,1,1,0,1519511037,"nnoremap <c-k> <c-w>k"
-"4	CHAR	0
+|3,0,4,1,1,0,1519511037,"nnoremap <c-k> <c-w>k"
+"5	CHAR	0
 	split windows
 	
-|3,0,4,0,2,0,1519510975,"split windows",""
-"5	LINE	0
-	    exit(1);
-|3,0,5,1,1,0,1518462190,"    exit(1);"
+|3,0,5,0,2,0,1519510975,"split windows",""
 "6	LINE	0
-	
-|3,0,6,1,1,0,1518387337,""
+	    exit(1);
+|3,0,6,1,1,0,1518462190,"    exit(1);"
 "7	LINE	0
+	
+|3,0,7,1,1,0,1518387337,""
+"8	LINE	0
 	cat cmds.txt > output2.txt
 	
-|3,0,7,1,2,0,1518387308,"cat cmds.txt > output2.txt",""
-"8	LINE	0
-	                    printf("redir: %s\n", redir);
-|3,0,8,1,1,0,1518386773,"                    printf(\"redir: %s\\n\", redir);"
+|3,0,8,1,2,0,1518387308,"cat cmds.txt > output2.txt",""
 "9	LINE	0
 	                    printf("redir: %s\n", redir);
-|3,0,9,1,1,0,1518386769,"                    printf(\"redir: %s\\n\", redir);"
+|3,0,9,1,1,0,1518386773,"                    printf(\"redir: %s\\n\", redir);"
 "a	CHAR	0
 	xx
 |3,0,10,0,1,0,1512350725,"xx"
@@ -281,43 +281,193 @@ $
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com",>749
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfCGFUnkPvf5zzPxNhOYf/3Vd9V+AiTcfQY3GICNEvlwBs1tkcOtp/wjp1tH5VdQRQZXUNFamtUYb2T2QjcPszCgOEcfGUZ1GFdDTkwb+mVI4VUTFG3mvbH/1CooPqhq/bN9Smp+/akBgnA3ukB6wkjODJtOt1I72adJG7SqOeolA65cmLsXsRZn1SGBzVQOKelkmi6Vz4/nc/9uTXJLBp2NKan7a3VAvTY8FuJYQRw2GjtLoVGnvPvaGmqvQTCq+A2oVflYn067RuFvCSMWSABTUIZGOs5fguk91LMp3CLqYCL8gS1aRB6XWd4RjSD1O38dRyyWw3WUNewR+549GLXUXkTb1dnDR0OlHB2ky1VIqrn6vp90weusxeaBzwYO1d4mxZm24sGQzpultMBzTwEPGJh8k/WA7ZBgxh396fVFwnGsktHPmGdl3l7aoSipkPN
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com"
-""-	CHAR	0
+"-	CHAR	0
 	logistic_regression
-|3,1,36,0,1,0,1521851765,"logistic_regression"
+|3,0,36,0,1,0,1521851765,"logistic_regression"
 
 # File marks:
-'0  94  0  ~/.zshrc
-|4,48,94,0,1523139371,"~/.zshrc"
-'1  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,49,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
-'2  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,50,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
-'3  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,51,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
-'4  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,52,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
-'5  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,53,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
-'6  1  43  ~/.zshrc
-|4,54,1,43,1519545939,"~/.zshrc"
-'7  1  43  ~/.zshrc
-|4,55,1,43,1519545939,"~/.zshrc"
-'8  220  0  ~/.vimrc
-|4,56,220,0,1519511041,"~/.vimrc"
-'9  3  0  ~/.vimrc
-|4,57,3,0,1519451678,"~/.vimrc"
+'0  2  0  ~/.vimrc
+|4,48,2,0,1523141861,"~/.vimrc"
+'1  2  0  ~/.vimrc
+|4,49,2,0,1523141858,"~/.vimrc"
+'2  1  0  ~/NERD_tree_1
+|4,50,1,0,1523141841,"~/NERD_tree_1"
+'3  94  0  ~/.zshrc
+|4,51,94,0,1523139371,"~/.zshrc"
+'4  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,52,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+'5  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,53,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+'6  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,54,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+'7  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,55,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+'8  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
+|4,56,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
+'9  1  43  ~/.zshrc
+|4,57,1,43,1519545939,"~/.zshrc"
 
 # Jumplist (newest first):
+-'  2  0  ~/.vimrc
+|4,39,2,0,1523141861,"~/.vimrc"
+-'  2  0  ~/.vimrc
+|4,39,2,0,1523141858,"~/.vimrc"
+-'  219  0  ~/.vimrc
+|4,39,219,0,1523141847,"~/.vimrc"
+-'  219  0  ~/.vimrc
+|4,39,219,0,1523141847,"~/.vimrc"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1523141841,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1523141841,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1523141841,"~/NERD_tree_1"
+-'  1  0  ~/NERD_tree_1
+|4,39,1,0,1523141841,"~/NERD_tree_1"
+-'  32  2  ~/NERD_tree_1
+|4,39,32,2,1523141840,"~/NERD_tree_1"
+-'  32  2  ~/NERD_tree_1
+|4,39,32,2,1523141840,"~/NERD_tree_1"
+-'  32  2  ~/NERD_tree_1
+|4,39,32,2,1523141840,"~/NERD_tree_1"
+-'  32  2  ~/NERD_tree_1
+|4,39,32,2,1523141840,"~/NERD_tree_1"
+-'  94  0  ~/.zshrc
+|4,39,94,0,1523139371,"~/.zshrc"
+-'  94  0  ~/.zshrc
+|4,39,94,0,1523139371,"~/.zshrc"
+-'  94  0  ~/.zshrc
+|4,39,94,0,1523139371,"~/.zshrc"
+-'  94  0  ~/.zshrc
+|4,39,94,0,1523139371,"~/.zshrc"
+-'  94  0  ~/.zshrc
+|4,39,94,0,1523139371,"~/.zshrc"
+-'  94  0  ~/.zshrc
+|4,39,94,0,1523139371,"~/.zshrc"
+-'  94  0  ~/.zshrc
+|4,39,94,0,1523139371,"~/.zshrc"
 -'  94  0  ~/.zshrc
 |4,39,94,0,1523139371,"~/.zshrc"
 -'  10  0  ~/.zshrc
 |4,39,10,0,1523139353,"~/.zshrc"
+-'  10  0  ~/.zshrc
+|4,39,10,0,1523139353,"~/.zshrc"
+-'  10  0  ~/.zshrc
+|4,39,10,0,1523139353,"~/.zshrc"
+-'  10  0  ~/.zshrc
+|4,39,10,0,1523139353,"~/.zshrc"
+-'  10  0  ~/.zshrc
+|4,39,10,0,1523139353,"~/.zshrc"
+-'  10  0  ~/.zshrc
+|4,39,10,0,1523139353,"~/.zshrc"
+-'  10  0  ~/.zshrc
+|4,39,10,0,1523139353,"~/.zshrc"
+-'  10  0  ~/.zshrc
+|4,39,10,0,1523139353,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1523139350,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1523139350,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1523139350,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1523139350,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1523139350,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1523139350,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1523139350,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1523139350,"~/.zshrc"
 -'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
 |4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
 -'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
 |4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
+|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
 -'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
 |4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
 -'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
@@ -334,182 +484,87 @@ $
 |4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
 -'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
 |4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,39,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  1  43  ~/.zshrc
-|4,39,1,43,1519545939,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
--'  12  0  ~/.zshrc
-|4,39,12,0,1519528521,"~/.zshrc"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
+|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	*	1523141860	0
+	"	2	0
+	^	218	15
+	.	2	0
+	+	153	0
+	+	205	25
+	+	203	0
+	+	201	22
+	+	203	28
+	+	206	0
+	+	108	0
+	+	195	11
+	+	247	0
+	+	1	0
+	+	247	7
+	+	248	0
+	+	259	0
+	+	255	0
+	+	256	0
+	+	255	0
+	+	278	0
+	+	241	8
+	+	243	0
+	+	242	0
+	+	241	0
+	+	242	11
+	+	243	10
+	+	243	1
+	+	242	2
+	+	264	0
+	+	284	0
+	+	242	0
+	+	132	0
+	+	131	0
+	+	130	0
+	+	131	25
+	+	68	0
+	+	2	23
+	+	2	0
+	+	26	0
+	+	216	0
+	+	219	0
+	+	216	34
+	+	217	19
+	+	218	14
+	+	219	0
+	+	2	0
+
+> ~/NERD_tree_1
+	*	1523141840	0
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/.zshrc
 	*	1523139369	0
@@ -563,60 +618,6 @@ $
 	.	1	6
 	+	1	0
 	+	1	6
-
-> ~/.vimrc
-	*	1519511038	0
-	"	220	0
-	^	219	15
-	.	220	0
-	+	154	0
-	+	206	25
-	+	204	0
-	+	202	22
-	+	204	28
-	+	207	0
-	+	109	0
-	+	196	11
-	+	248	0
-	+	1	0
-	+	248	7
-	+	249	0
-	+	260	0
-	+	256	0
-	+	257	0
-	+	256	0
-	+	279	0
-	+	242	8
-	+	244	0
-	+	243	0
-	+	242	0
-	+	243	11
-	+	244	10
-	+	244	1
-	+	243	2
-	+	265	0
-	+	285	0
-	+	243	0
-	+	133	0
-	+	132	0
-	+	131	0
-	+	132	25
-	+	69	0
-	+	2	23
-	+	3	0
-	+	27	0
-	+	217	0
-	+	220	0
-	+	217	34
-	+	218	19
-	+	219	14
-	+	220	0
-
-> ~/NERD_tree_1
-	*	1519510924	0
-	"	1	1
-	.	1	0
-	+	1	0
 
 > ~/.vim/ControlP
 	*	1519451719	0
