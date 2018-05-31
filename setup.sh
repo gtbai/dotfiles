@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # remove old dotfiles
 rm -rf ~/.vimrc
 rm -rf ~/.viminfo
