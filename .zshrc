@@ -76,6 +76,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR='vim'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -99,3 +101,9 @@ source $ZSH/oh-my-zsh.sh
 # export M2_HOME=$HOME/maven/apache-maven-3.5.0
 # export PATH=$PATH:$M2_HOME/bin
 # export PATH=$PATH:/usr/local/cuda/bin
+
+git config --global diff.tool diffmerge
+git config --global difftool.diffmerge.cmd 'diffmerge "$LOCAL" "$REMOTE"'
+git config --global merge.tool diffmerge
+git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"'
+git config --global mergetool.diffmerge.trustExitCode true

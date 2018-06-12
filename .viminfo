@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/easier
+~MSle0~/mouse
 
 # Last Substitute Search Pattern:
 ~MSle0&\.\.
@@ -20,20 +20,32 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1528761549,,"wq"
+:w
+|2,0,1528761548,,"w"
+:q
+|2,0,1528757880,,"q"
+:70
+|2,0,1528755407,,"70"
+:bd
+|2,0,1528583848,,"bd"
+:W
+|2,0,1528583541,,"W"
+:sp
+|2,0,1528583182,,"sp"
+:bn
+|2,0,1527730237,,"bn"
+:PlugInstall
+|2,0,1527730176,,"PlugInstall"
 :Q
 |2,0,1523141861,,"Q"
-:wq
-|2,0,1523141858,,"wq"
 :2
 |2,0,1523141850,,"2"
-:q
-|2,0,1521851812,,"q"
 :wall
 |2,0,1521851807,,"wall"
 :e ~/.vimrc
 |2,0,1519240378,,"e ~/.vimrc"
-:w
-|2,0,1518462191,,"w"
 :Wq
 |2,0,1518387313,,"Wq"
 :sb
@@ -46,8 +58,6 @@ $
 |2,0,1518298716,,"74"
 :help exchange
 |2,0,1518296703,,"help exchange"
-:bd
-|2,0,1518295686,,"bd"
 :61
 |2,0,1518166006,,"61"
 :bp
@@ -72,8 +82,6 @@ $
 |2,0,1517715925,,"b2"
 :sysfunc.h
 |2,0,1517715658,,"sysfunc.h"
-:bn
-|2,0,1517715608,,"bn"
 :blast
 |2,0,1517715601,,"blast"
 :b kernel/trap.c
@@ -88,12 +96,8 @@ $
 |2,0,1517698823,,"vert sb kernel/sysproc.c"
 :qa
 |2,0,1517697827,,"qa"
-:sp
-|2,0,1517697442,,"sp"
 :qall
 |2,0,1517697430,,"qall"
-:PlugInstall
-|2,0,1517697413,,"PlugInstall"
 :PlugUpdate
 |2,0,1517697179,,"PlugUpdate"
 :e ~/.vim/plugin.vim
@@ -116,12 +120,16 @@ $
 |2,0,1517684002,,"ls"
 :b%a
 |2,0,1517683996,,"b%a"
-:b12
-|2,0,1517683968,,"b12"
-:buffer
-|2,0,1517683869,,"buffer"
 
 # Search String History (newest to oldest):
+?/mouse
+|2,1,1528761543,47,"mouse"
+?/hooks
+|2,1,1528756624,47,"hooks"
+?/broadcast
+|2,1,1528756612,47,"broadcast"
+? \$\(cursor\|select\)\$
+|2,1,1528185206,,"\\$\\(cursor\\|select\\)\\$"
 ?/easier
 |2,1,1519510956,47,"easier"
 ?/source
@@ -192,8 +200,6 @@ $
 |2,1,1517713390,47,"mainc"
 ?/tvint
 |2,1,1517713384,47,"tvint"
-? \$\(cursor\|select\)\$
-|2,1,1517713236,,"\\$\\(cursor\\|select\\)\\$"
 ?/proc
 |2,1,1517698765,47,"proc"
 ?/sys_read
@@ -216,12 +222,6 @@ $
 |2,1,1517695877,47,"syscall("
 ?/syscall
 |2,1,1517695856,47,"syscall"
-?/trapfram
-|2,1,1517695454,47,"trapfram"
-?/hehe
-|2,1,1517684661,47,"hehe"
-?/user
-|2,1,1517684654,47,"user"
 
 # Expression History (newest to oldest):
 
@@ -233,40 +233,67 @@ $
 
 # Registers:
 "0	LINE	0
-	nnoremap ˙ :bp<CR>
-|3,0,0,1,1,0,1519511023,"nnoremap ˙ :bp<CR>"
-""1	LINE	0
-	source ~/.vim/bclose.vim
-|3,1,1,1,1,0,1523141856,"source ~/.vim/bclose.vim"
+	#!/bin/bash
+	
+	mkdir /tmp/openmpi
+	cd /tmp/openmpi
+	# wget https://www.open-mpi.org/software/ompi/v3.0/downloads/openmpi-3.0.0.tar.gz && \
+	wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.0.tar.gz
+	tar zxf openmpi-3.1.0.tar.gz
+	cd openmpi-3.1.0 
+	./configure --prefix=/usr/local --enable-orterun-prefix-by-default
+	make -j $(sysctl -n hw.physicalcpu) all
+	make install
+|3,0,0,1,11,0,1528583274,"#!/bin/bash","","mkdir /tmp/openmpi","cd /tmp/openmpi","# wget https://www.open-mpi.org/software/ompi/v3.0/downloads/openmpi-3.0.0.tar.gz && \\","wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.0.tar.gz","tar zxf openmpi-3.1.0.tar.gz","cd openmpi-3.1.0 ","./configure --prefix=/usr/local --enable-orterun-prefix-by-default","make -j $(sysctl -n hw.physicalcpu) all","make install"
+"1	LINE	0
+	        libnccl-dev=${NCCL_VERSION} \
+|3,0,1,1,1,0,1528607747,"        libnccl-dev=${NCCL_VERSION} \\"
 "2	LINE	0
-	python learn_bayes.py 
-|3,0,2,1,1,0,1521851423,"python learn_bayes.py "
+	        libnccl2=${NCCL_VERSION} \
+|3,0,2,1,1,0,1528607747,"        libnccl2=${NCCL_VERSION} \\"
 "3	LINE	0
-	python learn_bayes.py 
-|3,0,3,1,1,0,1520652050,"python learn_bayes.py "
+	        libcudnn7=${CUDNN_VERSION} \
+|3,0,3,1,1,0,1528607746,"        libcudnn7=${CUDNN_VERSION} \\"
 "4	LINE	0
-	nnoremap <c-k> <c-w>k
-|3,0,4,1,1,0,1519511037,"nnoremap <c-k> <c-w>k"
-"5	CHAR	0
-	split windows
+	ldconfig
+|3,0,4,1,1,0,1528583656,"ldconfig"
+"5	LINE	0
+	#!/bin/bash
 	
-|3,0,5,0,2,0,1519510975,"split windows",""
+	mkdir /tmp/openmpi
+	cd /tmp/openmpi
+	# wget https://www.open-mpi.org/software/ompi/v3.0/downloads/openmpi-3.0.0.tar.gz && \
+	wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.0.tar.gz
+	tar zxf openmpi-3.1.0.tar.gz
+	cd openmpi-3.1.0 
+	./configure --prefix=/usr/local --enable-orterun-prefix-by-default
+	make -j $(sysctl -n hw.physicalcpu) all
+	make install
+|3,0,5,1,11,0,1528583252,"#!/bin/bash","","mkdir /tmp/openmpi","cd /tmp/openmpi","# wget https://www.open-mpi.org/software/ompi/v3.0/downloads/openmpi-3.0.0.tar.gz && \\","wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.0.tar.gz","tar zxf openmpi-3.1.0.tar.gz","cd openmpi-3.1.0 ","./configure --prefix=/usr/local --enable-orterun-prefix-by-default","make -j $(sysctl -n hw.physicalcpu) all","make install"
 "6	LINE	0
-	    exit(1);
-|3,0,6,1,1,0,1518462190,"    exit(1);"
+	``
+|3,0,6,1,1,0,1528410627,"``"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1518387337,""
+	mkdir /tmp/openmpi
+	cd /tmp/openmpi
+	# wget https://www.open-mpi.org/software/ompi/v3.0/downloads/openmpi-3.0.0.tar.gz && \
+	wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.0.tar.gz
+	tar zxf openmpi-3.1.0.tar.gz
+	cd openmpi-3.1.0 
+	./configure --prefix=/usr/local --enable-orterun-prefix-by-default
+	make -j $(sysctl -n hw.physicalcpu) all
+	make install
+	rm -rf /tmp/openmpi
+|3,0,7,1,10,0,1528410620,"mkdir /tmp/openmpi","cd /tmp/openmpi","# wget https://www.open-mpi.org/software/ompi/v3.0/downloads/openmpi-3.0.0.tar.gz && \\","wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.0.tar.gz","tar zxf openmpi-3.1.0.tar.gz","cd openmpi-3.1.0 ","./configure --prefix=/usr/local --enable-orterun-prefix-by-default","make -j $(sysctl -n hw.physicalcpu) all","make install","rm -rf /tmp/openmpi"
 "8	LINE	0
-	cat cmds.txt > output2.txt
-	
-|3,0,8,1,2,0,1518387308,"cat cmds.txt > output2.txt",""
+	    -bind-to none -map-by slot \
+|3,0,8,1,1,0,1528407362,"    -bind-to none -map-by slot \\"
 "9	LINE	0
-	                    printf("redir: %s\n", redir);
-|3,0,9,1,1,0,1518386773,"                    printf(\"redir: %s\\n\", redir);"
-"a	CHAR	0
+	    -mca pml ob1 -mca btl ^openib \
+|3,0,9,1,1,0,1528396991,"    -mca pml ob1 -mca btl ^openib \\"
+""a	CHAR	0
 	xx
-|3,0,10,0,1,0,1512350725,"xx"
+|3,1,10,0,1,0,1528607943,"xx"
 "m	LINE	0
 	        if (fp == NULL){
 	            printf();
@@ -282,234 +309,704 @@ $
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfCGFUnkPvf5zzPxNhOYf/3Vd9V+AiTcfQY3GICNEvlwBs1tkcOtp/wjp1tH5VdQRQZXUNFamtUYb2T2QjcPszCgOEcfGUZ1GFdDTkwb+mVI4VUTFG3mvbH/1CooPqhq/bN9Smp+/akBgnA3ukB6wkjODJtOt1I72adJG7SqOeolA65cmLsXsRZn1SGBzVQOKelkmi6Vz4/nc/9uTXJLBp2NKan7a3VAvTY8FuJYQRw2GjtLoVGnvPvaGmqvQTCq+A2oVflYn067RuFvCSMWSABTUIZGOs5fguk91LMp3CLqYCL8gS1aRB6XWd4RjSD1O38dRyyWw3WUNewR+549GLXUXkTb1dnDR0OlHB2ky1VIqrn6vp90weusxeaBzwYO1d4mxZm24sGQzpultMBzTwEPGJh8k/WA7ZBgxh396fVFwnGsktHPmGdl3l7aoSipkPN
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com"
 "-	CHAR	0
-	logistic_regression
-|3,0,36,0,1,0,1521851765,"logistic_regression"
+	 
+|3,0,36,0,1,0,1528607925," "
 
 # File marks:
-'0  2  0  ~/.vimrc
-|4,48,2,0,1523141861,"~/.vimrc"
-'1  2  0  ~/.vimrc
-|4,49,2,0,1523141858,"~/.vimrc"
-'2  1  0  ~/NERD_tree_1
-|4,50,1,0,1523141841,"~/NERD_tree_1"
-'3  94  0  ~/.zshrc
-|4,51,94,0,1523139371,"~/.zshrc"
-'4  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,52,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
-'5  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,53,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
-'6  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,54,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
-'7  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,55,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
-'8  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,56,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
-'9  1  43  ~/.zshrc
-|4,57,1,43,1519545939,"~/.zshrc"
+'0  44  1  ~/.tmux.conf
+|4,48,44,1,1528761549,"~/.tmux.conf"
+'1  119  43  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,49,119,43,1528757880,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+'2  74  12  ~/workspace/horovod-docker/Dockerfile
+|4,50,74,12,1528608868,"~/workspace/horovod-docker/Dockerfile"
+'3  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,51,1,0,1528607427,"~/workspace/horovod-docker/Dockerfile"
+'4  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,52,1,0,1528607427,"~/workspace/horovod-docker/Dockerfile"
+'5  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,53,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+'6  4  0  ~/.ssh/config
+|4,54,4,0,1528584355,"~/.ssh/config"
+'7  6  32  ~/workspace/horovod-test/horovod/examples/parallel_run.sh
+|4,55,6,32,1528584018,"~/workspace/horovod-test/horovod/examples/parallel_run.sh"
+'8  1  10  ~/workspace/horovod-test/openmpi_install_mac.sh
+|4,56,1,10,1528583856,"~/workspace/horovod-test/openmpi_install_mac.sh"
+'9  11  0  ~/workspace/horovod-test/openmpi_install_mac.sh
+|4,57,11,0,1528583657,"~/workspace/horovod-test/openmpi_install_mac.sh"
 
 # Jumplist (newest first):
--'  2  0  ~/.vimrc
-|4,39,2,0,1523141861,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1523141858,"~/.vimrc"
--'  219  0  ~/.vimrc
-|4,39,219,0,1523141847,"~/.vimrc"
--'  219  0  ~/.vimrc
-|4,39,219,0,1523141847,"~/.vimrc"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1523141841,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1523141841,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1523141841,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1523141841,"~/NERD_tree_1"
--'  32  2  ~/NERD_tree_1
-|4,39,32,2,1523141840,"~/NERD_tree_1"
--'  32  2  ~/NERD_tree_1
-|4,39,32,2,1523141840,"~/NERD_tree_1"
--'  32  2  ~/NERD_tree_1
-|4,39,32,2,1523141840,"~/NERD_tree_1"
--'  32  2  ~/NERD_tree_1
-|4,39,32,2,1523141840,"~/NERD_tree_1"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  44  1  ~/.tmux.conf
+|4,39,44,1,1528761549,"~/.tmux.conf"
+-'  89  0  ~/.tmux.conf
+|4,39,89,0,1528761543,"~/.tmux.conf"
+-'  119  43  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,119,43,1528757880,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  119  43  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,119,43,1528757880,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  92  4  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,92,4,1528756648,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  92  4  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,92,4,1528756648,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  97  12  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,97,12,1528756624,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  97  12  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,97,12,1528756624,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  93  48  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,93,48,1528756620,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  93  48  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,93,48,1528756620,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  63  0  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,63,0,1528756612,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  63  0  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,63,0,1528756612,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  67  4  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,67,4,1528755401,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  67  4  ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+|4,39,67,4,1528755401,"~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py"
+-'  74  12  ~/workspace/horovod-docker/Dockerfile
+|4,39,74,12,1528608868,"~/workspace/horovod-docker/Dockerfile"
+-'  74  12  ~/workspace/horovod-docker/Dockerfile
+|4,39,74,12,1528608868,"~/workspace/horovod-docker/Dockerfile"
+-'  74  12  ~/workspace/horovod-docker/Dockerfile
+|4,39,74,12,1528608868,"~/workspace/horovod-docker/Dockerfile"
+-'  74  12  ~/workspace/horovod-docker/Dockerfile
+|4,39,74,12,1528608868,"~/workspace/horovod-docker/Dockerfile"
+-'  75  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,75,0,1528607944,"~/workspace/horovod-docker/Dockerfile"
+-'  75  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,75,0,1528607944,"~/workspace/horovod-docker/Dockerfile"
+-'  75  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,75,0,1528607944,"~/workspace/horovod-docker/Dockerfile"
+-'  75  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,75,0,1528607944,"~/workspace/horovod-docker/Dockerfile"
+-'  59  1  ~/workspace/horovod-docker/Dockerfile
+|4,39,59,1,1528607895,"~/workspace/horovod-docker/Dockerfile"
+-'  59  1  ~/workspace/horovod-docker/Dockerfile
+|4,39,59,1,1528607895,"~/workspace/horovod-docker/Dockerfile"
+-'  59  1  ~/workspace/horovod-docker/Dockerfile
+|4,39,59,1,1528607895,"~/workspace/horovod-docker/Dockerfile"
+-'  59  1  ~/workspace/horovod-docker/Dockerfile
+|4,39,59,1,1528607895,"~/workspace/horovod-docker/Dockerfile"
+-'  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,1,0,1528607573,"~/workspace/horovod-docker/Dockerfile"
+-'  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,1,0,1528607573,"~/workspace/horovod-docker/Dockerfile"
+-'  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,1,0,1528607573,"~/workspace/horovod-docker/Dockerfile"
+-'  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,1,0,1528607573,"~/workspace/horovod-docker/Dockerfile"
+-'  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,1,0,1528607427,"~/workspace/horovod-docker/Dockerfile"
+-'  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,1,0,1528607427,"~/workspace/horovod-docker/Dockerfile"
+-'  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,1,0,1528607427,"~/workspace/horovod-docker/Dockerfile"
+-'  1  0  ~/workspace/horovod-docker/Dockerfile
+|4,39,1,0,1528607427,"~/workspace/horovod-docker/Dockerfile"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  13  0  ~/workspace/horovod-test/openmpi_config.sh
+|4,39,13,0,1528585407,"~/workspace/horovod-test/openmpi_config.sh"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  4  0  ~/.ssh/config
+|4,39,4,0,1528584355,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1528584311,"~/.ssh/config"
 
 # History of marks within files (newest to oldest):
+
+> ~/.tmux.conf
+	*	1528761548	0
+	"	44	1
+	^	44	2
+	.	44	1
+	+	56	17
+	+	33	16
+	+	33	26
+	+	33	38
+	+	55	0
+	+	33	38
+	+	51	0
+	+	33	25
+	+	52	0
+	+	33	41
+	+	33	40
+	+	33	39
+	+	33	38
+	+	33	37
+	+	33	36
+	+	33	35
+	+	33	34
+	+	33	16
+	+	33	3
+	+	33	16
+	+	33	0
+	+	33	16
+	+	33	15
+	+	33	0
+	+	33	16
+	+	33	0
+	+	33	16
+	+	33	0
+	+	2	3
+	+	3	0
+	+	51	0
+	+	52	0
+	+	20	0
+	+	49	0
+	+	20	13
+	+	1	0
+	+	2	0
+	+	1	3
+	+	2	0
+	+	50	0
+	+	1	0
+	+	54	19
+	+	195	44
+	+	155	1
+	+	156	2
+	+	50	0
+	+	44	3
+	+	154	0
+	+	157	0
+	+	158	19
+	+	195	0
+	+	206	29
+	+	208	0
+	+	200	0
+	+	198	0
+	+	96	68
+	+	94	67
+	+	86	17
+	+	88	8
+	+	89	18
+	+	44	1
+
+> ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.py
+	*	1528756684	0
+	"	119	43
+	^	67	23
+	.	67	22
+	+	68	0
+	+	67	22
+
+> ~/workspace/horovod-docker/Dockerfile
+	*	1528608866	0
+	"	74	12
+	^	75	2
+	.	76	0
+	+	1	16
+	+	5	1
+	+	6	1
+	+	7	1
+	+	13	1
+	+	23	0
+	+	35	26
+	+	5	0
+	+	59	2
+	+	60	0
+	+	59	4
+	+	76	0
+
+> ~/workspace/horovod-test/openmpi_config.sh
+	*	1528584969	0
+	"	13	0
+	^	13	0
+	.	14	0
+	+	5	0
+	+	7	34
+	+	4	0
+	+	2	0
+	+	4	0
+	+	3	65
+	+	8	0
+	+	9	41
+	+	12	83
+	+	10	0
+	+	14	0
+
+> ~/.ssh/config
+	*	1528584354	0
+	"	4	0
+	^	4	0
+	.	4	0
+	+	4	0
+
+> ~/workspace/horovod-test/horovod/examples/parallel_run.sh
+	*	1528584016	0
+	"	6	32
+	^	6	30
+	.	6	29
+	+	1	26
+	+	1	35
+	+	1	29
+	+	1	5
+	+	1	79
+	+	1	97
+	+	1	4
+	+	6	55
+	+	6	53
+	+	6	90
+	+	1	0
+	+	6	63
+	+	6	37
+	+	6	0
+	+	6	3
+	+	6	51
+	+	6	37
+	+	6	0
+	+	6	3
+	+	6	35
+	+	6	4
+	+	6	0
+	+	4	17
+	+	1	11
+	+	6	0
+	+	3	29
+	+	6	0
+	+	5	18
+	+	6	29
+	+	2	29
+	+	6	29
+
+> ~/workspace/horovod-test/openmpi_install_mac.sh
+	*	1528583855	0
+	"	1	10
+	^	1	11
+	.	1	10
+	+	9	33
+	+	11	0
+	+	1	10
+
+> ~/workspace/horovod-test/openmpi_install_linux.sh
+	*	1528583842	0
+	"	1	10
+	^	1	11
+	.	1	10
+	+	1	10
+
+> ~/workspace/horovod-test/openmpi_install.sh
+	*	1528583542	0
+	"	1	7
+	^	9	8
+	.	10	0
+	+	10	19
+	+	4	28
+	+	5	16
+	+	6	46
+	+	9	8
+	+	10	0
+
+> ~/workspace/horovod-test/ControlP
+	*	1528583278	0
+	"	9	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/workspace/horovod-test/lib/python2.7/site-packages/tensorflow/include/Eigen/src/SparseLU/SparseLU_Structs.h
+	*	1528583278	0
+	"	1	0
+
+> ~/workspace/horovod-test/pip-selfcheck.json
+	*	1528583245	0
+	"	1	0
+
+> ~/.bash_profile
+	*	1528394859	0
+	"	47	0
+
+> ~/.zshrc
+	*	1528394831	0
+	"	109	0
+	^	109	58
+	.	109	57
+	+	99	0
+	+	101	26
+	+	99	19
+	+	99	39
+	+	100	0
+	+	99	19
+	+	10	35
+	+	103	37
+	+	58	7
+	+	59	0
+	+	61	0
+	+	59	17
+	+	99	23
+	+	101	19
+	+	5	15
+	+	95	0
+	+	60	31
+	+	95	0
+	+	11	0
+	+	12	6
+	+	15	0
+	+	14	33
+	+	14	0
+	+	97	0
+	+	72	1
+	+	74	0
+	+	79	0
+	+	78	0
+	+	109	57
+
+> /private/etc/paths
+	*	1528393780	0
+	"	5	4
+
+> ~/workspace/horovod-test/horovod/examples/tensorflow_mnist.p
+	*	1528359794	0
+	"	1	0
+
+> ~/workspace/horovod-test/horovod/examples/tensorflow_m
+	*	1528359786	0
+	"	1	0
+
+> ~/workspace/horovod-test/horovod/examples/tensorflow_mnist
+	*	1528358714	0
+	"	1	0
+
+> ~/workspace/horovod-test/install_openmpi.sh
+	*	1528351370	0
+	"	12	0
+	^	1	11
+	.	12	0
+	+	3	22
+	+	3	27
+	+	12	22
+	+	3	17
+	+	4	14
+	+	5	1
+	+	6	4
+	+	7	27
+	+	8	13
+	+	9	31
+	+	10	19
+	+	11	11
+	+	12	7
+	+	10	33
+	+	3	17
+	+	2	0
+	+	1	10
+	+	2	0
+	+	8	16
+	+	12	0
+
+> ~/workspace/docker-test/app.py
+	*	1528345956	0
+	"	24	4
+	^	24	36
+	.	24	35
+	+	24	35
+
+> ~/workspace/docker-test/Dockerfile
+	*	1528345956	0
+	"	20	0
+	^	20	24
+	.	20	23
+	+	20	23
+
+> ~/workspace/docker-test/ControlP
+	*	1528345922	0
+	"	2	0
+	.	2	0
+	+	2	0
+
+> ~/workspace/docker-test/requirements.txt
+	*	1528345901	0
+	"	2	4
+	^	2	5
+	.	2	4
+	+	2	4
+
+> /private/etc/hosts
+	*	1528185415	0
+	"	13	77
+	^	13	79
+	.	13	77
+	+	1	0
+	+	13	77
+
+> /private/var/folders/lj/h2dyk9m533bgfnb9tytr6rwh0000gn/T/edit.bn5tmb0abjwcwwco/differential-update-comments
+	*	1527877574	0
+	"	9	19
+
+> ~/.local.bash
+	*	1527877328	0
+	"	1	0
+
+> ~/workspace/source/university/devnho/src/test/java/com/twitter/devnho/UserGbaiTest.java
+	*	1527876311	0
+	"	17	39
+	^	17	40
+	.	17	39
+	+	16	39
+	+	17	39
+
+> ~/workspace/source/university/devnho/src/main/java/com/twitter/devnho/UserGbai.java
+	*	1527876190	0
+	"	5	35
+	^	5	36
+	.	5	35
+	+	5	35
+
+> ~/workspace/source/university/scala-primer/src/main/scala/com/twitter/minitwitter/models/Tweet.scala
+	*	1527807241	0
+	"	1	20
+	^	3	29
+	.	3	28
+	+	1	38
+	+	3	28
+
+> ~/workspace/NERD_tree_2
+	*	1527806831	0
+	"	3	0
+	.	1	0
+	+	1	0
+
+> ~/workspace/source/NERD_tree_1
+	*	1527806819	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/workspace/source/ControlP
+	*	1527806805	0
+	"	6	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/dotfiles/update.sh
+	*	1527730258	0
+	"	13	0
+	^	2	0
+	.	2	0
+	+	6	80
+	+	6	0
+	+	6	97
+	+	6	95
+	+	14	0
+	+	2	19
+	+	5	21
+	+	20	8
+	+	6	119
+	+	6	0
+	+	6	120
+	+	6	0
+	+	6	95
+	+	6	3
+	+	6	121
+	+	6	27
+	+	6	120
+	+	6	23
+	+	6	122
+	+	6	121
+	+	6	0
+	+	6	121
+	+	10	22
+	+	6	109
+	+	6	43
+	+	6	125
+	+	6	0
+	+	3	9
+	+	4	9
+	+	5	9
+	+	7	9
+	+	8	9
+	+	6	9
+	+	14	15
+	+	20	17
+	+	21	19
+	+	22	16
+	+	26	17
+	+	25	21
+	+	31	0
+	+	33	5
+	+	34	0
+	+	35	0
+	+	36	0
+	+	9	25
+	+	30	17
+	+	34	9
+	+	35	14
+	+	36	0
+	+	20	31
+	+	14	20
+	+	15	37
+	+	16	29
+	+	20	0
+	+	17	0
+	+	19	0
+	+	18	17
+	+	20	0
+	+	12	0
+	+	13	5
+	+	22	0
+	+	23	5
+	+	27	4
+	+	29	26
+	+	30	38
+	+	20	0
+	+	30	46
+	+	15	37
+	+	17	39
+	+	18	34
+	+	30	47
+	+	3	0
+	+	1	0
+	+	2	0
+
+> ~/dotfiles/setup.sh
+	*	1527730230	0
+	"	1	0
+	^	15	28
+	.	2	0
+	+	2	8
+	+	9	0
+	+	10	0
+	+	9	0
+	+	10	0
+	+	9	8
+	+	10	8
+	+	11	8
+	+	12	8
+	+	13	8
+	+	14	8
+	+	10	25
+	+	11	27
+	+	12	24
+	+	13	29
+	+	14	25
+	+	7	0
+	+	7	18
+	+	15	27
+	+	7	0
+	+	2	0
 
 > ~/.vimrc
 	*	1523141860	0
@@ -565,36 +1062,6 @@ $
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/.zshrc
-	*	1523139369	0
-	"	94	0
-	^	94	2
-	.	95	0
-	+	97	0
-	+	99	26
-	+	97	19
-	+	97	39
-	+	98	0
-	+	97	19
-	+	10	35
-	+	101	37
-	+	58	7
-	+	59	0
-	+	61	0
-	+	59	17
-	+	97	23
-	+	99	19
-	+	5	15
-	+	93	0
-	+	60	31
-	+	93	0
-	+	11	0
-	+	12	6
-	+	15	0
-	+	14	33
-	+	14	0
-	+	95	0
 
 > ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
 	*	1521851810	0
@@ -1179,110 +1646,6 @@ $
 	.	14	0
 	+	14	0
 
-> ~/dotfiles/setup.sh
-	*	1517208693	0
-	"	6	0
-	^	15	28
-	.	2	0
-	+	2	8
-	+	9	0
-	+	10	0
-	+	9	0
-	+	10	0
-	+	9	8
-	+	10	8
-	+	11	8
-	+	12	8
-	+	13	8
-	+	14	8
-	+	10	25
-	+	11	27
-	+	12	24
-	+	13	29
-	+	14	25
-	+	7	0
-	+	7	18
-	+	15	27
-	+	7	0
-	+	2	0
-
-> ~/dotfiles/update.sh
-	*	1517208571	0
-	"	29	47
-	^	29	48
-	.	29	47
-	+	5	80
-	+	5	0
-	+	5	97
-	+	5	95
-	+	13	0
-	+	1	19
-	+	4	21
-	+	19	8
-	+	5	119
-	+	5	0
-	+	5	120
-	+	5	0
-	+	5	95
-	+	5	3
-	+	5	121
-	+	5	27
-	+	5	120
-	+	5	23
-	+	5	122
-	+	5	121
-	+	5	0
-	+	5	121
-	+	9	22
-	+	5	109
-	+	5	43
-	+	5	125
-	+	5	0
-	+	2	9
-	+	3	9
-	+	4	9
-	+	6	9
-	+	7	9
-	+	5	9
-	+	13	15
-	+	19	17
-	+	20	19
-	+	21	16
-	+	25	17
-	+	24	21
-	+	30	0
-	+	32	5
-	+	33	0
-	+	34	0
-	+	35	0
-	+	8	25
-	+	29	17
-	+	33	9
-	+	34	14
-	+	35	0
-	+	19	31
-	+	13	20
-	+	14	37
-	+	15	29
-	+	19	0
-	+	16	0
-	+	18	0
-	+	17	17
-	+	19	0
-	+	11	0
-	+	12	5
-	+	21	0
-	+	22	5
-	+	26	4
-	+	28	26
-	+	29	38
-	+	19	0
-	+	29	46
-	+	14	37
-	+	16	39
-	+	17	34
-	+	29	47
-
 > ~/.dotfiles/update.sh
 	*	1517203880	0
 	"	19	0
@@ -1371,72 +1734,6 @@ $
 	"	10	0
 	.	1	0
 	+	1	0
-
-> ~/.tmux.conf
-	*	1517195049	0
-	"	89	31
-	^	89	17
-	.	89	18
-	+	56	17
-	+	33	16
-	+	33	26
-	+	33	38
-	+	55	0
-	+	33	38
-	+	51	0
-	+	33	25
-	+	52	0
-	+	33	41
-	+	33	40
-	+	33	39
-	+	33	38
-	+	33	37
-	+	33	36
-	+	33	35
-	+	33	34
-	+	33	16
-	+	33	3
-	+	33	16
-	+	33	0
-	+	33	16
-	+	33	15
-	+	33	0
-	+	33	16
-	+	33	0
-	+	33	16
-	+	33	0
-	+	2	3
-	+	3	0
-	+	51	0
-	+	52	0
-	+	20	0
-	+	49	0
-	+	20	13
-	+	1	0
-	+	2	0
-	+	1	3
-	+	2	0
-	+	50	0
-	+	1	0
-	+	54	19
-	+	195	44
-	+	155	1
-	+	156	2
-	+	50	0
-	+	44	3
-	+	154	0
-	+	157	0
-	+	158	19
-	+	195	0
-	+	206	29
-	+	208	0
-	+	200	0
-	+	198	0
-	+	96	68
-	+	94	67
-	+	86	17
-	+	88	8
-	+	89	18
 
 > ~/Documents/codebase/cs537-projs/p1a/my-zip.c
 	*	1517194469	0
@@ -1556,188 +1853,3 @@ $
 	.	1	0
 	+	1	10
 	+	1	0
-
-> /usr/local/Cellar/macvim/8.0-144_3/MacVim.app/Contents/Resources/vim/runtime/doc/help.txt
-	*	1517092558	0
-	"	222	1
-
-> /usr/share/vim/vim80/doc/gui_x11.txt
-	*	1517042866	0
-	"	592	56
-
-> /private/var/folders/p3/t6754x9s6m30hdyy25j0k_vh0000gn/T/tutorDg1PrH
-	*	1517042176	0
-	"	3	0
-	^	42	42
-	.	42	0
-	+	42	0
-
-> ~/.vim/plugged/nerdtree/doc/NERDTree.txt
-	*	1517040716	0
-	"	417	27
-
-> ~/Documents/codebase/cs537-projs/NERD_tree_1
-	*	1517040587	0
-	"	7	5
-	.	1	0
-	+	1	0
-
-> ~/Documents/codebase/cs537-projs/p1a/2.txt
-	*	1517029480	0
-	"	1	2
-	^	1	3
-	.	1	2
-	+	1	15
-	+	1	16
-	+	1	2
-
-> ~/Documents/codebase/cs537-projs/p1a/zip.out
-	*	1517027580	0
-	"	3	13
-
-> ~/Documents/codebase/cs537-projs/p1a/zip.txt
-	*	1517024489	0
-	"	9	0
-	^	9	0
-	.	8	7
-	+	1	14
-	+	1	0
-	+	1	2
-	+	8	7
-
-> ~/Documents/codebase/cs537-projs/p1a/my-unzip.c
-	*	1517022395	0
-	"	22	24
-	^	22	25
-	.	22	24
-	+	6	0
-	+	15	0
-	+	27	0
-	+	14	0
-	+	15	16
-	+	16	15
-	+	27	10
-	+	28	0
-	+	45	9
-	+	40	55
-	+	41	11
-	+	40	51
-	+	41	44
-	+	42	42
-	+	43	31
-	+	46	0
-	+	40	46
-	+	43	20
-	+	9	26
-	+	22	24
-
-> ~/Documents/codebase/cs537-projs/p1a/b1
-	*	1517015686	0
-	"	1	0
-
-> ~/Documents/codebase/cs537-projs/p1a/ControlP
-	*	1517010986	0
-	"	1	0
-	.	2	0
-	+	1	0
-	+	2	0
-
-> ~/Documents/codebase/cs537-projs/temp.c
-	*	1517010715	0
-	"	6	3
-	^	6	4
-	.	5	4
-	+	1	18
-	+	1	0
-	+	3	0
-	+	5	4
-
-> ~/Documents/codebase/cs537-projs/p1a/my-grep
-	*	1517010141	0
-	"	1	0
-
-> ~/.vim/plugged/plugin.vim
-	*	1517007277	0
-	"	1	0
-
-> ~/.vim/plugged/rainbow_parentheses.vim/readme.md
-	*	1517007271	0
-	"	3	0
-
-> ~/.vim/plugged/NERD_tree_1
-	*	1517007243	0
-	"	9	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/my-cat.c
-	*	1517002089	0
-	"	1	0
-
-> ~/.vim/plug.v
-	*	1516951816	0
-	"	1	0
-
-> ~/.vim/plug
-	*	1516951812	0
-	"	1	0
-
-> ~/.vim/plugged/vim-trailing-whitespace/plugin/trailing-whitespace.vim
-	*	1516949557	0
-	"	1	0
-
-> ~/.vim/plugged/vim-trailing-whitespace/README
-	*	1516949528	0
-	"	11	0
-
-> ~/.oh-my-zsh/oh-my-zsh.sh
-	*	1516947337	0
-	"	107	0
-
-> /private/var/folders/p3/t6754x9s6m30hdyy25j0k_vh0000gn/T/tutor7k7sfn
-	*	1516832059	0
-	"	1	35
-
-> /private/var/folders/p3/t6754x9s6m30hdyy25j0k_vh0000gn/T/tutorl2NjMm
-	*	1516831716	0
-	"	9	0
-
-> ~/Documents/codebase/eclipse-workspace/AnagramSorter/src/AggregateReducer.java
-	*	1516831526	0
-	"	12	20
-	^	12	20
-	.	12	0
-	+	12	0
-
-> ~/.viminfo
-	*	1516827773	0
-	"	397	0
-
-> ~/.vim/[vimshell] - default
-	*	1514606825	0
-	"	24	0
-	^	32	10
-	.	32	0
-	+	1	11
-	+	4	14
-	+	5	8
-	+	6	11
-	+	15	11
-	+	17	10
-	+	18	0
-	+	19	11
-	+	28	11
-	+	30	11
-	+	32	0
-
-> ~/.vim/autoload/plug.vim
-	*	1514605529	0
-	"	125	2
-
-> /usr/share/vim/vim80/doc/options.txt
-	*	1514605289	0
-	"	6195	4
-
-> ~/.vim/plugged/vim-snippets/snippets/java.snippets
-	*	1514605203	0
-	"	61	1
