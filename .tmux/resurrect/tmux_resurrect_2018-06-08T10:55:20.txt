@@ -1,0 +1,4 @@
+pane	0	1	:vim	1	:*	1	:/Users/gbai/workspace/horovod-test/horovod/examples	1	vim	:vim parallel_run.sh
+pane	0	1	:vim	1	:*	2	:/Users/gbai/workspace/horovod-test/horovod/examples	0	zsh	:
+window	0	1	1	:*	95c4,119x86,0,0[119x44,0,0,0,119x41,0,45,1]
+state	0	

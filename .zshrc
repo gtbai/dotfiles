@@ -76,6 +76,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR='vim'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -100,15 +102,3 @@ source $ZSH/oh-my-zsh.sh
 # export PATH=$PATH:$M2_HOME/bin
 # export PATH=$PATH:/usr/local/cuda/bin
 
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
-export PATH="$JAVA_HOME:$PATH"
-export BREWED_PYTHONHOME="/usr/local/opt/python/libexec/bin"
-export PATH="$BREWED_PYTHONHOME:$PATH"
-
-export PATH="/Users/gtbai/anaconda3/bin:$PATH"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/gtbai/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/gtbai/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/completion.zsh.inc'; fi
