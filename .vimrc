@@ -170,6 +170,7 @@ let g:ycm_key_invoke_completion = '<C-e>'
 let g:ycm_show_diagnostics_ui = 1
 let g:ycm_max_diagnostics_to_display = 10000
 let g:ycm_always_populate_location_list = 1
+let g:ycm_python_interpreter_path = '/Users/gtbai/anaconda3/bin/python'
 
 " syntastic
 let g:syntastic_error_symbol = '✗'
@@ -294,3 +295,5 @@ nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+set textwidth=100

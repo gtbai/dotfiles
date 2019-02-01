@@ -11,31 +11,69 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/easier
+~MSle0~/youcom
 
 # Last Substitute Search Pattern:
-~MSle0&\.\.
+~MSle0&’
 
 # Last Substitute String:
-$
+$'
 
 # Command Line History (newest to oldest):
-:Q
-|2,0,1523141861,,"Q"
 :wq
-|2,0,1523141858,,"wq"
+|2,0,1549049709,,"wq"
+:q
+|2,0,1549049598,,"q"
+:YcmRestartServer
+|2,0,1549047348,,"YcmRestartServer"
+:PlugInstall
+|2,0,1549043838,,"PlugInstall"
+:PlugStatus
+|2,0,1549043814,,"PlugStatus"
+:w
+|2,0,1549043721,,"w"
+:Q
+|2,0,1549043617,,"Q"
+:PlugClean
+|2,0,1548541038,,"PlugClean"
+:a
+|2,0,1548541004,,"a"
+:pluguninstall
+|2,0,1548540947,,"pluguninstall"
+:set textwidth=100
+|2,0,1542516437,,"set textwidth=100"
+:%s/’/'/g
+|2,0,1541828175,,"%s/’/'/g"
+:%s/‘/'/g
+|2,0,1541828169,,"%s/‘/'/g"
+:%s/”/"/g
+|2,0,1541828157,,"%s/”/\"/g"
+:%s/“/"/g
+|2,0,1541828145,,"%s/“/\"/g"
+:Wq
+|2,0,1541562355,,"Wq"
+:e ~/.vim/plugin.vim
+|2,0,1540923627,,"e ~/.vim/plugin.vim"
+:source ~/.vim/autoload/bclose.vim
+|2,0,1540923455,,"source ~/.vim/autoload/bclose.vim"
+:Bclose
+|2,0,1540923440,,"Bclose"
+:W
+|2,0,1540922557,,"W"
+:e ~/.vimrc
+|2,0,1540921828,,"e ~/.vimrc"
+:54
+|2,0,1530091344,,"54"
+:bp
+|2,0,1524538385,,"bp"
+:e ~/.tmux.conf
+|2,0,1524538251,,"e ~/.tmux.conf"
+:q!
+|2,0,1524424321,,"q!"
 :2
 |2,0,1523141850,,"2"
-:q
-|2,0,1521851812,,"q"
 :wall
 |2,0,1521851807,,"wall"
-:e ~/.vimrc
-|2,0,1519240378,,"e ~/.vimrc"
-:w
-|2,0,1518462191,,"w"
-:Wq
-|2,0,1518387313,,"Wq"
 :sb
 |2,0,1518305278,,"sb"
 :registers
@@ -50,8 +88,6 @@ $
 |2,0,1518295686,,"bd"
 :61
 |2,0,1518166006,,"61"
-:bp
-|2,0,1518165845,,"bp"
 :wqall
 |2,0,1517717129,,"wqall"
 :b kernel/sysfile.c
@@ -84,48 +120,38 @@ $
 |2,0,1517713422,,"tvinit"
 :vert sb user/usys.S
 |2,0,1517713152,,"vert sb user/usys.S"
-:vert sb kernel/sysproc.c
-|2,0,1517698823,,"vert sb kernel/sysproc.c"
-:qa
-|2,0,1517697827,,"qa"
-:sp
-|2,0,1517697442,,"sp"
-:qall
-|2,0,1517697430,,"qall"
-:PlugInstall
-|2,0,1517697413,,"PlugInstall"
-:PlugUpdate
-|2,0,1517697179,,"PlugUpdate"
-:e ~/.vim/plugin.vim
-|2,0,1517696960,,"e ~/.vim/plugin.vim"
-:vert sb kernel/sysfunc.h
-|2,0,1517696806,,"vert sb kernel/sysfunc.h"
-:sb kernel/sysfunc.h
-|2,0,1517696780,,"sb kernel/sysfunc.h"
-:iret
-|2,0,1517696352,,"iret"
-:b4
-|2,0,1517696333,,"b4"
-:b1
-|2,0,1517696326,,"b1"
-:help 'ctrlp'
-|2,0,1517684216,,"help 'ctrlp'"
-:b"No Name"
-|2,0,1517684016,,"b\"No Name\""
-:ls
-|2,0,1517684002,,"ls"
-:b%a
-|2,0,1517683996,,"b%a"
-:b12
-|2,0,1517683968,,"b12"
-:buffer
-|2,0,1517683869,,"buffer"
 
 # Search String History (newest to oldest):
-?/easier
-|2,1,1519510956,47,"easier"
+?/youcom
+|2,1,1549049465,47,"youcom"
+? ’
+|2,1,1541828175,,"’"
+? ‘
+|2,1,1541828169,,"‘"
+? ”
+|2,1,1541828157,,"”"
+? “
+|2,1,1541828145,,"“"
 ?/source
-|2,1,1519451643,47,"source"
+|2,1,1540923494,47,"source"
+?/W
+|2,1,1540922266,47,"W"
+?/bd
+|2,1,1540921831,47,"bd"
+?/mouse
+|2,1,1537139087,47,"mouse"
+?/the runway wrong
+|2,1,1530091524,47,"the runway wrong"
+?/tests
+|2,1,1529768707,47,"tests"
+?/easier
+|2,1,1524538392,47,"easier"
+?/py
+|2,1,1524259801,47,"py"
+?/python
+|2,1,1524259553,47,"python"
+?/java
+|2,1,1524258448,47,"java"
 ?/tab
 |2,1,1519240381,47,"tab"
 ?/print_err
@@ -196,74 +222,56 @@ $
 |2,1,1517713236,,"\\$\\(cursor\\|select\\)\\$"
 ?/proc
 |2,1,1517698765,47,"proc"
-?/sys_read
-|2,1,1517698499,47,"sys_read"
-?/g
-|2,1,1517698271,47,"g"
-?/argfd
-|2,1,1517698217,47,"argfd"
-?/file
-|2,1,1517698043,47,"file"
-?/window
-|2,1,1517697250,47,"window"
-?/widnow
-|2,1,1517697120,47,"widnow"
-?/iret
-|2,1,1517696355,47,"iret"
-?/exit(
-|2,1,1517696269,47,"exit("
-?/syscall(
-|2,1,1517695877,47,"syscall("
-?/syscall
-|2,1,1517695856,47,"syscall"
-?/trapfram
-|2,1,1517695454,47,"trapfram"
-?/hehe
-|2,1,1517684661,47,"hehe"
-?/user
-|2,1,1517684654,47,"user"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
 @y
-|2,3,1514606383,,"y"
+|2,3,1548541045,,"y"
+@n
+|2,3,1548540973,,"n"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
 "0	LINE	0
-	nnoremap ˙ :bp<CR>
-|3,0,0,1,1,0,1519511023,"nnoremap ˙ :bp<CR>"
-""1	LINE	0
-	source ~/.vim/bclose.vim
-|3,1,1,1,1,0,1523141856,"source ~/.vim/bclose.vim"
+	        print("The number of sentences in the text is {}".format(num_sentences))
+|3,0,0,1,1,0,1541829777,"        print(\"The number of sentences in the text is {}\".format(num_sentences))"
+"1	LINE	0
+	pe
+|3,0,1,1,1,0,1549043405,"pe"
 "2	LINE	0
-	python learn_bayes.py 
-|3,0,2,1,1,0,1521851423,"python learn_bayes.py "
+	Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+|3,0,2,1,1,0,1548541031,"Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }"
 "3	LINE	0
-	python learn_bayes.py 
-|3,0,3,1,1,0,1520652050,"python learn_bayes.py "
-"4	LINE	0
-	nnoremap <c-k> <c-w>k
-|3,0,4,1,1,0,1519511037,"nnoremap <c-k> <c-w>k"
-"5	CHAR	0
-	split windows
+	  (optional) bearer_token: <TOKEN>
+|3,0,3,1,1,0,1544435700,"  (optional) bearer_token: <TOKEN>"
+"4	CHAR	0
+	<KEY>
 	
-|3,0,5,0,2,0,1519510975,"split windows",""
+|3,0,4,0,2,0,1544435671,"<KEY>",""
+"5	LINE	0
+	
+|3,0,5,1,1,0,1542516413,""
 "6	LINE	0
-	    exit(1);
-|3,0,6,1,1,0,1518462190,"    exit(1);"
+	We were able to model a locality-aware load-balanced scheduler like LARD, and conducted a simulation experiment
+|3,0,6,1,1,0,1542516411,"We were able to model a locality-aware load-balanced scheduler like LARD, and conducted a simulation experiment"
 "7	LINE	0
+	def calc(a, b): return a+b, a-b
 	
-|3,0,7,1,1,0,1518387337,""
+	
+	res1, res2 = calc(1, 3)
+	
+	l = [res1 for _ in range(10)]
+	
+	print l
+|3,0,7,1,8,0,1542072747,"def calc(a, b): return a+b, a-b","","","res1, res2 = calc(1, 3)","","l = [res1 for _ in range(10)]","","print l"
 "8	LINE	0
-	cat cmds.txt > output2.txt
 	
-|3,0,8,1,2,0,1518387308,"cat cmds.txt > output2.txt",""
+|3,0,8,1,1,0,1541830132,""
 "9	LINE	0
-	                    printf("redir: %s\n", redir);
-|3,0,9,1,1,0,1518386773,"                    printf(\"redir: %s\\n\", redir);"
+	import os
+|3,0,9,1,1,0,1541830131,"import os"
 "a	CHAR	0
 	xx
 |3,0,10,0,1,0,1512350725,"xx"
@@ -281,269 +289,346 @@ $
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com",>749
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfCGFUnkPvf5zzPxNhOYf/3Vd9V+AiTcfQY3GICNEvlwBs1tkcOtp/wjp1tH5VdQRQZXUNFamtUYb2T2QjcPszCgOEcfGUZ1GFdDTkwb+mVI4VUTFG3mvbH/1CooPqhq/bN9Smp+/akBgnA3ukB6wkjODJtOt1I72adJG7SqOeolA65cmLsXsRZn1SGBzVQOKelkmi6Vz4/nc/9uTXJLBp2NKan7a3VAvTY8FuJYQRw2GjtLoVGnvPvaGmqvQTCq+A2oVflYn067RuFvCSMWSABTUIZGOs5fguk91LMp3CLqYCL8gS1aRB6XWd4RjSD1O38dRyyWw3WUNewR+549GLXUXkTb1dnDR0OlHB2ky1VIqrn6vp90weusxeaBzwYO1d4mxZm24sGQzpultMBzTwEPGJh8k/WA7ZBgxh396fVFwnGsktHPmGdl3l7aoSipkPN
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com"
-"-	CHAR	0
-	logistic_regression
-|3,0,36,0,1,0,1521851765,"logistic_regression"
+""-	CHAR	0
+	valloric/youcompleteme
+|3,1,36,0,1,0,1549043719,"valloric/youcompleteme"
 
 # File marks:
-'0  2  0  ~/.vimrc
-|4,48,2,0,1523141861,"~/.vimrc"
-'1  2  0  ~/.vimrc
-|4,49,2,0,1523141858,"~/.vimrc"
-'2  1  0  ~/NERD_tree_1
-|4,50,1,0,1523141841,"~/NERD_tree_1"
-'3  94  0  ~/.zshrc
-|4,51,94,0,1523139371,"~/.zshrc"
-'4  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,52,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
-'5  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,53,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
-'6  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,54,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
-'7  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,55,1,6,1520652357,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
-'8  1  0  ~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes
-|4,56,1,0,1520652064,"~/Documents/codebase/pycharm-workspace/cs760/HW3-Bayes/submission/bayes"
-'9  1  43  ~/.zshrc
-|4,57,1,43,1519545939,"~/.zshrc"
+'0  34  7  ~/dotfiles/update.sh
+|4,48,34,7,1549049709,"~/dotfiles/update.sh"
+'1  173  69  ~/.vimrc
+|4,49,173,69,1549049593,"~/.vimrc"
+'2  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,50,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+'3  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,51,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+'4  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,52,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
+'5  227  6  ~/.vimrc
+|4,53,227,6,1549044659,"~/.vimrc"
+'6  226  6  ~/.vimrc
+|4,54,226,6,1549044659,"~/.vimrc"
+'7  32  0  ~/.vim/plugin.vim
+|4,55,32,0,1549044039,"~/.vim/plugin.vim"
+'8  15  0  ~/.vim/plugin.vim
+|4,56,15,0,1549043917,"~/.vim/plugin.vim"
+'9  15  0  ~/.vim/plugin.vim
+|4,57,15,0,1549043917,"~/.vim/plugin.vim"
 
 # Jumplist (newest first):
--'  2  0  ~/.vimrc
-|4,39,2,0,1523141861,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1523141858,"~/.vimrc"
--'  219  0  ~/.vimrc
-|4,39,219,0,1523141847,"~/.vimrc"
--'  219  0  ~/.vimrc
-|4,39,219,0,1523141847,"~/.vimrc"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1523141841,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1523141841,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1523141841,"~/NERD_tree_1"
--'  1  0  ~/NERD_tree_1
-|4,39,1,0,1523141841,"~/NERD_tree_1"
--'  32  2  ~/NERD_tree_1
-|4,39,32,2,1523141840,"~/NERD_tree_1"
--'  32  2  ~/NERD_tree_1
-|4,39,32,2,1523141840,"~/NERD_tree_1"
--'  32  2  ~/NERD_tree_1
-|4,39,32,2,1523141840,"~/NERD_tree_1"
--'  32  2  ~/NERD_tree_1
-|4,39,32,2,1523141840,"~/NERD_tree_1"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  94  0  ~/.zshrc
-|4,39,94,0,1523139371,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  10  0  ~/.zshrc
-|4,39,10,0,1523139353,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1523139350,"~/.zshrc"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  35  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
-|4,39,1,35,1521851812,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  6  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,6,1521851544,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
--'  1  40  ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic
-|4,39,1,40,1521851496,"~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/logistic"
+-'  34  7  ~/dotfiles/update.sh
+|4,39,34,7,1549049709,"~/dotfiles/update.sh"
+-'  14  0  ~/dotfiles/update.sh
+|4,39,14,0,1549049635,"~/dotfiles/update.sh"
+-'  173  69  ~/.vimrc
+|4,39,173,69,1549049593,"~/.vimrc"
+-'  173  69  ~/.vimrc
+|4,39,173,69,1549049593,"~/.vimrc"
+-'  173  69  ~/.vimrc
+|4,39,173,69,1549049593,"~/.vimrc"
+-'  173  69  ~/.vimrc
+|4,39,173,69,1549049593,"~/.vimrc"
+-'  118  6  ~/.vimrc
+|4,39,118,6,1549049465,"~/.vimrc"
+-'  118  6  ~/.vimrc
+|4,39,118,6,1549049465,"~/.vimrc"
+-'  118  6  ~/.vimrc
+|4,39,118,6,1549049465,"~/.vimrc"
+-'  118  6  ~/.vimrc
+|4,39,118,6,1549049465,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1549049444,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1549049444,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1549049444,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1549049444,"~/.vimrc"
+-'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
+|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
 
 # History of marks within files (newest to oldest):
 
+> ~/dotfiles/update.sh
+	*	1549049707	0
+	"	34	7
+	^	29	48
+	.	29	47
+	+	5	80
+	+	5	0
+	+	5	97
+	+	5	95
+	+	13	0
+	+	1	19
+	+	4	21
+	+	19	8
+	+	5	119
+	+	5	0
+	+	5	120
+	+	5	0
+	+	5	95
+	+	5	3
+	+	5	121
+	+	5	27
+	+	5	120
+	+	5	23
+	+	5	122
+	+	5	121
+	+	5	0
+	+	5	121
+	+	9	22
+	+	5	109
+	+	5	43
+	+	5	125
+	+	5	0
+	+	2	9
+	+	3	9
+	+	4	9
+	+	6	9
+	+	7	9
+	+	5	9
+	+	13	15
+	+	19	17
+	+	20	19
+	+	21	16
+	+	25	17
+	+	24	21
+	+	30	0
+	+	32	5
+	+	33	0
+	+	34	0
+	+	35	0
+	+	8	25
+	+	29	17
+	+	33	9
+	+	34	14
+	+	35	0
+	+	19	31
+	+	13	20
+	+	14	37
+	+	15	29
+	+	19	0
+	+	16	0
+	+	18	0
+	+	17	17
+	+	19	0
+	+	11	0
+	+	12	5
+	+	21	0
+	+	22	5
+	+	26	4
+	+	28	26
+	+	29	38
+	+	19	0
+	+	29	46
+	+	14	37
+	+	16	39
+	+	17	34
+	+	29	47
+
 > ~/.vimrc
-	*	1523141860	0
-	"	2	0
-	^	218	15
-	.	2	0
+	*	1549049589	0
+	"	173	69
+	^	173	70
+	.	173	69
 	+	153	0
-	+	205	25
-	+	203	0
-	+	201	22
-	+	203	28
-	+	206	0
+	+	206	25
+	+	204	0
+	+	202	22
+	+	204	28
+	+	207	0
 	+	108	0
-	+	195	11
-	+	247	0
-	+	1	0
-	+	247	7
+	+	196	11
 	+	248	0
-	+	259	0
-	+	255	0
+	+	1	0
+	+	248	7
+	+	249	0
+	+	260	0
 	+	256	0
-	+	255	0
-	+	278	0
-	+	241	8
+	+	257	0
+	+	256	0
+	+	279	0
+	+	242	8
+	+	244	0
 	+	243	0
 	+	242	0
-	+	241	0
-	+	242	11
-	+	243	10
-	+	243	1
-	+	242	2
-	+	264	0
-	+	284	0
-	+	242	0
+	+	243	11
+	+	244	10
+	+	244	1
+	+	243	2
+	+	265	0
+	+	285	0
+	+	243	0
 	+	132	0
 	+	131	0
 	+	130	0
@@ -552,25 +637,344 @@ $
 	+	2	23
 	+	2	0
 	+	26	0
-	+	216	0
-	+	219	0
-	+	216	34
-	+	217	19
-	+	218	14
-	+	219	0
+	+	217	0
+	+	220	0
+	+	217	34
+	+	218	19
+	+	219	14
+	+	220	0
 	+	2	0
+	+	299	16
+	+	299	0
+	+	173	69
 
-> ~/NERD_tree_1
-	*	1523141840	0
+> ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
+	*	1549048290	0
+	"	6	0
+	^	6	51
+	.	6	50
+	+	5	0
+	+	6	50
+
+> ~/.vim/plugged/YouCompleteMe/install.py
+	*	1549047571	0
+	"	1	0
+
+> ~/.vim/plugin.vim
+	*	1549044035	0
+	"	32	0
+	^	10	28
+	.	10	27
+	+	68	15
+	+	71	0
+	+	77	0
+	+	72	20
+	+	71	24
+	+	72	25
+	+	71	0
+	+	42	1
+	+	10	30
+	+	11	54
+	+	20	22
+	+	21	0
+	+	18	0
+	+	20	0
+	+	18	40
+	+	19	0
+	+	74	0
+	+	77	0
+	+	85	0
+	+	75	1
+	+	69	1
+	+	75	33
+	+	77	0
+	+	84	0
+	+	77	23
+	+	32	25
+	+	30	0
+	+	32	0
+	+	31	6
+	+	32	0
+	+	85	0
+	+	78	34
+	+	85	0
+	+	78	2
+	+	78	0
+	+	79	0
+	+	80	0
+	+	79	0
+	+	81	13
+	+	83	4
+	+	11	0
+	+	10	27
+
+> ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/NERD_tree_1
+	*	1549043630	0
 	"	1	0
 	.	1	0
 	+	1	0
 
+> ~/.tmux.conf
+	*	1548541011	0
+	"	73	0
+	^	48	2
+	.	73	0
+	+	56	17
+	+	33	16
+	+	33	26
+	+	33	38
+	+	55	0
+	+	33	38
+	+	51	0
+	+	33	25
+	+	52	0
+	+	33	41
+	+	33	40
+	+	33	39
+	+	33	38
+	+	33	37
+	+	33	36
+	+	33	35
+	+	33	34
+	+	33	16
+	+	33	3
+	+	33	16
+	+	33	0
+	+	33	16
+	+	33	15
+	+	33	0
+	+	33	16
+	+	33	0
+	+	33	16
+	+	33	0
+	+	2	3
+	+	3	0
+	+	51	0
+	+	52	0
+	+	20	0
+	+	49	0
+	+	20	13
+	+	1	0
+	+	2	0
+	+	1	3
+	+	2	0
+	+	50	0
+	+	1	0
+	+	54	19
+	+	205	44
+	+	165	1
+	+	166	2
+	+	50	0
+	+	44	3
+	+	164	0
+	+	167	0
+	+	168	19
+	+	205	0
+	+	216	29
+	+	218	0
+	+	210	0
+	+	208	0
+	+	106	68
+	+	104	67
+	+	96	17
+	+	98	8
+	+	99	18
+	+	45	0
+	+	44	1
+	+	48	0
+	+	49	0
+	+	50	0
+	+	49	0
+	+	48	1
+	+	49	1
+	+	50	1
+	+	44	0
+	+	73	0
+
+> ~/Documents/codebase/cs739/p3/ceph/.git/MERGE_MSG
+	*	1545193409	0
+	"	4	0
+
+> ~/.twitter_keys.yaml
+	*	1544437377	0
+	"	5	2
+	^	5	69
+	.	6	0
+	+	6	33
+	+	1	24
+	+	3	68
+	+	4	41
+	+	5	68
+	+	6	0
+
+> ~/Downloads/search_tweets.py
+	*	1544435733	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/Downloads/test_twitter_api.sh
+	*	1544430788	0
+	"	3	114
+	^	3	71
+	.	3	70
+	+	1	10
+	+	3	70
+
+> ~/Downloads/test_twitter_api
+	*	1544430660	0
+	"	1	0
+	^	1	224
+	.	1	223
+	+	1	223
+
+> ~/Documents/codebase/cs739/p3/ceph/.gitignore
+	*	1544219243	0
+	"	66	0
+	^	66	1
+	.	66	0
+	+	69	13
+	+	70	0
+	+	67	1
+	+	66	0
+	+	65	12
+	+	68	12
+	+	69	0
+	+	66	19
+	+	65	0
+	+	66	0
+
+> ~/Documents/codebase/cs739/p3_lard/lard/.git/MERGE_MSG
+	*	1542516955	0
+	"	1	0
+
+> ~/Documents/codebase/cs739/p3_lard/lard/README
+	*	1542516928	0
+	"	10	85
+	^	10	86
+	.	10	85
+	+	1	15
+	+	2	0
+	+	1	0
+	+	2	111
+	+	2	0
+	+	2	100
+	+	3	75
+	+	6	94
+	+	7	97
+	+	8	51
+	+	7	100
+	+	8	95
+	+	9	99
+	+	10	85
+
+> ~/Desktop/test.py
+	*	1542074504	0
+	"	13	0
+	^	13	0
+	.	12	0
+	+	1	14
+	+	4	13
+	+	6	18
+	+	9	20
+	+	11	43
+	+	12	0
+
+> ~/Documents/codebase/dan/flesch_index/flesch_index.py
+	*	1541830255	0
+	"	1	0
+
+> ~/Documents/codebase/dan/flesch_index/flesh_index.py
+	*	1541830237	0
+	"	1	0
+	^	5	13
+	.	5	12
+	+	42	94
+	+	5	6
+	+	1	0
+	+	5	0
+	+	5	10
+	+	5	38
+	+	5	0
+	+	6	0
+	+	5	50
+	+	6	49
+	+	10	34
+	+	11	24
+	+	16	0
+	+	1	24
+	+	2	34
+	+	3	28
+	+	16	0
+	+	14	35
+	+	15	43
+	+	11	0
+	+	12	36
+	+	18	22
+	+	17	27
+	+	18	31
+	+	19	0
+	+	20	11
+	+	18	11
+	+	21	24
+	+	22	30
+	+	24	36
+	+	23	19
+	+	26	23
+	+	28	23
+	+	33	9
+	+	37	0
+	+	42	38
+	+	42	0
+	+	42	39
+	+	16	30
+	+	19	68
+	+	30	69
+	+	31	32
+	+	20	23
+	+	23	28
+	+	26	32
+	+	28	32
+	+	31	53
+	+	33	58
+	+	33	64
+	+	34	52
+	+	37	68
+	+	29	41
+	+	33	0
+	+	36	0
+	+	32	39
+	+	41	0
+	+	38	69
+	+	39	77
+	+	40	77
+	+	35	22
+	+	42	0
+	+	5	0
+	+	10	0
+	+	6	33
+	+	7	37
+	+	8	10
+	+	9	0
+	+	14	24
+	+	30	59
+	+	33	54
+	+	1	4
+	+	5	12
+
+> ~/Documents/codebase/dan/flesch_index/sonnets_i.txt
+	*	1541827894	0
+	"	1	41
+	^	14	46
+	.	14	45
+	+	14	45
+
 > ~/.zshrc
-	*	1523139369	0
-	"	94	0
-	^	94	2
-	.	95	0
+	*	1541562355	0
+	"	114	24
+	^	114	25
+	.	114	24
 	+	97	0
 	+	99	26
 	+	97	19
@@ -595,6 +999,263 @@ $
 	+	14	33
 	+	14	0
 	+	95	0
+	+	103	17
+	+	104	11
+	+	103	82
+	+	104	28
+	+	106	52
+	+	105	15
+	+	105	26
+	+	106	13
+	+	105	26
+	+	106	30
+	+	114	24
+
+> ~/.vim/autoload/bclose.vim
+	*	1540923456	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.ssh/google_compute_engine.pub
+	*	1537066943	0
+	"	1	410
+	^	1	411
+	.	1	410
+	+	1	410
+
+> ~/.ssh/google_compute_engine
+	*	1537066925	0
+	"	27	28
+	^	27	29
+	.	27	28
+	+	1	31
+	+	27	28
+
+> ~/.ssh/henry-id_rsa.pub
+	*	1537064805	0
+	"	1	410
+	^	1	411
+	.	1	410
+	+	1	410
+
+> ~/.ssh/config
+	*	1537064575	0
+	"	75	4
+	^	76	30
+	.	77	0
+	+	24	0
+	+	17	0
+	+	12	0
+	+	17	0
+	+	12	14
+	+	13	19
+	+	78	0
+	+	42	13
+	+	46	35
+	+	59	9
+	+	67	13
+	+	69	9
+	+	67	13
+	+	70	28
+	+	71	0
+	+	42	10
+	+	70	29
+	+	69	12
+	+	70	32
+	+	69	10
+	+	70	29
+	+	67	42
+	+	69	13
+	+	70	29
+	+	67	42
+	+	48	0
+	+	53	0
+	+	48	12
+	+	49	42
+	+	52	35
+	+	49	42
+	+	48	13
+	+	54	0
+	+	59	0
+	+	54	13
+	+	55	42
+	+	60	0
+	+	65	0
+	+	60	13
+	+	61	13
+	+	72	0
+	+	77	0
+	+	72	9
+	+	73	27
+	+	75	13
+	+	77	0
+
+> ~/.ssh/henry-id_rsa
+	*	1537064407	0
+	"	27	28
+	^	27	29
+	.	27	28
+	+	27	28
+
+> ~/Documents/codebase/smart_contract/Team_C/.git/MERGE_MSG
+	*	1530720311	0
+	"	1	0
+
+> ~/Documents/codebase/smart_contract/Team_C/projects/lesson-3/test/update-employee.js
+	*	1530092218	0
+	"	49	11
+
+> ~/Documents/codebase/smart_contract/Team_C/manager.sh
+	*	1529768722	0
+	"	75	12
+
+> ~/Documents/codebase/ece901/DAT/setup_scripts/openmpi_install.sh
+	*	1525493318	0
+	"	16	0
+	^	16	0
+	.	15	0
+	+	9	3
+	+	3	0
+	+	9	0
+	+	2	3
+	+	18	17
+	+	15	0
+
+> ~/Documents/codebase/ece901/DAT/DistributedMNIST/cluster_scripts/update_repo.sh
+	*	1525490048	0
+	"	11	10
+	^	11	11
+	.	11	10
+	+	11	10
+
+> ~/Documents/codebase/ece901/DAT/setup_scripts/setup_worker.sh
+	*	1525489106	0
+	"	8	15
+	^	8	16
+	.	8	15
+	+	8	15
+
+> ~/Documents/codebase/ece901/DAT/setup_scripts/setup_master.sh
+	*	1525489095	0
+	"	18	15
+	^	18	16
+	.	18	15
+	+	10	15
+	+	18	15
+
+> ~/Documents/codebase/cs760/DistributedFFM/tf_src/mat-FFM.py
+	*	1525409590	0
+	"	77	9
+	^	77	10
+	.	77	9
+	+	28	57
+	+	28	0
+	+	49	8
+	+	67	8
+	+	77	8
+	+	49	0
+	+	76	0
+	+	78	0
+	+	77	9
+
+> ~/Documents/codebase/cs760/DistributedFFM/.gitignore
+	*	1525073665	0
+	"	3	15
+	^	3	16
+	.	3	15
+	+	4	0
+	+	1	2
+	+	4	0
+	+	5	4
+	+	2	4
+	+	3	15
+
+> ~/Documents/codebase/cs760/DistributedFFM/.git/MERGE_MSG
+	*	1524554543	0
+	"	1	0
+
+> /usr/local/Cellar/macvim/8.0-144_3/MacVim.app/Contents/Resources/vim/runtime/doc/help.txt
+	*	1524538380	0
+	"	1	0
+
+> ~/Downloads/__Gundo__
+	*	1524538330	0
+	"	6	1
+	.	1	0
+	+	1	0
+
+> ~/Downloads/__Gundo_Preview__
+	*	1524538329	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Downloads/NERD_tree_1
+	*	1524538324	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/codebase/ece901/DAT/DistributedMNIST/local_scripts/hostfile
+	*	1524263855	0
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	16
+
+> ~/Documents/codebase/ece901/DAT/DistributedMNIST/local_scripts/ps.sh
+	*	1524261018	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/codebase/ece901/DAT/DistributedMNIST/local_scripts/helloworld.py
+	*	1524259116	0
+	"	8	63
+	^	8	64
+	.	8	63
+	+	8	63
+	+	8	17
+	+	9	0
+	+	8	63
+
+> ~/Documents/codebase/ece901/DAT/DistributedMNIST/helloworld.py
+	*	1524258974	0
+	"	1	0
+	^	1	0
+	.	2	0
+	+	10	36
+	+	1	0
+	+	2	0
+
+> ~/Documents/codebase/ece901/DAT/DistributedMNIST/local_scripts/local-worker-0.sh
+	*	1524254564	0
+	"	2	16
+
+> ~/Documents/codebase/ece901/DAT/DistributedMNIST/local_async_adv_train.sh
+	*	1524253899	0
+	"	4	29
+	^	4	30
+	.	4	29
+	+	1	0
+	+	3	42
+	+	4	24
+	+	3	48
+	+	4	29
+
+> ~/Documents/codebase/ece901/DAT/.git/MERGE_MSG
+	*	1524253741	0
+	"	1	32
+	^	1	33
+	.	2	0
+	+	2	0
+
+> ~/NERD_tree_1
+	*	1523141840	0
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/Documents/codebase/pycharm-workspace/cs760/HW4-NN/nnet
 	*	1521851810	0
@@ -631,52 +1292,6 @@ $
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/.vim/plugin.vim
-	*	1519451472	0
-	"	35	12
-	^	84	29
-	.	84	4
-	+	69	15
-	+	72	0
-	+	78	0
-	+	73	20
-	+	72	24
-	+	73	25
-	+	72	0
-	+	43	1
-	+	10	30
-	+	11	54
-	+	21	22
-	+	22	0
-	+	19	0
-	+	21	0
-	+	19	40
-	+	20	0
-	+	75	0
-	+	78	0
-	+	86	0
-	+	76	1
-	+	70	1
-	+	76	33
-	+	78	0
-	+	85	0
-	+	78	23
-	+	33	25
-	+	31	0
-	+	33	0
-	+	32	6
-	+	33	0
-	+	86	0
-	+	79	34
-	+	86	0
-	+	79	2
-	+	79	0
-	+	80	0
-	+	81	0
-	+	80	0
-	+	82	13
-	+	84	4
 
 > ~/Documents/codebase/cs537-projs/p2a/wish.c
 	*	1519167578	0
@@ -1172,572 +1787,3 @@ $
 	"	3	0
 	.	1	0
 	+	1	0
-
-> ~/OneDrive - UW-Madison/2018 Spring/TA Related/01-29.md
-	*	1517264502	0
-	"	13	0
-	.	14	0
-	+	14	0
-
-> ~/dotfiles/setup.sh
-	*	1517208693	0
-	"	6	0
-	^	15	28
-	.	2	0
-	+	2	8
-	+	9	0
-	+	10	0
-	+	9	0
-	+	10	0
-	+	9	8
-	+	10	8
-	+	11	8
-	+	12	8
-	+	13	8
-	+	14	8
-	+	10	25
-	+	11	27
-	+	12	24
-	+	13	29
-	+	14	25
-	+	7	0
-	+	7	18
-	+	15	27
-	+	7	0
-	+	2	0
-
-> ~/dotfiles/update.sh
-	*	1517208571	0
-	"	29	47
-	^	29	48
-	.	29	47
-	+	5	80
-	+	5	0
-	+	5	97
-	+	5	95
-	+	13	0
-	+	1	19
-	+	4	21
-	+	19	8
-	+	5	119
-	+	5	0
-	+	5	120
-	+	5	0
-	+	5	95
-	+	5	3
-	+	5	121
-	+	5	27
-	+	5	120
-	+	5	23
-	+	5	122
-	+	5	121
-	+	5	0
-	+	5	121
-	+	9	22
-	+	5	109
-	+	5	43
-	+	5	125
-	+	5	0
-	+	2	9
-	+	3	9
-	+	4	9
-	+	6	9
-	+	7	9
-	+	5	9
-	+	13	15
-	+	19	17
-	+	20	19
-	+	21	16
-	+	25	17
-	+	24	21
-	+	30	0
-	+	32	5
-	+	33	0
-	+	34	0
-	+	35	0
-	+	8	25
-	+	29	17
-	+	33	9
-	+	34	14
-	+	35	0
-	+	19	31
-	+	13	20
-	+	14	37
-	+	15	29
-	+	19	0
-	+	16	0
-	+	18	0
-	+	17	17
-	+	19	0
-	+	11	0
-	+	12	5
-	+	21	0
-	+	22	5
-	+	26	4
-	+	28	26
-	+	29	38
-	+	19	0
-	+	29	46
-	+	14	37
-	+	16	39
-	+	17	34
-	+	29	47
-
-> ~/.dotfiles/update.sh
-	*	1517203880	0
-	"	19	0
-	^	15	16
-	.	15	15
-	+	1	15
-	+	11	15
-	+	12	5
-	+	11	7
-	+	12	19
-	+	13	14
-	+	14	19
-	+	15	16
-	+	13	15
-	+	14	20
-	+	16	0
-	+	8	0
-	+	2	11
-	+	9	19
-	+	2	0
-	+	2	2
-	+	3	0
-	+	2	11
-	+	3	13
-	+	4	15
-	+	5	12
-	+	6	17
-	+	7	13
-	+	2	18
-	+	3	0
-	+	10	23
-	+	10	0
-	+	11	0
-	+	10	15
-	+	11	17
-	+	12	19
-	+	13	16
-	+	14	21
-	+	15	17
-	+	11	16
-	+	12	17
-	+	13	14
-	+	14	19
-	+	15	15
-
-> ~/.zsh
-	*	1517202795	0
-	"	1	0
-
-> ~/Documents/codebase/cs537-projs/p1a/README.md
-	*	1517195784	0
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	8
-	+	1	3
-	+	1	5
-	+	1	9
-	+	1	11
-	+	1	0
-
-> ~/.vim/plugged/syntastic/doc/syntastic-checkers.txt
-	*	1517195753	0
-	"	4174	0
-
-> ~/Documents/codebase/cs537-projs/p1a/my-grep.c
-	*	1517195544	0
-	"	1	0
-	^	6	4
-	.	1	0
-	+	1	0
-	+	3	0
-	+	5	4
-	+	6	3
-	+	3	0
-	+	1	0
-
-> ~/Documents/codebase/cs537-projs/p1a/NERD_tree_2
-	*	1517195526	0
-	"	12	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/codebase/cs537-projs/p1a/NERD_tree_1
-	*	1517195469	0
-	"	10	0
-	.	1	0
-	+	1	0
-
-> ~/.tmux.conf
-	*	1517195049	0
-	"	89	31
-	^	89	17
-	.	89	18
-	+	56	17
-	+	33	16
-	+	33	26
-	+	33	38
-	+	55	0
-	+	33	38
-	+	51	0
-	+	33	25
-	+	52	0
-	+	33	41
-	+	33	40
-	+	33	39
-	+	33	38
-	+	33	37
-	+	33	36
-	+	33	35
-	+	33	34
-	+	33	16
-	+	33	3
-	+	33	16
-	+	33	0
-	+	33	16
-	+	33	15
-	+	33	0
-	+	33	16
-	+	33	0
-	+	33	16
-	+	33	0
-	+	2	3
-	+	3	0
-	+	51	0
-	+	52	0
-	+	20	0
-	+	49	0
-	+	20	13
-	+	1	0
-	+	2	0
-	+	1	3
-	+	2	0
-	+	50	0
-	+	1	0
-	+	54	19
-	+	195	44
-	+	155	1
-	+	156	2
-	+	50	0
-	+	44	3
-	+	154	0
-	+	157	0
-	+	158	19
-	+	195	0
-	+	206	29
-	+	208	0
-	+	200	0
-	+	198	0
-	+	96	68
-	+	94	67
-	+	86	17
-	+	88	8
-	+	89	18
-
-> ~/Documents/codebase/cs537-projs/p1a/my-zip.c
-	*	1517194469	0
-	"	30	0
-	^	5	27
-	.	8	0
-	+	36	49
-	+	36	43
-	+	36	47
-	+	36	45
-	+	36	0
-	+	36	16
-	+	36	0
-	+	32	0
-	+	29	31
-	+	30	31
-	+	31	30
-	+	14	16
-	+	18	6
-	+	36	0
-	+	28	34
-	+	36	47
-	+	36	0
-	+	46	0
-	+	36	0
-	+	36	50
-	+	36	0
-	+	51	0
-	+	50	0
-	+	63	0
-	+	14	23
-	+	36	0
-	+	36	12
-	+	36	14
-	+	47	21
-	+	14	0
-	+	36	28
-	+	36	25
-	+	36	26
-	+	36	0
-	+	49	19
-	+	36	0
-	+	35	0
-	+	5	30
-	+	14	59
-	+	34	39
-	+	36	0
-	+	47	0
-	+	36	12
-	+	37	0
-	+	36	7
-	+	33	42
-	+	38	10
-	+	39	0
-	+	38	36
-	+	34	54
-	+	38	27
-	+	17	18
-	+	6	8
-	+	6	27
-	+	17	46
-	+	14	63
-	+	16	20
-	+	14	13
-	+	17	13
-	+	16	31
-	+	28	9
-	+	29	0
-	+	44	0
-	+	40	7
-	+	29	0
-	+	40	50
-	+	41	31
-	+	42	32
-	+	52	20
-	+	53	59
-	+	60	30
-	+	14	67
-	+	16	48
-	+	40	31
-	+	41	35
-	+	42	37
-	+	49	32
-	+	41	26
-	+	42	19
-	+	53	68
-	+	15	0
-	+	16	0
-	+	15	29
-	+	49	84
-	+	49	6
-	+	42	47
-	+	42	43
-	+	16	0
-	+	19	0
-	+	17	4
-	+	49	6
-	+	5	27
-	+	8	0
-
-> ~/Documents/codebase/cs537-projs/p1a/1.txt
-	*	1517194360	0
-	"	1	3
-	^	1	4
-	.	1	3
-	+	1	16
-	+	1	0
-	+	1	6
-	+	1	5
-	+	1	16
-	+	1	3
-
-> ~/test.txt
-	*	1517193640	0
-	"	2	9
-	^	1	7
-	.	1	0
-	+	1	10
-	+	1	0
-
-> /usr/local/Cellar/macvim/8.0-144_3/MacVim.app/Contents/Resources/vim/runtime/doc/help.txt
-	*	1517092558	0
-	"	222	1
-
-> /usr/share/vim/vim80/doc/gui_x11.txt
-	*	1517042866	0
-	"	592	56
-
-> /private/var/folders/p3/t6754x9s6m30hdyy25j0k_vh0000gn/T/tutorDg1PrH
-	*	1517042176	0
-	"	3	0
-	^	42	42
-	.	42	0
-	+	42	0
-
-> ~/.vim/plugged/nerdtree/doc/NERDTree.txt
-	*	1517040716	0
-	"	417	27
-
-> ~/Documents/codebase/cs537-projs/NERD_tree_1
-	*	1517040587	0
-	"	7	5
-	.	1	0
-	+	1	0
-
-> ~/Documents/codebase/cs537-projs/p1a/2.txt
-	*	1517029480	0
-	"	1	2
-	^	1	3
-	.	1	2
-	+	1	15
-	+	1	16
-	+	1	2
-
-> ~/Documents/codebase/cs537-projs/p1a/zip.out
-	*	1517027580	0
-	"	3	13
-
-> ~/Documents/codebase/cs537-projs/p1a/zip.txt
-	*	1517024489	0
-	"	9	0
-	^	9	0
-	.	8	7
-	+	1	14
-	+	1	0
-	+	1	2
-	+	8	7
-
-> ~/Documents/codebase/cs537-projs/p1a/my-unzip.c
-	*	1517022395	0
-	"	22	24
-	^	22	25
-	.	22	24
-	+	6	0
-	+	15	0
-	+	27	0
-	+	14	0
-	+	15	16
-	+	16	15
-	+	27	10
-	+	28	0
-	+	45	9
-	+	40	55
-	+	41	11
-	+	40	51
-	+	41	44
-	+	42	42
-	+	43	31
-	+	46	0
-	+	40	46
-	+	43	20
-	+	9	26
-	+	22	24
-
-> ~/Documents/codebase/cs537-projs/p1a/b1
-	*	1517015686	0
-	"	1	0
-
-> ~/Documents/codebase/cs537-projs/p1a/ControlP
-	*	1517010986	0
-	"	1	0
-	.	2	0
-	+	1	0
-	+	2	0
-
-> ~/Documents/codebase/cs537-projs/temp.c
-	*	1517010715	0
-	"	6	3
-	^	6	4
-	.	5	4
-	+	1	18
-	+	1	0
-	+	3	0
-	+	5	4
-
-> ~/Documents/codebase/cs537-projs/p1a/my-grep
-	*	1517010141	0
-	"	1	0
-
-> ~/.vim/plugged/plugin.vim
-	*	1517007277	0
-	"	1	0
-
-> ~/.vim/plugged/rainbow_parentheses.vim/readme.md
-	*	1517007271	0
-	"	3	0
-
-> ~/.vim/plugged/NERD_tree_1
-	*	1517007243	0
-	"	9	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/my-cat.c
-	*	1517002089	0
-	"	1	0
-
-> ~/.vim/plug.v
-	*	1516951816	0
-	"	1	0
-
-> ~/.vim/plug
-	*	1516951812	0
-	"	1	0
-
-> ~/.vim/plugged/vim-trailing-whitespace/plugin/trailing-whitespace.vim
-	*	1516949557	0
-	"	1	0
-
-> ~/.vim/plugged/vim-trailing-whitespace/README
-	*	1516949528	0
-	"	11	0
-
-> ~/.oh-my-zsh/oh-my-zsh.sh
-	*	1516947337	0
-	"	107	0
-
-> /private/var/folders/p3/t6754x9s6m30hdyy25j0k_vh0000gn/T/tutor7k7sfn
-	*	1516832059	0
-	"	1	35
-
-> /private/var/folders/p3/t6754x9s6m30hdyy25j0k_vh0000gn/T/tutorl2NjMm
-	*	1516831716	0
-	"	9	0
-
-> ~/Documents/codebase/eclipse-workspace/AnagramSorter/src/AggregateReducer.java
-	*	1516831526	0
-	"	12	20
-	^	12	20
-	.	12	0
-	+	12	0
-
-> ~/.viminfo
-	*	1516827773	0
-	"	397	0
-
-> ~/.vim/[vimshell] - default
-	*	1514606825	0
-	"	24	0
-	^	32	10
-	.	32	0
-	+	1	11
-	+	4	14
-	+	5	8
-	+	6	11
-	+	15	11
-	+	17	10
-	+	18	0
-	+	19	11
-	+	28	11
-	+	30	11
-	+	32	0
-
-> ~/.vim/autoload/plug.vim
-	*	1514605529	0
-	"	125	2
-
-> /usr/share/vim/vim80/doc/options.txt
-	*	1514605289	0
-	"	6195	4
-
-> ~/.vim/plugged/vim-snippets/snippets/java.snippets
-	*	1514605203	0
-	"	61	1
