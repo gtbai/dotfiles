@@ -26,7 +26,7 @@ cp -r ~/.tmux ~/dotfiles/
 cp -r ~/.tmux.conf ~/dotfiles/ 
 
 # zsh
-cp -r ~/.zshrc ~/dotfiles/
+sed '/Bruce/,$d' ~/.zshrc > ~/dotfiles/.zshrc
 mkdir ~/dotfiles/.oh-my-zsh
 cp -r ~/.oh-my-zsh/custom ~/dotfiles/.oh-my-zsh/
 

@@ -75,7 +75,6 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-
 export EDITOR='vim'
 
 # Compilation flags
@@ -92,13 +91,4 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# export PATH="$HOME/.jenv/bin:$PATH"
-# eval "$(jenv init -)"
-# 
-# export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0
-# export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH
-# export M2_HOME=$HOME/maven/apache-maven-3.5.0
-# export PATH=$PATH:$M2_HOME/bin
-# export PATH=$PATH:/usr/local/cuda/bin
 

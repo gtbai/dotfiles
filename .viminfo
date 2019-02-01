@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/youcom
+~MSle0~/zshrc
 
 # Last Substitute Search Pattern:
 ~MSle0&’
@@ -21,9 +21,9 @@ $'
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1549049709,,"wq"
+|2,0,1549052214,,"wq"
 :q
-|2,0,1549049598,,"q"
+|2,0,1549052146,,"q"
 :YcmRestartServer
 |2,0,1549047348,,"YcmRestartServer"
 :PlugInstall
@@ -122,6 +122,10 @@ $'
 |2,0,1517713152,,"vert sb user/usys.S"
 
 # Search String History (newest to oldest):
+?/zshrc
+|2,1,1549051728,47,"zshrc"
+?/youc
+|2,1,1549050111,47,"youc"
 ?/youcom
 |2,1,1549049465,47,"youcom"
 ? ’
@@ -218,10 +222,6 @@ $'
 |2,1,1517713390,47,"mainc"
 ?/tvint
 |2,1,1517713384,47,"tvint"
-? \$\(cursor\|select\)\$
-|2,1,1517713236,,"\\$\\(cursor\\|select\\)\\$"
-?/proc
-|2,1,1517698765,47,"proc"
 
 # Expression History (newest to oldest):
 
@@ -235,43 +235,62 @@ $'
 
 # Registers:
 "0	LINE	0
-	        print("The number of sentences in the text is {}".format(num_sentences))
-|3,0,0,1,1,0,1541829777,"        print(\"The number of sentences in the text is {}\".format(num_sentences))"
-"1	LINE	0
-	pe
-|3,0,1,1,1,0,1549043405,"pe"
+	chown --reference=~/.zshrc ~/dotfiles/.zshrc
+|3,0,0,1,1,0,1549052047,"chown --reference=~/.zshrc ~/dotfiles/.zshrc"
+""1	LINE	0
+	chmod --reference=~/.zshrc ~/dotfiles/.zshrc
+	chown --reference=~/.zshrc ~/dotfiles/.zshrc
+|3,1,1,1,2,0,1549052212,"chmod --reference=~/.zshrc ~/dotfiles/.zshrc","chown --reference=~/.zshrc ~/dotfiles/.zshrc"
 "2	LINE	0
-	Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-|3,0,2,1,1,0,1548541031,"Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }"
+	cp -r ~/.zshrc ~/dotfiles/
+|3,0,2,1,1,0,1549052073,"cp -r ~/.zshrc ~/dotfiles/"
 "3	LINE	0
-	  (optional) bearer_token: <TOKEN>
-|3,0,3,1,1,0,1544435700,"  (optional) bearer_token: <TOKEN>"
-"4	CHAR	0
-	<KEY>
 	
-|3,0,4,0,2,0,1544435671,"<KEY>",""
+|3,0,3,1,1,0,1549052048,""
+"4	LINE	0
+	# export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0
+	# export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH
+	# export M2_HOME=$HOME/maven/apache-maven-3.5.0
+	# export PATH=$PATH:$M2_HOME/bin
+	# export PATH=$PATH:/usr/local/cuda/bin
+	
+|3,0,4,1,6,0,1549050728,"# export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0","# export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH","# export M2_HOME=$HOME/maven/apache-maven-3.5.0","# export PATH=$PATH:$M2_HOME/bin","# export PATH=$PATH:/usr/local/cuda/bin",""
 "5	LINE	0
 	
-|3,0,5,1,1,0,1542516413,""
+|3,0,5,1,1,0,1549050595,""
 "6	LINE	0
-	We were able to model a locality-aware load-balanced scheduler like LARD, and conducted a simulation experiment
-|3,0,6,1,1,0,1542516411,"We were able to model a locality-aware load-balanced scheduler like LARD, and conducted a simulation experiment"
+	<<<<<<< HEAD
+	export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
+	export PATH="$JAVA_HOME:$PATH"
+	export BREWED_PYTHONHOME="/usr/local/opt/python/libexec/bin"
+	export PATH="$BREWED_PYTHONHOME:$PATH"
+	
+	export PATH="/Users/gtbai/anaconda3/bin:$PATH"
+	
+	# The next line updates PATH for the Google Cloud SDK.
+	if [ -f '/Users/gtbai/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/path.zsh.inc'; fi
+	
+	# The next line enables shell command completion for gcloud.
+	if [ -f '/Users/gtbai/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/completion.zsh.inc'; fi
+	=======
+	git config --global diff.tool diffmerge
+	git config --global difftool.diffmerge.cmd 'diffmerge "$LOCAL" "$REMOTE"'
+	git config --global merge.tool diffmerge
+	git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"'
+	git config --global mergetool.diffmerge.trustExitCode true
+	>>>>>>> fe716cd9a58022fe999edbfc6cbbe6a5c46dd203
+|3,0,6,1,20,0,1549049964,"<<<<<<< HEAD","export JAVA_HOME=\"/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home\"","export PATH=\"$JAVA_HOME:$PATH\"","export BREWED_PYTHONHOME=\"/usr/local/opt/python/libexec/bin\"","export PATH=\"$BREWED_PYTHONHOME:$PATH\"","","export PATH=\"/Users/gtbai/anaconda3/bin:$PATH\"","","# The next line updates PATH for the Google Cloud SDK.",>113
+|<"if [ -f '/Users/gtbai/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/path.zsh.inc'; fi","","# The next line enables shell command completion for gcloud.","if [ -f '/Users/gtbai/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/completion.zsh.inc'; fi","=======","git config --global diff.tool diffmerge","git config --global difftool.diffmerge.cmd 'diffmerge \"$LOCAL\" \"$REMOTE\"'","git config --global merge.tool diffmerge",>184
+|<"git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\"'","git config --global mergetool.diffmerge.trustExitCode true",">>>>>>> fe716cd9a58022fe999edbfc6cbbe6a5c46dd203"
 "7	LINE	0
-	def calc(a, b): return a+b, a-b
-	
-	
-	res1, res2 = calc(1, 3)
-	
-	l = [res1 for _ in range(10)]
-	
-	print l
-|3,0,7,1,8,0,1542072747,"def calc(a, b): return a+b, a-b","","","res1, res2 = calc(1, 3)","","l = [res1 for _ in range(10)]","","print l"
+	pe
+|3,0,7,1,1,0,1549043405,"pe"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1541830132,""
+	Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+|3,0,8,1,1,0,1548541031,"Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }"
 "9	LINE	0
-	import os
-|3,0,9,1,1,0,1541830131,"import os"
+	  (optional) bearer_token: <TOKEN>
+|3,0,9,1,1,0,1544435700,"  (optional) bearer_token: <TOKEN>"
 "a	CHAR	0
 	xx
 |3,0,10,0,1,0,1512350725,"xx"
@@ -289,241 +308,240 @@ $'
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com",>749
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfCGFUnkPvf5zzPxNhOYf/3Vd9V+AiTcfQY3GICNEvlwBs1tkcOtp/wjp1tH5VdQRQZXUNFamtUYb2T2QjcPszCgOEcfGUZ1GFdDTkwb+mVI4VUTFG3mvbH/1CooPqhq/bN9Smp+/akBgnA3ukB6wkjODJtOt1I72adJG7SqOeolA65cmLsXsRZn1SGBzVQOKelkmi6Vz4/nc/9uTXJLBp2NKan7a3VAvTY8FuJYQRw2GjtLoVGnvPvaGmqvQTCq+A2oVflYn067RuFvCSMWSABTUIZGOs5fguk91LMp3CLqYCL8gS1aRB6XWd4RjSD1O38dRyyWw3WUNewR+549GLXUXkTb1dnDR0OlHB2ky1VIqrn6vp90weusxeaBzwYO1d4mxZm24sGQzpultMBzTwEPGJh8k/WA7ZBgxh396fVFwnGsktHPmGdl3l7aoSipkPN
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com"
-""-	CHAR	0
-	valloric/youcompleteme
-|3,1,36,0,1,0,1549043719,"valloric/youcompleteme"
+"-	CHAR	0
+	own
+|3,0,36,0,1,0,1549052058,"own"
 
 # File marks:
-'0  34  7  ~/dotfiles/update.sh
-|4,48,34,7,1549049709,"~/dotfiles/update.sh"
-'1  173  69  ~/.vimrc
-|4,49,173,69,1549049593,"~/.vimrc"
-'2  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,50,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
-'3  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,51,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
-'4  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,52,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
-'5  227  6  ~/.vimrc
-|4,53,227,6,1549044659,"~/.vimrc"
-'6  226  6  ~/.vimrc
-|4,54,226,6,1549044659,"~/.vimrc"
-'7  32  0  ~/.vim/plugin.vim
-|4,55,32,0,1549044039,"~/.vim/plugin.vim"
-'8  15  0  ~/.vim/plugin.vim
-|4,56,15,0,1549043917,"~/.vim/plugin.vim"
-'9  15  0  ~/.vim/plugin.vim
-|4,57,15,0,1549043917,"~/.vim/plugin.vim"
+'0  30  0  ~/dotfiles/update.sh
+|4,48,30,0,1549052214,"~/dotfiles/update.sh"
+'1  30  13  ~/dotfiles/update.sh
+|4,49,30,13,1549052146,"~/dotfiles/update.sh"
+'2  29  0  ~/dotfiles/update.sh
+|4,50,29,0,1549052074,"~/dotfiles/update.sh"
+'3  29  0  ~/dotfiles/update.sh
+|4,51,29,0,1549052074,"~/dotfiles/update.sh"
+'4  29  0  ~/dotfiles/update.sh
+|4,52,29,0,1549052074,"~/dotfiles/update.sh"
+'5  29  0  ~/dotfiles/update.sh
+|4,53,29,0,1549052074,"~/dotfiles/update.sh"
+'6  29  0  ~/dotfiles/update.sh
+|4,54,29,0,1549051742,"~/dotfiles/update.sh"
+'7  29  0  ~/dotfiles/update.sh
+|4,55,29,0,1549051742,"~/dotfiles/update.sh"
+'8  29  0  ~/dotfiles/update.sh
+|4,56,29,0,1549051742,"~/dotfiles/update.sh"
+'9  29  0  ~/dotfiles/update.sh
+|4,57,29,0,1549051742,"~/dotfiles/update.sh"
 
 # Jumplist (newest first):
--'  34  7  ~/dotfiles/update.sh
-|4,39,34,7,1549049709,"~/dotfiles/update.sh"
--'  14  0  ~/dotfiles/update.sh
-|4,39,14,0,1549049635,"~/dotfiles/update.sh"
--'  173  69  ~/.vimrc
-|4,39,173,69,1549049593,"~/.vimrc"
--'  173  69  ~/.vimrc
-|4,39,173,69,1549049593,"~/.vimrc"
--'  173  69  ~/.vimrc
-|4,39,173,69,1549049593,"~/.vimrc"
--'  173  69  ~/.vimrc
-|4,39,173,69,1549049593,"~/.vimrc"
--'  118  6  ~/.vimrc
-|4,39,118,6,1549049465,"~/.vimrc"
--'  118  6  ~/.vimrc
-|4,39,118,6,1549049465,"~/.vimrc"
--'  118  6  ~/.vimrc
-|4,39,118,6,1549049465,"~/.vimrc"
--'  118  6  ~/.vimrc
-|4,39,118,6,1549049465,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1549049444,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1549049444,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1549049444,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1549049444,"~/.vimrc"
--'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  6  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,6,0,1549048291,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  8  0  ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
-|4,39,8,0,1549048258,"~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047573,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
--'  1  0  ~/.vim/plugged/YouCompleteMe/install.py
-|4,39,1,0,1549047515,"~/.vim/plugged/YouCompleteMe/install.py"
+-'  30  0  ~/dotfiles/update.sh
+|4,39,30,0,1549052214,"~/dotfiles/update.sh"
+-'  30  13  ~/dotfiles/update.sh
+|4,39,30,13,1549052146,"~/dotfiles/update.sh"
+-'  29  0  ~/dotfiles/update.sh
+|4,39,29,0,1549052098,"~/dotfiles/update.sh"
+-'  29  0  ~/dotfiles/update.sh
+|4,39,29,0,1549052098,"~/dotfiles/update.sh"
+-'  29  0  ~/dotfiles/update.sh
+|4,39,29,0,1549052074,"~/dotfiles/update.sh"
+-'  32  5  ~/dotfiles/update.sh
+|4,39,32,5,1549051931,"~/dotfiles/update.sh"
+-'  32  5  ~/dotfiles/update.sh
+|4,39,32,5,1549051931,"~/dotfiles/update.sh"
+-'  29  0  ~/dotfiles/update.sh
+|4,39,29,0,1549051742,"~/dotfiles/update.sh"
+-'  17  0  ~/dotfiles/update.sh
+|4,39,17,0,1549051728,"~/dotfiles/update.sh"
+-'  17  0  ~/dotfiles/update.sh
+|4,39,17,0,1549051728,"~/dotfiles/update.sh"
+-'  17  0  ~/dotfiles/update.sh
+|4,39,17,0,1549051728,"~/dotfiles/update.sh"
+-'  17  0  ~/dotfiles/update.sh
+|4,39,17,0,1549051728,"~/dotfiles/update.sh"
+-'  34  0  ~/dotfiles/update.sh
+|4,39,34,0,1549051715,"~/dotfiles/update.sh"
+-'  32  0  ~/dotfiles/update.sh
+|4,39,32,0,1549051715,"~/dotfiles/update.sh"
+-'  36  0  ~/dotfiles/update.sh
+|4,39,36,0,1549051715,"~/dotfiles/update.sh"
+-'  34  0  ~/dotfiles/update.sh
+|4,39,34,0,1549051715,"~/dotfiles/update.sh"
+-'  36  0  ~/dotfiles/update.sh
+|4,39,36,0,1549051715,"~/dotfiles/update.sh"
+-'  34  0  ~/dotfiles/update.sh
+|4,39,34,0,1549051715,"~/dotfiles/update.sh"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  94  0  ~/clean_zshrc
+|4,39,94,0,1549051694,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  1  0  ~/clean_zshrc
+|4,39,1,0,1549051692,"~/clean_zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  95  44  ~/.zshrc
+|4,39,95,44,1549050911,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
+-'  73  0  ~/.zshrc
+|4,39,73,0,1549050684,"~/.zshrc"
 
 # History of marks within files (newest to oldest):
 
 > ~/dotfiles/update.sh
-	*	1549049707	0
-	"	34	7
-	^	29	48
-	.	29	47
+	*	1549052213	0
+	"	30	0
+	.	30	0
 	+	5	80
 	+	5	0
 	+	5	97
@@ -594,7 +612,78 @@ $'
 	+	14	37
 	+	16	39
 	+	17	34
-	+	29	47
+	+	29	0
+	+	29	44
+	+	30	0
+	+	29	44
+	+	30	44
+	+	30	0
+	+	30	4
+	+	29	0
+	+	30	0
+
+> ~/clean_zshrc
+	*	1549051693	0
+	"	94	0
+
+> ~/.zshrc
+	*	1549050911	0
+	"	95	44
+	^	95	45
+	.	95	45
+	+	100	0
+	+	100	26
+	+	100	19
+	+	100	39
+	+	100	0
+	+	100	19
+	+	10	35
+	+	100	37
+	+	58	7
+	+	59	0
+	+	61	0
+	+	59	17
+	+	100	23
+	+	100	19
+	+	5	15
+	+	94	0
+	+	60	31
+	+	94	0
+	+	11	0
+	+	12	6
+	+	15	0
+	+	14	33
+	+	14	0
+	+	98	0
+	+	100	17
+	+	102	11
+	+	100	82
+	+	102	28
+	+	104	52
+	+	103	15
+	+	103	26
+	+	104	13
+	+	103	26
+	+	104	30
+	+	111	24
+	+	105	0
+	+	78	0
+	+	100	0
+	+	95	45
+
+> ~/dotfiles/.zshrc
+	*	1549050248	0
+	"	104	0
+	.	105	0
+	+	105	0
+
+> ~/dotfiles/.vim/plugin.vim
+	*	1549050116	0
+	"	74	14
+
+> ~/dotfiles/.viminfo
+	*	1549050040	0
+	"	12	0
 
 > ~/.vimrc
 	*	1549049589	0
@@ -969,47 +1058,6 @@ $'
 	^	14	46
 	.	14	45
 	+	14	45
-
-> ~/.zshrc
-	*	1541562355	0
-	"	114	24
-	^	114	25
-	.	114	24
-	+	97	0
-	+	99	26
-	+	97	19
-	+	97	39
-	+	98	0
-	+	97	19
-	+	10	35
-	+	101	37
-	+	58	7
-	+	59	0
-	+	61	0
-	+	59	17
-	+	97	23
-	+	99	19
-	+	5	15
-	+	93	0
-	+	60	31
-	+	93	0
-	+	11	0
-	+	12	6
-	+	15	0
-	+	14	33
-	+	14	0
-	+	95	0
-	+	103	17
-	+	104	11
-	+	103	82
-	+	104	28
-	+	106	52
-	+	105	15
-	+	105	26
-	+	106	13
-	+	105	26
-	+	106	30
-	+	114	24
 
 > ~/.vim/autoload/bclose.vim
 	*	1540923456	0
@@ -1765,25 +1813,3 @@ $'
 > ~/Documents/codebase/cs537-projs/xv6/include/fcntl.h
 	*	1517684249	0
 	"	5	0
-
-> ~/.vim/plugged/ctrlp.vim/doc/ctrlp.txt
-	*	1517684240	0
-	"	163	0
-
-> ~/Documents/codebase/cs537-projs/NERD_tree_5
-	*	1517684058	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/codebase/cs537-projs/NERD_tree_3
-	*	1517683302	0
-	"	13	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/codebase/cs537-projs/NERD_tree_4
-	*	1517683294	0
-	"	3	0
-	.	1	0
-	+	1	0

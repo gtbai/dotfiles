@@ -1,3 +1,5 @@
-pane	0	1	:zsh	1	:*	1	:/Users/gbai/Documents/Ads Prediction/Notes/ads-prediction	1	zsh	:
-window	0	1	1	:*	cf42,119x86,0,0,5
-state	0	
+pane	1	1	:~	1	:*	1	:/Users/gtbai	1	zsh	:
+pane	cs537	1	:..e/cs537-projs	1	:*	1	:/Users/gtbai/Documents/codebase/cs537-projs	1	zsh	:
+window	1	1	1	:*	b500,128x32,0,0,3
+window	cs537	1	1	:*	c2fe,143x36,0,0,1
+state	cs537	
