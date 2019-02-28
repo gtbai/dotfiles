@@ -11,25 +11,27 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/zshrc
+~MSle0~/alias
 
 # Last Substitute Search Pattern:
 ~MSle0&’
 
 # Last Substitute String:
-$'
+$
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1549052214,,"wq"
+|2,0,1551391754,,"wq"
+:PlugStatus
+|2,0,1551391671,,"PlugStatus"
 :q
-|2,0,1549052146,,"q"
+|2,0,1551334707,,"q"
+:66
+|2,0,1551334271,,"66"
 :YcmRestartServer
 |2,0,1549047348,,"YcmRestartServer"
 :PlugInstall
 |2,0,1549043838,,"PlugInstall"
-:PlugStatus
-|2,0,1549043814,,"PlugStatus"
 :w
 |2,0,1549043721,,"w"
 :Q
@@ -118,10 +120,14 @@ $'
 |2,0,1517713983,,"b kernel/main.c"
 :tvinit
 |2,0,1517713422,,"tvinit"
-:vert sb user/usys.S
-|2,0,1517713152,,"vert sb user/usys.S"
 
 # Search String History (newest to oldest):
+? \$\(cursor\|select\)\$
+|2,1,1551334240,,"\\$\\(cursor\\|select\\)\\$"
+?/alias
+|2,1,1550386389,47,"alias"
+?/stages
+|2,1,1550265299,47,"stages"
 ?/zshrc
 |2,1,1549051728,47,"zshrc"
 ?/youc
@@ -216,12 +222,6 @@ $'
 |2,1,1517714054,47,"mpmain"
 ?/idinit
 |2,1,1517714043,47,"idinit"
-?/tvinit
-|2,1,1517713439,47,"tvinit"
-?/mainc
-|2,1,1517713390,47,"mainc"
-?/tvint
-|2,1,1517713384,47,"tvint"
 
 # Expression History (newest to oldest):
 
@@ -238,27 +238,37 @@ $'
 	chown --reference=~/.zshrc ~/dotfiles/.zshrc
 |3,0,0,1,1,0,1549052047,"chown --reference=~/.zshrc ~/dotfiles/.zshrc"
 ""1	LINE	0
+	
+|3,1,1,1,1,0,1551391747,""
+"2	LINE	0
+	
+	作者：灰墙
+	链接：https://zhuanlan.zhihu.com/p/53380250
+	来源：知乎
+	著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+|3,0,2,1,5,0,1551334252,"","作者：灰墙","链接：https://zhuanlan.zhihu.com/p/53380250","来源：知乎","著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"
+"3	LINE	0
 	chmod --reference=~/.zshrc ~/dotfiles/.zshrc
 	chown --reference=~/.zshrc ~/dotfiles/.zshrc
-|3,1,1,1,2,0,1549052212,"chmod --reference=~/.zshrc ~/dotfiles/.zshrc","chown --reference=~/.zshrc ~/dotfiles/.zshrc"
-"2	LINE	0
-	cp -r ~/.zshrc ~/dotfiles/
-|3,0,2,1,1,0,1549052073,"cp -r ~/.zshrc ~/dotfiles/"
-"3	LINE	0
-	
-|3,0,3,1,1,0,1549052048,""
+|3,0,3,1,2,0,1549052212,"chmod --reference=~/.zshrc ~/dotfiles/.zshrc","chown --reference=~/.zshrc ~/dotfiles/.zshrc"
 "4	LINE	0
+	cp -r ~/.zshrc ~/dotfiles/
+|3,0,4,1,1,0,1549052073,"cp -r ~/.zshrc ~/dotfiles/"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1549052048,""
+"6	LINE	0
 	# export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0
 	# export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH
 	# export M2_HOME=$HOME/maven/apache-maven-3.5.0
 	# export PATH=$PATH:$M2_HOME/bin
 	# export PATH=$PATH:/usr/local/cuda/bin
 	
-|3,0,4,1,6,0,1549050728,"# export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0","# export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH","# export M2_HOME=$HOME/maven/apache-maven-3.5.0","# export PATH=$PATH:$M2_HOME/bin","# export PATH=$PATH:/usr/local/cuda/bin",""
-"5	LINE	0
+|3,0,6,1,6,0,1549050728,"# export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0","# export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH","# export M2_HOME=$HOME/maven/apache-maven-3.5.0","# export PATH=$PATH:$M2_HOME/bin","# export PATH=$PATH:/usr/local/cuda/bin",""
+"7	LINE	0
 	
-|3,0,5,1,1,0,1549050595,""
-"6	LINE	0
+|3,0,7,1,1,0,1549050595,""
+"8	LINE	0
 	<<<<<<< HEAD
 	export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
 	export PATH="$JAVA_HOME:$PATH"
@@ -279,18 +289,12 @@ $'
 	git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"'
 	git config --global mergetool.diffmerge.trustExitCode true
 	>>>>>>> fe716cd9a58022fe999edbfc6cbbe6a5c46dd203
-|3,0,6,1,20,0,1549049964,"<<<<<<< HEAD","export JAVA_HOME=\"/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home\"","export PATH=\"$JAVA_HOME:$PATH\"","export BREWED_PYTHONHOME=\"/usr/local/opt/python/libexec/bin\"","export PATH=\"$BREWED_PYTHONHOME:$PATH\"","","export PATH=\"/Users/gtbai/anaconda3/bin:$PATH\"","","# The next line updates PATH for the Google Cloud SDK.",>113
+|3,0,8,1,20,0,1549049964,"<<<<<<< HEAD","export JAVA_HOME=\"/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home\"","export PATH=\"$JAVA_HOME:$PATH\"","export BREWED_PYTHONHOME=\"/usr/local/opt/python/libexec/bin\"","export PATH=\"$BREWED_PYTHONHOME:$PATH\"","","export PATH=\"/Users/gtbai/anaconda3/bin:$PATH\"","","# The next line updates PATH for the Google Cloud SDK.",>113
 |<"if [ -f '/Users/gtbai/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/path.zsh.inc'; fi","","# The next line enables shell command completion for gcloud.","if [ -f '/Users/gtbai/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/completion.zsh.inc'; fi","=======","git config --global diff.tool diffmerge","git config --global difftool.diffmerge.cmd 'diffmerge \"$LOCAL\" \"$REMOTE\"'","git config --global merge.tool diffmerge",>184
 |<"git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\"'","git config --global mergetool.diffmerge.trustExitCode true",">>>>>>> fe716cd9a58022fe999edbfc6cbbe6a5c46dd203"
-"7	LINE	0
-	pe
-|3,0,7,1,1,0,1549043405,"pe"
-"8	LINE	0
-	Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-|3,0,8,1,1,0,1548541031,"Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }"
 "9	LINE	0
-	  (optional) bearer_token: <TOKEN>
-|3,0,9,1,1,0,1544435700,"  (optional) bearer_token: <TOKEN>"
+	pe
+|3,0,9,1,1,0,1549043405,"pe"
 "a	CHAR	0
 	xx
 |3,0,10,0,1,0,1512350725,"xx"
@@ -309,234 +313,357 @@ $'
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfCGFUnkPvf5zzPxNhOYf/3Vd9V+AiTcfQY3GICNEvlwBs1tkcOtp/wjp1tH5VdQRQZXUNFamtUYb2T2QjcPszCgOEcfGUZ1GFdDTkwb+mVI4VUTFG3mvbH/1CooPqhq/bN9Smp+/akBgnA3ukB6wkjODJtOt1I72adJG7SqOeolA65cmLsXsRZn1SGBzVQOKelkmi6Vz4/nc/9uTXJLBp2NKan7a3VAvTY8FuJYQRw2GjtLoVGnvPvaGmqvQTCq+A2oVflYn067RuFvCSMWSABTUIZGOs5fguk91LMp3CLqYCL8gS1aRB6XWd4RjSD1O38dRyyWw3WUNewR+549GLXUXkTb1dnDR0OlHB2ky1VIqrn6vp90weusxeaBzwYO1d4mxZm24sGQzpultMBzTwEPGJh8k/WA7ZBgxh396fVFwnGsktHPmGdl3l7aoSipkPN
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com"
 "-	CHAR	0
-	own
-|3,0,36,0,1,0,1549052058,"own"
+	 
+|3,0,36,0,1,0,1551391745," "
 
 # File marks:
-'0  30  0  ~/dotfiles/update.sh
-|4,48,30,0,1549052214,"~/dotfiles/update.sh"
-'1  30  13  ~/dotfiles/update.sh
-|4,49,30,13,1549052146,"~/dotfiles/update.sh"
-'2  29  0  ~/dotfiles/update.sh
-|4,50,29,0,1549052074,"~/dotfiles/update.sh"
-'3  29  0  ~/dotfiles/update.sh
-|4,51,29,0,1549052074,"~/dotfiles/update.sh"
-'4  29  0  ~/dotfiles/update.sh
-|4,52,29,0,1549052074,"~/dotfiles/update.sh"
-'5  29  0  ~/dotfiles/update.sh
-|4,53,29,0,1549052074,"~/dotfiles/update.sh"
-'6  29  0  ~/dotfiles/update.sh
-|4,54,29,0,1549051742,"~/dotfiles/update.sh"
-'7  29  0  ~/dotfiles/update.sh
-|4,55,29,0,1549051742,"~/dotfiles/update.sh"
-'8  29  0  ~/dotfiles/update.sh
-|4,56,29,0,1549051742,"~/dotfiles/update.sh"
-'9  29  0  ~/dotfiles/update.sh
-|4,57,29,0,1549051742,"~/dotfiles/update.sh"
+'0  117  0  ~/.zshrc
+|4,48,117,0,1551391754,"~/.zshrc"
+'1  1  0  ~/[Plugins]
+|4,49,1,0,1551391684,"~/[Plugins]"
+'2  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,50,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+'3  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,51,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+'4  108  0  ~/.zshrc
+|4,52,108,0,1551334253,"~/.zshrc"
+'5  109  0  ~/.zshrc
+|4,53,109,0,1551334253,"~/.zshrc"
+'6  115  29  ~/.zshrc
+|4,54,115,29,1550386563,"~/.zshrc"
+'7  112  29  ~/.zshrc
+|4,55,112,29,1550386563,"~/.zshrc"
+'8  116  29  ~/.zshrc
+|4,56,116,29,1550386563,"~/.zshrc"
+'9  113  29  ~/.zshrc
+|4,57,113,29,1550386563,"~/.zshrc"
 
 # Jumplist (newest first):
--'  30  0  ~/dotfiles/update.sh
-|4,39,30,0,1549052214,"~/dotfiles/update.sh"
--'  30  13  ~/dotfiles/update.sh
-|4,39,30,13,1549052146,"~/dotfiles/update.sh"
--'  29  0  ~/dotfiles/update.sh
-|4,39,29,0,1549052098,"~/dotfiles/update.sh"
--'  29  0  ~/dotfiles/update.sh
-|4,39,29,0,1549052098,"~/dotfiles/update.sh"
--'  29  0  ~/dotfiles/update.sh
-|4,39,29,0,1549052074,"~/dotfiles/update.sh"
--'  32  5  ~/dotfiles/update.sh
-|4,39,32,5,1549051931,"~/dotfiles/update.sh"
--'  32  5  ~/dotfiles/update.sh
-|4,39,32,5,1549051931,"~/dotfiles/update.sh"
--'  29  0  ~/dotfiles/update.sh
-|4,39,29,0,1549051742,"~/dotfiles/update.sh"
--'  17  0  ~/dotfiles/update.sh
-|4,39,17,0,1549051728,"~/dotfiles/update.sh"
--'  17  0  ~/dotfiles/update.sh
-|4,39,17,0,1549051728,"~/dotfiles/update.sh"
--'  17  0  ~/dotfiles/update.sh
-|4,39,17,0,1549051728,"~/dotfiles/update.sh"
--'  17  0  ~/dotfiles/update.sh
-|4,39,17,0,1549051728,"~/dotfiles/update.sh"
--'  34  0  ~/dotfiles/update.sh
-|4,39,34,0,1549051715,"~/dotfiles/update.sh"
--'  32  0  ~/dotfiles/update.sh
-|4,39,32,0,1549051715,"~/dotfiles/update.sh"
--'  36  0  ~/dotfiles/update.sh
-|4,39,36,0,1549051715,"~/dotfiles/update.sh"
--'  34  0  ~/dotfiles/update.sh
-|4,39,34,0,1549051715,"~/dotfiles/update.sh"
--'  36  0  ~/dotfiles/update.sh
-|4,39,36,0,1549051715,"~/dotfiles/update.sh"
--'  34  0  ~/dotfiles/update.sh
-|4,39,34,0,1549051715,"~/dotfiles/update.sh"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  94  0  ~/clean_zshrc
-|4,39,94,0,1549051694,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  1  0  ~/clean_zshrc
-|4,39,1,0,1549051692,"~/clean_zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  95  44  ~/.zshrc
-|4,39,95,44,1549050911,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
--'  73  0  ~/.zshrc
-|4,39,73,0,1549050684,"~/.zshrc"
+-'  117  0  ~/.zshrc
+|4,39,117,0,1551391754,"~/.zshrc"
+-'  108  0  ~/.zshrc
+|4,39,108,0,1551391713,"~/.zshrc"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1551391684,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1551391684,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1551391673,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1551391673,"~/[Plugins]"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1551391671,"~/[Plugins]"
+-'  105  0  ~/.vimrc
+|4,39,105,0,1551391671,"~/.vimrc"
+-'  3  0  ~/[Plugins]
+|4,39,3,0,1551391671,"~/[Plugins]"
+-'  105  0  ~/.vimrc
+|4,39,105,0,1551391671,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1551391654,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1551391654,"~/.vimrc"
+-'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
+-'  109  0  ~/.zshrc
+|4,39,109,0,1551334253,"~/.zshrc"
+-'  109  0  ~/.zshrc
+|4,39,109,0,1551334253,"~/.zshrc"
+-'  109  0  ~/.zshrc
+|4,39,109,0,1551334253,"~/.zshrc"
+-'  109  0  ~/.zshrc
+|4,39,109,0,1551334253,"~/.zshrc"
+-'  109  0  ~/.zshrc
+|4,39,109,0,1551334253,"~/.zshrc"
+-'  109  0  ~/.zshrc
+|4,39,109,0,1551334253,"~/.zshrc"
+-'  109  0  ~/.zshrc
+|4,39,109,0,1551334253,"~/.zshrc"
+-'  109  0  ~/.zshrc
+|4,39,109,0,1551334253,"~/.zshrc"
+-'  115  0  ~/.zshrc
+|4,39,115,0,1551334230,"~/.zshrc"
+-'  116  0  ~/.zshrc
+|4,39,116,0,1551334230,"~/.zshrc"
+-'  116  0  ~/.zshrc
+|4,39,116,0,1551334230,"~/.zshrc"
+-'  116  0  ~/.zshrc
+|4,39,116,0,1551334230,"~/.zshrc"
+-'  116  0  ~/.zshrc
+|4,39,116,0,1551334230,"~/.zshrc"
+-'  116  0  ~/.zshrc
+|4,39,116,0,1551334230,"~/.zshrc"
+-'  116  0  ~/.zshrc
+|4,39,116,0,1551334230,"~/.zshrc"
+-'  116  0  ~/.zshrc
+|4,39,116,0,1551334230,"~/.zshrc"
+-'  116  0  ~/.zshrc
+|4,39,116,0,1551334230,"~/.zshrc"
+-'  112  29  ~/.zshrc
+|4,39,112,29,1550386563,"~/.zshrc"
+-'  113  29  ~/.zshrc
+|4,39,113,29,1550386563,"~/.zshrc"
+-'  113  29  ~/.zshrc
+|4,39,113,29,1550386563,"~/.zshrc"
+-'  113  29  ~/.zshrc
+|4,39,113,29,1550386563,"~/.zshrc"
+-'  113  29  ~/.zshrc
+|4,39,113,29,1550386563,"~/.zshrc"
+-'  113  29  ~/.zshrc
+|4,39,113,29,1550386563,"~/.zshrc"
+-'  113  29  ~/.zshrc
+|4,39,113,29,1550386563,"~/.zshrc"
+-'  113  29  ~/.zshrc
+|4,39,113,29,1550386563,"~/.zshrc"
+-'  113  29  ~/.zshrc
+|4,39,113,29,1550386563,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1550386552,"~/.zshrc"
+-'  113  6  ~/.zshrc
+|4,39,113,6,1550386502,"~/.zshrc"
+-'  113  6  ~/.zshrc
+|4,39,113,6,1550386502,"~/.zshrc"
+-'  113  6  ~/.zshrc
+|4,39,113,6,1550386502,"~/.zshrc"
+-'  113  6  ~/.zshrc
+|4,39,113,6,1550386502,"~/.zshrc"
+-'  113  6  ~/.zshrc
+|4,39,113,6,1550386502,"~/.zshrc"
+-'  113  6  ~/.zshrc
+|4,39,113,6,1550386502,"~/.zshrc"
+-'  113  6  ~/.zshrc
+|4,39,113,6,1550386502,"~/.zshrc"
+-'  113  6  ~/.zshrc
+|4,39,113,6,1550386502,"~/.zshrc"
+-'  113  1  ~/.zshrc
+|4,39,113,1,1550386443,"~/.zshrc"
+-'  110  1  ~/.zshrc
+|4,39,110,1,1550386443,"~/.zshrc"
+-'  114  1  ~/.zshrc
+|4,39,114,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  114  1  ~/.zshrc
+|4,39,114,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  114  1  ~/.zshrc
+|4,39,114,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  114  1  ~/.zshrc
+|4,39,114,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  114  1  ~/.zshrc
+|4,39,114,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  114  1  ~/.zshrc
+|4,39,114,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  111  1  ~/.zshrc
+|4,39,111,1,1550386443,"~/.zshrc"
+-'  114  1  ~/.zshrc
+|4,39,114,1,1550386443,"~/.zshrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.zshrc
+	*	1551391753	0
+	"	117	0
+	.	99	0
+	+	99	0
+	+	99	26
+	+	99	19
+	+	99	39
+	+	99	0
+	+	99	19
+	+	10	35
+	+	99	37
+	+	58	7
+	+	59	0
+	+	61	0
+	+	59	17
+	+	99	23
+	+	99	19
+	+	5	15
+	+	94	0
+	+	60	31
+	+	94	0
+	+	11	0
+	+	12	6
+	+	15	0
+	+	14	33
+	+	14	0
+	+	98	0
+	+	99	17
+	+	101	11
+	+	99	82
+	+	101	28
+	+	103	52
+	+	102	15
+	+	102	26
+	+	103	13
+	+	102	26
+	+	103	30
+	+	113	24
+	+	104	0
+	+	78	0
+	+	99	0
+	+	95	45
+	+	113	0
+	+	115	29
+	+	108	0
+	+	99	0
+
+> ~/.vimrc
+	*	1551391658	0
+	"	105	0
+	^	173	70
+	.	173	69
+	+	153	0
+	+	206	25
+	+	204	0
+	+	202	22
+	+	204	28
+	+	207	0
+	+	108	0
+	+	196	11
+	+	248	0
+	+	1	0
+	+	248	7
+	+	249	0
+	+	260	0
+	+	256	0
+	+	257	0
+	+	256	0
+	+	279	0
+	+	242	8
+	+	244	0
+	+	243	0
+	+	242	0
+	+	243	11
+	+	244	10
+	+	244	1
+	+	243	2
+	+	265	0
+	+	285	0
+	+	243	0
+	+	132	0
+	+	131	0
+	+	130	0
+	+	131	25
+	+	68	0
+	+	2	23
+	+	2	0
+	+	26	0
+	+	217	0
+	+	220	0
+	+	217	34
+	+	218	19
+	+	219	14
+	+	220	0
+	+	2	0
+	+	299	16
+	+	299	0
+	+	173	69
+
+> /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+	*	1551334705	0
+	"	64	10
+	^	64	11
+	.	64	10
+	+	64	10
+
+> ~/.oh-my-zsh/oh-my-zsh.sh
+	*	1550386393	0
+	"	113	0
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/index.html
+	*	1550265299	0
+	"	41	30
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+	*	1550265253	0
+	"	1	0
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+	*	1550264699	0
+	"	1	0
 
 > ~/dotfiles/update.sh
 	*	1549052213	0
@@ -626,51 +753,6 @@ $'
 	*	1549051693	0
 	"	94	0
 
-> ~/.zshrc
-	*	1549050911	0
-	"	95	44
-	^	95	45
-	.	95	45
-	+	100	0
-	+	100	26
-	+	100	19
-	+	100	39
-	+	100	0
-	+	100	19
-	+	10	35
-	+	100	37
-	+	58	7
-	+	59	0
-	+	61	0
-	+	59	17
-	+	100	23
-	+	100	19
-	+	5	15
-	+	94	0
-	+	60	31
-	+	94	0
-	+	11	0
-	+	12	6
-	+	15	0
-	+	14	33
-	+	14	0
-	+	98	0
-	+	100	17
-	+	102	11
-	+	100	82
-	+	102	28
-	+	104	52
-	+	103	15
-	+	103	26
-	+	104	13
-	+	103	26
-	+	104	30
-	+	111	24
-	+	105	0
-	+	78	0
-	+	100	0
-	+	95	45
-
 > ~/dotfiles/.zshrc
 	*	1549050248	0
 	"	104	0
@@ -684,58 +766,6 @@ $'
 > ~/dotfiles/.viminfo
 	*	1549050040	0
 	"	12	0
-
-> ~/.vimrc
-	*	1549049589	0
-	"	173	69
-	^	173	70
-	.	173	69
-	+	153	0
-	+	206	25
-	+	204	0
-	+	202	22
-	+	204	28
-	+	207	0
-	+	108	0
-	+	196	11
-	+	248	0
-	+	1	0
-	+	248	7
-	+	249	0
-	+	260	0
-	+	256	0
-	+	257	0
-	+	256	0
-	+	279	0
-	+	242	8
-	+	244	0
-	+	243	0
-	+	242	0
-	+	243	11
-	+	244	10
-	+	244	1
-	+	243	2
-	+	265	0
-	+	285	0
-	+	243	0
-	+	132	0
-	+	131	0
-	+	130	0
-	+	131	25
-	+	68	0
-	+	2	23
-	+	2	0
-	+	26	0
-	+	217	0
-	+	220	0
-	+	217	34
-	+	218	19
-	+	219	14
-	+	220	0
-	+	2	0
-	+	299	16
-	+	299	0
-	+	173	69
 
 > ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/1_compute_cents(demo).py
 	*	1549048290	0
@@ -1759,57 +1789,3 @@ $'
 > ~/Documents/codebase/cs537-projs/xv6/kernel/defs.h
 	*	1517698708	0
 	"	175	0
-
-> ~/Documents/codebase/cs537-projs/xv6/include/types.h
-	*	1517698648	0
-	"	14	0
-
-> ~/Documents/codebase/cs537-projs/xv6/NERD_tree_2
-	*	1517684737	0
-	"	9	4
-	.	1	0
-	+	1	0
-
-> ~/Documents/codebase/cs537-projs/p1a/README
-	*	1517684496	0
-	"	7	0
-	^	1	8
-	.	7	209
-	+	1	8
-	+	1	0
-	+	2	20
-	+	3	115
-	+	3	0
-	+	8	6
-	+	8	0
-	+	5	0
-	+	8	223
-	+	8	0
-	+	7	44
-	+	8	0
-	+	9	5
-	+	11	270
-	+	12	0
-	+	13	4
-	+	15	4
-	+	11	10
-	+	15	60
-	+	16	0
-	+	1	5
-	+	5	6
-	+	9	5
-	+	13	7
-	+	1	0
-	+	7	0
-	+	7	209
-
-> ~/Documents/codebase/cs537-projs/ControlP
-	*	1517684482	0
-	"	2	0
-	.	2	0
-	+	1	0
-	+	2	0
-
-> ~/Documents/codebase/cs537-projs/xv6/include/fcntl.h
-	*	1517684249	0
-	"	5	0
