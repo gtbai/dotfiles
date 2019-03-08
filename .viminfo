@@ -20,14 +20,14 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1552036117,,"wq"
 :q
 |2,0,1552035948,,"q"
 :e ~/.vim/plugin.vim
 |2,0,1552035865,,"e ~/.vim/plugin.vim"
 :e ~/.vim/plugged/
 |2,0,1552035847,,"e ~/.vim/plugged/"
-:wq
-|2,0,1552004005,,"wq"
 :w
 |2,0,1551419832,,"w"
 :GoRun 3000
@@ -234,10 +234,13 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
+"0	LINE	0
 	.DS_Store
-|3,1,0,1,1,0,1551735949,".DS_Store"
-"1	LINE	0
+|3,0,0,1,1,0,1551735949,".DS_Store"
+""1	LINE	0
+	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+|3,1,1,1,1,0,1552036084,"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }"
+"2	LINE	0
 	:Q
 	:q
 	
@@ -248,32 +251,29 @@ $
 	
 	
 	
-|3,0,1,1,10,0,1551419824,":Q",":q","","","","","","","",""
-"2	LINE	0
-	func handler(fmt.GoStringer)
-|3,0,2,1,1,0,1551418641,"func handler(fmt.GoStringer)"
+|3,0,2,1,10,0,1551419824,":Q",":q","","","","","","","",""
 "3	LINE	0
+	func handler(fmt.GoStringer)
+|3,0,3,1,1,0,1551418641,"func handler(fmt.GoStringer)"
+"4	LINE	0
 	import "os"
 	import "f
-|3,0,3,1,2,0,1551417222,"import \"os\"","import \"f"
-"4	LINE	0
-	    LogInfo("here")
-|3,0,4,1,1,0,1551415853,"    LogInfo(\"here\")"
+|3,0,4,1,2,0,1551417222,"import \"os\"","import \"f"
 "5	LINE	0
-	    LogInfo("strconv.Itoa(proxy.Port)")
-|3,0,5,1,1,0,1551415851,"    LogInfo(\"strconv.Itoa(proxy.Port)\")"
+	    LogInfo("here")
+|3,0,5,1,1,0,1551415853,"    LogInfo(\"here\")"
 "6	LINE	0
-	    
-|3,0,6,1,1,0,1551415503,"    "
+	    LogInfo("strconv.Itoa(proxy.Port)")
+|3,0,6,1,1,0,1551415851,"    LogInfo(\"strconv.Itoa(proxy.Port)\")"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1551415493,""
+	    
+|3,0,7,1,1,0,1551415503,"    "
 "8	LINE	0
-	    LogInfo("here...")
-|3,0,8,1,1,0,1551415048,"    LogInfo(\"here...\")"
+	
+|3,0,8,1,1,0,1551415493,""
 "9	LINE	0
-	    IdentityFile ~/.ssh/henry-id_rsa
-|3,0,9,1,1,0,1551411034,"    IdentityFile ~/.ssh/henry-id_rsa"
+	    LogInfo("here...")
+|3,0,9,1,1,0,1551415048,"    LogInfo(\"here...\")"
 "a	CHAR	0
 	xx
 |3,0,10,0,1,0,1512350725,"xx"
@@ -296,42 +296,200 @@ $
 |3,0,36,0,1,0,1551673982,"/usr/bin/google-chrome"
 
 # File marks:
-'0  21  0  ~/.vim/plugin.vim
-|4,48,21,0,1552035948,"~/.vim/plugin.vim"
-'1  1  0  ~/Downloads/autograder/results.json
-|4,49,1,0,1552008281,"~/Downloads/autograder/results.json"
-'2  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,50,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
-'3  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,51,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
-'4  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,52,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
-'5  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,53,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
-'6  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,54,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
-'7  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,55,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
-'8  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,56,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
-'9  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,57,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+'0  15  0  ~/.vim/plugin.vim
+|4,48,15,0,1552036117,"~/.vim/plugin.vim"
+'1  1  17  ~/dotfiles/.gitignore
+|4,49,1,17,1552036016,"~/dotfiles/.gitignore"
+'2  1  15  ~/dotfiles/.gitignore
+|4,50,1,15,1552036005,"~/dotfiles/.gitignore"
+'3  22  0  ~/.vim/plugin.vim
+|4,51,22,0,1552035948,"~/.vim/plugin.vim"
+'4  21  0  ~/.vim/plugin.vim
+|4,52,21,0,1552035948,"~/.vim/plugin.vim"
+'5  1  0  ~/Downloads/autograder/results.json
+|4,53,1,0,1552008281,"~/Downloads/autograder/results.json"
+'6  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,54,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+'7  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,55,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+'8  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,56,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+'9  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,57,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 
 # Jumplist (newest first):
+-'  15  0  ~/.vim/plugin.vim
+|4,39,15,0,1552036117,"~/.vim/plugin.vim"
+-'  22  0  ~/.vim/plugin.vim
+|4,39,22,0,1552036073,"~/.vim/plugin.vim"
+-'  1  17  ~/dotfiles/.gitignore
+|4,39,1,17,1552036016,"~/dotfiles/.gitignore"
+-'  1  17  ~/dotfiles/.gitignore
+|4,39,1,17,1552036016,"~/dotfiles/.gitignore"
+-'  1  15  ~/dotfiles/.gitignore
+|4,39,1,15,1552036005,"~/dotfiles/.gitignore"
+-'  1  15  ~/dotfiles/.gitignore
+|4,39,1,15,1552036005,"~/dotfiles/.gitignore"
 -'  21  0  ~/.vim/plugin.vim
 |4,39,21,0,1552035948,"~/.vim/plugin.vim"
+-'  21  0  ~/.vim/plugin.vim
+|4,39,21,0,1552035948,"~/.vim/plugin.vim"
+-'  21  0  ~/.vim/plugin.vim
+|4,39,21,0,1552035948,"~/.vim/plugin.vim"
+-'  21  0  ~/.vim/plugin.vim
+|4,39,21,0,1552035948,"~/.vim/plugin.vim"
+-'  37  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,37,0,1552035865,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  37  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,37,0,1552035865,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  37  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,37,0,1552035865,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  37  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,37,0,1552035865,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  37  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,37,0,1552035865,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  37  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,37,0,1552035865,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  37  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,37,0,1552035865,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
 -'  37  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
 |4,39,37,0,1552035865,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
 -'  1  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
 |4,39,1,0,1552035847,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
 -'  100  0  ~/.vimrc
 |4,39,100,0,1552035847,"~/.vimrc"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,1,0,1552035847,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1552035847,"~/.vimrc"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,1,0,1552035847,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1552035847,"~/.vimrc"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,1,0,1552035847,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1552035847,"~/.vimrc"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,1,0,1552035847,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1552035847,"~/.vimrc"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,1,0,1552035847,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1552035847,"~/.vimrc"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,1,0,1552035847,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1552035847,"~/.vimrc"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,1,0,1552035847,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1552035847,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1552035833,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1552035833,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1552035833,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1552035833,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1552035833,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1552035833,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1552035833,"~/.vimrc"
 -'  1  0  ~/.vimrc
 |4,39,1,0,1552035833,"~/.vimrc"
 -'  1  0  ~/Downloads/autograder/results.json
 |4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
 -'  1  0  ~/Downloads/autograder/results.json
 |4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 -'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
 |4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 -'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
@@ -348,182 +506,26 @@ $
 |4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 -'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
 |4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
--'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
 -'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 -'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 -'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 -'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 -'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 -'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/plugin.vim
-	*	1552035867	0
-	"	21	0
+	*	1552036115	0
+	"	15	0
 	^	22	0
-	.	22	0
+	.	15	0
 	+	70	15
 	+	73	0
 	+	79	0
@@ -534,12 +536,12 @@ $
 	+	44	1
 	+	10	30
 	+	11	54
-	+	20	22
+	+	21	22
 	+	23	0
-	+	18	0
-	+	20	0
-	+	18	40
 	+	19	0
+	+	21	0
+	+	19	40
+	+	20	0
 	+	76	0
 	+	79	0
 	+	87	0
@@ -566,11 +568,19 @@ $
 	+	85	4
 	+	11	0
 	+	10	27
-	+	20	0
 	+	21	0
-	+	23	0
-	+	21	49
 	+	22	0
+	+	23	0
+	+	22	49
+	+	22	0
+	+	15	0
+
+> ~/dotfiles/.gitignore
+	*	1552036015	0
+	"	1	17
+	^	1	18
+	.	1	17
+	+	1	17
 
 > ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
 	*	1552035852	0
@@ -1833,9 +1843,3 @@ $
 > ~/Documents/codebase/cs537-projs/xv6/include/x86.h
 	*	1517715547	0
 	"	200	2
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/trap.c
-	*	1517715375	0
-	"	41	2
-	.	47	0
-	+	47	0

@@ -12,13 +12,13 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
 "Plug 'ervandew/supertab'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " snippets
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 " "------ snipmate dependencies ------- 
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim' 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 "-----------------
 " Fast navigation
