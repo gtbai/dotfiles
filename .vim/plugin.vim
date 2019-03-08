@@ -18,6 +18,8 @@ Plug 'honza/vim-snippets'
 " "------ snipmate dependencies ------- 
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim' 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 "-----------------
 " Fast navigation
 "-----------------

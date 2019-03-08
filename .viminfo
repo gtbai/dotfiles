@@ -20,20 +20,32 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1552035948,,"q"
+:e ~/.vim/plugin.vim
+|2,0,1552035865,,"e ~/.vim/plugin.vim"
+:e ~/.vim/plugged/
+|2,0,1552035847,,"e ~/.vim/plugged/"
 :wq
-|2,0,1551391754,,"wq"
+|2,0,1552004005,,"wq"
+:w
+|2,0,1551419832,,"w"
+:GoRun 3000
+|2,0,1551419600,,"GoRun 3000"
+:GoRun 
+|2,0,1551418986,,"GoRun "
+:GoRun
+|2,0,1551418971,,"GoRun"
+:PlugInstall
+|2,0,1551418100,,"PlugInstall"
+:source ~/.vimrc
+|2,0,1551418096,,"source ~/.vimrc"
 :PlugStatus
 |2,0,1551391671,,"PlugStatus"
-:q
-|2,0,1551334707,,"q"
 :66
 |2,0,1551334271,,"66"
 :YcmRestartServer
 |2,0,1549047348,,"YcmRestartServer"
-:PlugInstall
-|2,0,1549043838,,"PlugInstall"
-:w
-|2,0,1549043721,,"w"
 :Q
 |2,0,1549043617,,"Q"
 :PlugClean
@@ -54,8 +66,6 @@ $
 |2,0,1541828145,,"%s/“/\"/g"
 :Wq
 |2,0,1541562355,,"Wq"
-:e ~/.vim/plugin.vim
-|2,0,1540923627,,"e ~/.vim/plugin.vim"
 :source ~/.vim/autoload/bclose.vim
 |2,0,1540923455,,"source ~/.vim/autoload/bclose.vim"
 :Bclose
@@ -110,16 +120,6 @@ $
 |2,0,1517715925,,"b2"
 :sysfunc.h
 |2,0,1517715658,,"sysfunc.h"
-:bn
-|2,0,1517715608,,"bn"
-:blast
-|2,0,1517715601,,"blast"
-:b kernel/trap.c
-|2,0,1517715307,,"b kernel/trap.c"
-:b kernel/main.c
-|2,0,1517713983,,"b kernel/main.c"
-:tvinit
-|2,0,1517713422,,"tvinit"
 
 # Search String History (newest to oldest):
 ? \$\(cursor\|select\)\$
@@ -234,67 +234,46 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	chown --reference=~/.zshrc ~/dotfiles/.zshrc
-|3,0,0,1,1,0,1549052047,"chown --reference=~/.zshrc ~/dotfiles/.zshrc"
-""1	LINE	0
+""0	LINE	0
+	.DS_Store
+|3,1,0,1,1,0,1551735949,".DS_Store"
+"1	LINE	0
+	:Q
+	:q
 	
-|3,1,1,1,1,0,1551391747,""
+	
+	
+	
+	
+	
+	
+	
+|3,0,1,1,10,0,1551419824,":Q",":q","","","","","","","",""
 "2	LINE	0
-	
-	作者：灰墙
-	链接：https://zhuanlan.zhihu.com/p/53380250
-	来源：知乎
-	著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-|3,0,2,1,5,0,1551334252,"","作者：灰墙","链接：https://zhuanlan.zhihu.com/p/53380250","来源：知乎","著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"
+	func handler(fmt.GoStringer)
+|3,0,2,1,1,0,1551418641,"func handler(fmt.GoStringer)"
 "3	LINE	0
-	chmod --reference=~/.zshrc ~/dotfiles/.zshrc
-	chown --reference=~/.zshrc ~/dotfiles/.zshrc
-|3,0,3,1,2,0,1549052212,"chmod --reference=~/.zshrc ~/dotfiles/.zshrc","chown --reference=~/.zshrc ~/dotfiles/.zshrc"
+	import "os"
+	import "f
+|3,0,3,1,2,0,1551417222,"import \"os\"","import \"f"
 "4	LINE	0
-	cp -r ~/.zshrc ~/dotfiles/
-|3,0,4,1,1,0,1549052073,"cp -r ~/.zshrc ~/dotfiles/"
+	    LogInfo("here")
+|3,0,4,1,1,0,1551415853,"    LogInfo(\"here\")"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1549052048,""
+	    LogInfo("strconv.Itoa(proxy.Port)")
+|3,0,5,1,1,0,1551415851,"    LogInfo(\"strconv.Itoa(proxy.Port)\")"
 "6	LINE	0
-	# export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0
-	# export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH
-	# export M2_HOME=$HOME/maven/apache-maven-3.5.0
-	# export PATH=$PATH:$M2_HOME/bin
-	# export PATH=$PATH:/usr/local/cuda/bin
-	
-|3,0,6,1,6,0,1549050728,"# export HADOOP_HOME=$HOME/hadoop/hadoop-2.6.0","# export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH","# export M2_HOME=$HOME/maven/apache-maven-3.5.0","# export PATH=$PATH:$M2_HOME/bin","# export PATH=$PATH:/usr/local/cuda/bin",""
+	    
+|3,0,6,1,1,0,1551415503,"    "
 "7	LINE	0
 	
-|3,0,7,1,1,0,1549050595,""
+|3,0,7,1,1,0,1551415493,""
 "8	LINE	0
-	<<<<<<< HEAD
-	export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
-	export PATH="$JAVA_HOME:$PATH"
-	export BREWED_PYTHONHOME="/usr/local/opt/python/libexec/bin"
-	export PATH="$BREWED_PYTHONHOME:$PATH"
-	
-	export PATH="/Users/gtbai/anaconda3/bin:$PATH"
-	
-	# The next line updates PATH for the Google Cloud SDK.
-	if [ -f '/Users/gtbai/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/path.zsh.inc'; fi
-	
-	# The next line enables shell command completion for gcloud.
-	if [ -f '/Users/gtbai/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/completion.zsh.inc'; fi
-	=======
-	git config --global diff.tool diffmerge
-	git config --global difftool.diffmerge.cmd 'diffmerge "$LOCAL" "$REMOTE"'
-	git config --global merge.tool diffmerge
-	git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"'
-	git config --global mergetool.diffmerge.trustExitCode true
-	>>>>>>> fe716cd9a58022fe999edbfc6cbbe6a5c46dd203
-|3,0,8,1,20,0,1549049964,"<<<<<<< HEAD","export JAVA_HOME=\"/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home\"","export PATH=\"$JAVA_HOME:$PATH\"","export BREWED_PYTHONHOME=\"/usr/local/opt/python/libexec/bin\"","export PATH=\"$BREWED_PYTHONHOME:$PATH\"","","export PATH=\"/Users/gtbai/anaconda3/bin:$PATH\"","","# The next line updates PATH for the Google Cloud SDK.",>113
-|<"if [ -f '/Users/gtbai/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/path.zsh.inc'; fi","","# The next line enables shell command completion for gcloud.","if [ -f '/Users/gtbai/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gtbai/google-cloud-sdk/completion.zsh.inc'; fi","=======","git config --global diff.tool diffmerge","git config --global difftool.diffmerge.cmd 'diffmerge \"$LOCAL\" \"$REMOTE\"'","git config --global merge.tool diffmerge",>184
-|<"git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\"'","git config --global mergetool.diffmerge.trustExitCode true",">>>>>>> fe716cd9a58022fe999edbfc6cbbe6a5c46dd203"
+	    LogInfo("here...")
+|3,0,8,1,1,0,1551415048,"    LogInfo(\"here...\")"
 "9	LINE	0
-	pe
-|3,0,9,1,1,0,1549043405,"pe"
+	    IdentityFile ~/.ssh/henry-id_rsa
+|3,0,9,1,1,0,1551411034,"    IdentityFile ~/.ssh/henry-id_rsa"
 "a	CHAR	0
 	xx
 |3,0,10,0,1,0,1512350725,"xx"
@@ -313,286 +292,295 @@ $
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfCGFUnkPvf5zzPxNhOYf/3Vd9V+AiTcfQY3GICNEvlwBs1tkcOtp/wjp1tH5VdQRQZXUNFamtUYb2T2QjcPszCgOEcfGUZ1GFdDTkwb+mVI4VUTFG3mvbH/1CooPqhq/bN9Smp+/akBgnA3ukB6wkjODJtOt1I72adJG7SqOeolA65cmLsXsRZn1SGBzVQOKelkmi6Vz4/nc/9uTXJLBp2NKan7a3VAvTY8FuJYQRw2GjtLoVGnvPvaGmqvQTCq+A2oVflYn067RuFvCSMWSABTUIZGOs5fguk91LMp3CLqYCL8gS1aRB6XWd4RjSD1O38dRyyWw3WUNewR+549GLXUXkTb1dnDR0OlHB2ky1VIqrn6vp90weusxeaBzwYO1d4mxZm24sGQzpultMBzTwEPGJh8k/WA7ZBgxh396fVFwnGsktHPmGdl3l7aoSipkPN
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com"
 "-	CHAR	0
-	 
-|3,0,36,0,1,0,1551391745," "
+	/usr/bin/google-chrome
+|3,0,36,0,1,0,1551673982,"/usr/bin/google-chrome"
 
 # File marks:
-'0  117  0  ~/.zshrc
-|4,48,117,0,1551391754,"~/.zshrc"
-'1  1  0  ~/[Plugins]
-|4,49,1,0,1551391684,"~/[Plugins]"
-'2  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,50,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
-'3  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,51,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
-'4  108  0  ~/.zshrc
-|4,52,108,0,1551334253,"~/.zshrc"
-'5  109  0  ~/.zshrc
-|4,53,109,0,1551334253,"~/.zshrc"
-'6  115  29  ~/.zshrc
-|4,54,115,29,1550386563,"~/.zshrc"
-'7  112  29  ~/.zshrc
-|4,55,112,29,1550386563,"~/.zshrc"
-'8  116  29  ~/.zshrc
-|4,56,116,29,1550386563,"~/.zshrc"
-'9  113  29  ~/.zshrc
-|4,57,113,29,1550386563,"~/.zshrc"
+'0  21  0  ~/.vim/plugin.vim
+|4,48,21,0,1552035948,"~/.vim/plugin.vim"
+'1  1  0  ~/Downloads/autograder/results.json
+|4,49,1,0,1552008281,"~/Downloads/autograder/results.json"
+'2  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,50,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+'3  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,51,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+'4  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,52,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+'5  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,53,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+'6  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,54,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+'7  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,55,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+'8  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,56,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+'9  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,57,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
 
 # Jumplist (newest first):
--'  117  0  ~/.zshrc
-|4,39,117,0,1551391754,"~/.zshrc"
--'  108  0  ~/.zshrc
-|4,39,108,0,1551391713,"~/.zshrc"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1551391684,"~/[Plugins]"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1551391684,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1551391673,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1551391673,"~/[Plugins]"
--'  3  0  ~/[Plugins]
-|4,39,3,0,1551391671,"~/[Plugins]"
--'  105  0  ~/.vimrc
-|4,39,105,0,1551391671,"~/.vimrc"
--'  3  0  ~/[Plugins]
-|4,39,3,0,1551391671,"~/[Plugins]"
--'  105  0  ~/.vimrc
-|4,39,105,0,1551391671,"~/.vimrc"
+-'  21  0  ~/.vim/plugin.vim
+|4,39,21,0,1552035948,"~/.vim/plugin.vim"
+-'  37  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,37,0,1552035865,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+|4,39,1,0,1552035847,"~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1"
+-'  100  0  ~/.vimrc
+|4,39,100,0,1552035847,"~/.vimrc"
 -'  1  0  ~/.vimrc
-|4,39,1,0,1551391654,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1551391654,"~/.vimrc"
--'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,64,10,1551334707,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  64  10  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,64,10,1551334370,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  1  0  /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
-|4,39,1,0,1551334267,"/usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh"
--'  109  0  ~/.zshrc
-|4,39,109,0,1551334253,"~/.zshrc"
--'  109  0  ~/.zshrc
-|4,39,109,0,1551334253,"~/.zshrc"
--'  109  0  ~/.zshrc
-|4,39,109,0,1551334253,"~/.zshrc"
--'  109  0  ~/.zshrc
-|4,39,109,0,1551334253,"~/.zshrc"
--'  109  0  ~/.zshrc
-|4,39,109,0,1551334253,"~/.zshrc"
--'  109  0  ~/.zshrc
-|4,39,109,0,1551334253,"~/.zshrc"
--'  109  0  ~/.zshrc
-|4,39,109,0,1551334253,"~/.zshrc"
--'  109  0  ~/.zshrc
-|4,39,109,0,1551334253,"~/.zshrc"
--'  115  0  ~/.zshrc
-|4,39,115,0,1551334230,"~/.zshrc"
--'  116  0  ~/.zshrc
-|4,39,116,0,1551334230,"~/.zshrc"
--'  116  0  ~/.zshrc
-|4,39,116,0,1551334230,"~/.zshrc"
--'  116  0  ~/.zshrc
-|4,39,116,0,1551334230,"~/.zshrc"
--'  116  0  ~/.zshrc
-|4,39,116,0,1551334230,"~/.zshrc"
--'  116  0  ~/.zshrc
-|4,39,116,0,1551334230,"~/.zshrc"
--'  116  0  ~/.zshrc
-|4,39,116,0,1551334230,"~/.zshrc"
--'  116  0  ~/.zshrc
-|4,39,116,0,1551334230,"~/.zshrc"
--'  116  0  ~/.zshrc
-|4,39,116,0,1551334230,"~/.zshrc"
--'  112  29  ~/.zshrc
-|4,39,112,29,1550386563,"~/.zshrc"
--'  113  29  ~/.zshrc
-|4,39,113,29,1550386563,"~/.zshrc"
--'  113  29  ~/.zshrc
-|4,39,113,29,1550386563,"~/.zshrc"
--'  113  29  ~/.zshrc
-|4,39,113,29,1550386563,"~/.zshrc"
--'  113  29  ~/.zshrc
-|4,39,113,29,1550386563,"~/.zshrc"
--'  113  29  ~/.zshrc
-|4,39,113,29,1550386563,"~/.zshrc"
--'  113  29  ~/.zshrc
-|4,39,113,29,1550386563,"~/.zshrc"
--'  113  29  ~/.zshrc
-|4,39,113,29,1550386563,"~/.zshrc"
--'  113  29  ~/.zshrc
-|4,39,113,29,1550386563,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1550386552,"~/.zshrc"
--'  113  6  ~/.zshrc
-|4,39,113,6,1550386502,"~/.zshrc"
--'  113  6  ~/.zshrc
-|4,39,113,6,1550386502,"~/.zshrc"
--'  113  6  ~/.zshrc
-|4,39,113,6,1550386502,"~/.zshrc"
--'  113  6  ~/.zshrc
-|4,39,113,6,1550386502,"~/.zshrc"
--'  113  6  ~/.zshrc
-|4,39,113,6,1550386502,"~/.zshrc"
--'  113  6  ~/.zshrc
-|4,39,113,6,1550386502,"~/.zshrc"
--'  113  6  ~/.zshrc
-|4,39,113,6,1550386502,"~/.zshrc"
--'  113  6  ~/.zshrc
-|4,39,113,6,1550386502,"~/.zshrc"
--'  113  1  ~/.zshrc
-|4,39,113,1,1550386443,"~/.zshrc"
--'  110  1  ~/.zshrc
-|4,39,110,1,1550386443,"~/.zshrc"
--'  114  1  ~/.zshrc
-|4,39,114,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  114  1  ~/.zshrc
-|4,39,114,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  114  1  ~/.zshrc
-|4,39,114,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  114  1  ~/.zshrc
-|4,39,114,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  114  1  ~/.zshrc
-|4,39,114,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  114  1  ~/.zshrc
-|4,39,114,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  111  1  ~/.zshrc
-|4,39,111,1,1550386443,"~/.zshrc"
--'  114  1  ~/.zshrc
-|4,39,114,1,1550386443,"~/.zshrc"
+|4,39,1,0,1552035833,"~/.vimrc"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  1  0  ~/Downloads/autograder/results.json
+|4,39,1,0,1552008281,"~/Downloads/autograder/results.json"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  3  20  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,3,20,1552004005,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1552003993,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1552003948,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  1  23  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+|4,39,1,23,1552003919,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551905504,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,2,0,1551766382,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1551766261,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
 
 # History of marks within files (newest to oldest):
 
-> ~/.zshrc
-	*	1551391753	0
-	"	117	0
-	.	99	0
-	+	99	0
-	+	99	26
-	+	99	19
-	+	99	39
-	+	99	0
-	+	99	19
-	+	10	35
-	+	99	37
-	+	58	7
-	+	59	0
-	+	61	0
-	+	59	17
-	+	99	23
-	+	99	19
-	+	5	15
-	+	94	0
-	+	60	31
-	+	94	0
+> ~/.vim/plugin.vim
+	*	1552035867	0
+	"	21	0
+	^	22	0
+	.	22	0
+	+	70	15
+	+	73	0
+	+	79	0
+	+	74	20
+	+	73	24
+	+	74	25
+	+	73	0
+	+	44	1
+	+	10	30
+	+	11	54
+	+	20	22
+	+	23	0
+	+	18	0
+	+	20	0
+	+	18	40
+	+	19	0
+	+	76	0
+	+	79	0
+	+	87	0
+	+	77	1
+	+	71	1
+	+	77	33
+	+	79	0
+	+	86	0
+	+	79	23
+	+	34	25
+	+	32	0
+	+	34	0
+	+	33	6
+	+	34	0
+	+	87	0
+	+	80	34
+	+	87	0
+	+	80	2
+	+	80	0
+	+	81	0
+	+	82	0
+	+	81	0
+	+	83	13
+	+	85	4
 	+	11	0
-	+	12	6
-	+	15	0
-	+	14	33
-	+	14	0
-	+	98	0
-	+	99	17
-	+	101	11
-	+	99	82
-	+	101	28
-	+	103	52
-	+	102	15
-	+	102	26
-	+	103	13
-	+	102	26
-	+	103	30
-	+	113	24
-	+	104	0
-	+	78	0
-	+	99	0
-	+	95	45
-	+	113	0
-	+	115	29
-	+	108	0
-	+	99	0
+	+	10	27
+	+	20	0
+	+	21	0
+	+	23	0
+	+	21	49
+	+	22	0
+
+> ~/Documents/codebase/wisc/s19/cs838_edge/NERD_tree_1
+	*	1552035852	0
+	"	37	0
+	.	1	0
+	+	1	0
 
 > ~/.vimrc
-	*	1551391658	0
-	"	105	0
+	*	1552035836	0
+	"	100	0
 	^	173	70
 	.	173	69
 	+	153	0
@@ -642,6 +630,287 @@ $
 	+	299	0
 	+	173	69
 
+> ~/Downloads/autograder/results.json
+	*	1552008278	0
+	"	1	0
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+	*	1552004005	0
+	"	3	20
+	^	3	21
+	.	3	20
+	+	1	8
+	+	2	12
+	+	3	20
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+	*	1552003947	0
+	"	1	0
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
+	*	1552003919	0
+	"	1	23
+	^	1	24
+	.	1	23
+	+	1	0
+	+	1	23
+
+> ~/.jupyter/jupyter_notebook_config.py
+	*	1551673984	0
+	"	1	31
+	^	1	32
+	.	1	31
+	+	1	31
+
+> ~/.tmux.conf
+	*	1551427273	0
+	"	64	0
+	^	48	2
+	.	64	0
+	+	56	17
+	+	33	16
+	+	33	26
+	+	33	38
+	+	55	0
+	+	33	38
+	+	51	0
+	+	33	25
+	+	52	0
+	+	33	41
+	+	33	40
+	+	33	39
+	+	33	38
+	+	33	37
+	+	33	36
+	+	33	35
+	+	33	34
+	+	33	16
+	+	33	3
+	+	33	16
+	+	33	0
+	+	33	16
+	+	33	15
+	+	33	0
+	+	33	16
+	+	33	0
+	+	33	16
+	+	33	0
+	+	2	3
+	+	3	0
+	+	51	0
+	+	52	0
+	+	20	0
+	+	49	0
+	+	20	13
+	+	1	0
+	+	2	0
+	+	1	3
+	+	2	0
+	+	50	0
+	+	1	0
+	+	54	19
+	+	195	44
+	+	155	1
+	+	156	2
+	+	50	0
+	+	44	3
+	+	154	0
+	+	157	0
+	+	158	19
+	+	195	0
+	+	206	29
+	+	208	0
+	+	200	0
+	+	198	0
+	+	96	68
+	+	94	67
+	+	86	17
+	+	88	8
+	+	89	18
+	+	45	0
+	+	44	1
+	+	48	0
+	+	49	0
+	+	50	0
+	+	49	0
+	+	48	1
+	+	49	1
+	+	50	1
+	+	44	0
+	+	64	0
+
+> ~/Documents/codebase/go-workspace/src/Load-Balancer-Golang/config.yml
+	*	1551419797	0
+	"	12	10
+	^	12	11
+	.	12	10
+	+	9	17
+	+	12	10
+
+> ~/Documents/codebase/go-workspace/src/simple_http_server/http_server.go
+	*	1551419751	0
+	"	19	47
+	^	19	48
+	.	19	47
+	+	16	11
+	+	16	12
+	+	20	49
+	+	17	3
+	+	16	0
+	+	3	8
+	+	4	9
+	+	5	9
+	+	6	12
+	+	17	3
+	+	12	54
+	+	13	0
+	+	10	0
+	+	12	0
+	+	13	57
+	+	10	11
+	+	17	11
+	+	7	3
+	+	17	22
+	+	18	31
+	+	20	45
+	+	21	0
+	+	10	14
+	+	13	45
+	+	20	40
+	+	19	46
+	+	13	11
+	+	19	47
+
+> ~/Documents/codebase/go-workspace/src/Load-Balancer-Golang/main.go
+	*	1551415861	0
+	"	17	36
+	.	17	36
+	+	16	0
+	+	19	3
+	+	19	16
+	+	19	0
+	+	18	0
+	+	19	0
+	+	17	0
+	+	19	0
+	+	17	36
+
+> ~/.zshrc
+	*	1551414713	0
+	"	108	19
+	^	108	20
+	.	108	19
+	+	99	0
+	+	99	26
+	+	99	19
+	+	99	39
+	+	99	0
+	+	99	19
+	+	10	35
+	+	99	37
+	+	58	7
+	+	59	0
+	+	61	0
+	+	59	17
+	+	99	23
+	+	99	19
+	+	5	15
+	+	94	0
+	+	60	31
+	+	94	0
+	+	11	0
+	+	12	6
+	+	15	0
+	+	14	33
+	+	14	0
+	+	98	0
+	+	99	17
+	+	101	11
+	+	99	82
+	+	101	28
+	+	103	52
+	+	102	15
+	+	102	26
+	+	103	13
+	+	102	26
+	+	103	30
+	+	114	24
+	+	104	0
+	+	78	0
+	+	99	0
+	+	95	45
+	+	114	0
+	+	116	29
+	+	109	0
+	+	99	0
+	+	108	19
+
+> ~/Documents/codebase/go-workspace/src/hello/hello.go
+	*	1551414688	0
+	"	7	0
+	^	7	1
+	.	6	28
+	+	3	12
+	+	6	28
+
+> ~/.ssh/config
+	*	1551411034	0
+	"	82	0
+	^	81	14
+	.	82	0
+	+	24	0
+	+	17	0
+	+	12	0
+	+	17	0
+	+	12	14
+	+	13	19
+	+	83	0
+	+	42	13
+	+	46	35
+	+	59	9
+	+	67	13
+	+	69	9
+	+	67	13
+	+	70	28
+	+	71	0
+	+	42	10
+	+	70	29
+	+	69	12
+	+	70	32
+	+	69	10
+	+	70	29
+	+	67	42
+	+	69	13
+	+	70	29
+	+	67	42
+	+	48	0
+	+	53	0
+	+	48	12
+	+	49	42
+	+	52	35
+	+	49	42
+	+	48	13
+	+	54	0
+	+	59	0
+	+	54	13
+	+	55	42
+	+	60	0
+	+	65	0
+	+	60	13
+	+	61	13
+	+	72	0
+	+	77	0
+	+	72	9
+	+	73	27
+	+	75	13
+	+	77	0
+	+	78	0
+	+	82	0
+	+	78	8
+	+	79	42
+	+	81	13
+	+	82	0
+
 > /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
 	*	1551334705	0
 	"	64	10
@@ -656,14 +925,6 @@ $
 > ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/index.html
 	*	1550265299	0
 	"	41	30
-
-> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-	*	1550265253	0
-	"	1	0
-
-> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
-	*	1550264699	0
-	"	1	0
 
 > ~/dotfiles/update.sh
 	*	1549052213	0
@@ -779,136 +1040,11 @@ $
 	*	1549047571	0
 	"	1	0
 
-> ~/.vim/plugin.vim
-	*	1549044035	0
-	"	32	0
-	^	10	28
-	.	10	27
-	+	68	15
-	+	71	0
-	+	77	0
-	+	72	20
-	+	71	24
-	+	72	25
-	+	71	0
-	+	42	1
-	+	10	30
-	+	11	54
-	+	20	22
-	+	21	0
-	+	18	0
-	+	20	0
-	+	18	40
-	+	19	0
-	+	74	0
-	+	77	0
-	+	85	0
-	+	75	1
-	+	69	1
-	+	75	33
-	+	77	0
-	+	84	0
-	+	77	23
-	+	32	25
-	+	30	0
-	+	32	0
-	+	31	6
-	+	32	0
-	+	85	0
-	+	78	34
-	+	85	0
-	+	78	2
-	+	78	0
-	+	79	0
-	+	80	0
-	+	79	0
-	+	81	13
-	+	83	4
-	+	11	0
-	+	10	27
-
 > ~/Documents/codebase/python_workspace/cs300_2019_spring/java_study_group/01_29/NERD_tree_1
 	*	1549043630	0
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/.tmux.conf
-	*	1548541011	0
-	"	73	0
-	^	48	2
-	.	73	0
-	+	56	17
-	+	33	16
-	+	33	26
-	+	33	38
-	+	55	0
-	+	33	38
-	+	51	0
-	+	33	25
-	+	52	0
-	+	33	41
-	+	33	40
-	+	33	39
-	+	33	38
-	+	33	37
-	+	33	36
-	+	33	35
-	+	33	34
-	+	33	16
-	+	33	3
-	+	33	16
-	+	33	0
-	+	33	16
-	+	33	15
-	+	33	0
-	+	33	16
-	+	33	0
-	+	33	16
-	+	33	0
-	+	2	3
-	+	3	0
-	+	51	0
-	+	52	0
-	+	20	0
-	+	49	0
-	+	20	13
-	+	1	0
-	+	2	0
-	+	1	3
-	+	2	0
-	+	50	0
-	+	1	0
-	+	54	19
-	+	205	44
-	+	165	1
-	+	166	2
-	+	50	0
-	+	44	3
-	+	164	0
-	+	167	0
-	+	168	19
-	+	205	0
-	+	216	29
-	+	218	0
-	+	210	0
-	+	208	0
-	+	106	68
-	+	104	67
-	+	96	17
-	+	98	8
-	+	99	18
-	+	45	0
-	+	44	1
-	+	48	0
-	+	49	0
-	+	50	0
-	+	49	0
-	+	48	1
-	+	49	1
-	+	50	1
-	+	44	0
-	+	73	0
 
 > ~/Documents/codebase/cs739/p3/ceph/.git/MERGE_MSG
 	*	1545193409	0
@@ -1116,58 +1252,6 @@ $
 	^	1	411
 	.	1	410
 	+	1	410
-
-> ~/.ssh/config
-	*	1537064575	0
-	"	75	4
-	^	76	30
-	.	77	0
-	+	24	0
-	+	17	0
-	+	12	0
-	+	17	0
-	+	12	14
-	+	13	19
-	+	78	0
-	+	42	13
-	+	46	35
-	+	59	9
-	+	67	13
-	+	69	9
-	+	67	13
-	+	70	28
-	+	71	0
-	+	42	10
-	+	70	29
-	+	69	12
-	+	70	32
-	+	69	10
-	+	70	29
-	+	67	42
-	+	69	13
-	+	70	29
-	+	67	42
-	+	48	0
-	+	53	0
-	+	48	12
-	+	49	42
-	+	52	35
-	+	49	42
-	+	48	13
-	+	54	0
-	+	59	0
-	+	54	13
-	+	55	42
-	+	60	0
-	+	65	0
-	+	60	13
-	+	61	13
-	+	72	0
-	+	77	0
-	+	72	9
-	+	73	27
-	+	75	13
-	+	77	0
 
 > ~/.ssh/henry-id_rsa
 	*	1537064407	0
@@ -1755,37 +1839,3 @@ $
 	"	41	2
 	.	47	0
 	+	47	0
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/main.c
-	*	1517714124	0
-	"	5	0
-	.	56	0
-	+	56	0
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/vectors.pl
-	*	1517713736	0
-	"	47	0
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/mmu.h
-	*	1517713562	0
-	"	107	0
-
-> ~/Documents/codebase/cs537-projs/xv6/include/traps.h
-	*	1517713117	0
-	"	30	3
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/proc.h
-	*	1517698789	0
-	"	85	0
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/proc.c
-	*	1517698769	0
-	"	203	0
-
-> ~/Documents/codebase/cs537-projs/xv6/include/param.h
-	*	1517698732	0
-	"	5	0
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/defs.h
-	*	1517698708	0
-	"	175	0
