@@ -16,6 +16,7 @@ mkdir ~/dotfiles/.vim
 cp -r ~/.vim/autoload ~/dotfiles/.vim/
 mkdir ~/dotfiles/.vim/plugged
 cp -r ~/.vim/plugin.vim ~/dotfiles/.vim/
+cp -r ~/.vim/bclose.vim ~/dotfiles/.vim/
 cp -r ~/.vim/vimrc ~/dotfiles/.vim/
 
 cp -r ~/.vimrc ~/dotfiles/
