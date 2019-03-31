@@ -18,3 +18,11 @@ cp -r ~/dotfiles/.oh-my-zsh ~/
 
 # Enforce .zshrc. Errors might occur. To fix them, just comment/delete lines causing error.
 source ~/.zshrc
+
+# install plugins for vim
+vim -c "PlugInstall"
+
+# install YouCompleteMe
+sudo apt install -y cmake
+cd ~/.vim/plugged/YouCompleteMe
+./install.py
