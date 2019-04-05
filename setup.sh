@@ -26,3 +26,7 @@ vim -c "PlugInstall"
 sudo apt install -y cmake
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
+
+# install fzf for command-line fuzzy finder
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
