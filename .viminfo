@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/pane
+~MSle0~/66
 
 # Last Substitute Search Pattern:
 ~MSle0&’
@@ -20,12 +20,18 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1552594666,,"wq"
-:w
-|2,0,1552594653,,"w"
 :q
-|2,0,1552594615,,"q"
+|2,0,1554505715,,"q"
+:wq
+|2,0,1554435643,,"wq"
+:Wq
+|2,0,1554435202,,"Wq"
+:Q
+|2,0,1554434689,,"Q"
+:help solarized
+|2,0,1554434207,,"help solarized"
+:w
+|2,0,1554433863,,"w"
 :e ~/.vim/plugin.vim
 |2,0,1552035865,,"e ~/.vim/plugin.vim"
 :e ~/.vim/plugged/
@@ -46,8 +52,6 @@ $
 |2,0,1551334271,,"66"
 :YcmRestartServer
 |2,0,1549047348,,"YcmRestartServer"
-:Q
-|2,0,1549043617,,"Q"
 :PlugClean
 |2,0,1548541038,,"PlugClean"
 :a
@@ -64,8 +68,6 @@ $
 |2,0,1541828157,,"%s/”/\"/g"
 :%s/“/"/g
 |2,0,1541828145,,"%s/“/\"/g"
-:Wq
-|2,0,1541562355,,"Wq"
 :source ~/.vim/autoload/bclose.vim
 |2,0,1540923455,,"source ~/.vim/autoload/bclose.vim"
 :Bclose
@@ -118,10 +120,24 @@ $
 |2,0,1517715932,,"bf"
 :b2
 |2,0,1517715925,,"b2"
-:sysfunc.h
-|2,0,1517715658,,"sysfunc.h"
 
 # Search String History (newest to oldest):
+?/66
+|2,1,1554434360,47,"66"
+?/comment
+|2,1,1554434232,47,"comment"
+?/white
+|2,1,1554433080,47,"white"
+?/black
+|2,1,1554432941,47,"black"
+?/balck
+|2,1,1554432939,47,"balck"
+?/cloud
+|2,1,1554432893,47,"cloud"
+?/autosuggest
+|2,1,1554432439,47,"autosuggest"
+?/auto
+|2,1,1554431682,47,"auto"
 ?/pane
 |2,1,1552037815,47,"pane"
 ?/select
@@ -206,22 +222,6 @@ $
 |2,1,1518203128,47,"cancel"
 ?/readcount
 |2,1,1517717927,47,"readcount"
-?/read
-|2,1,1517716007,47,"read"
-?/alltraps
-|2,1,1517715069,47,"alltraps"
-?/trapno
-|2,1,1517715011,47,"trapno"
-?/trap
-|2,1,1517714942,47,"trap"
-?/lidt
-|2,1,1517714145,47,"lidt"
-?/idtinit
-|2,1,1517714131,47,"idtinit"
-?/bn
-|2,1,1517714124,47,"bn"
-?/cinit
-|2,1,1517714058,47,"cinit"
 
 # Expression History (newest to oldest):
 
@@ -235,12 +235,21 @@ $
 
 # Registers:
 "0	LINE	0
-	cp -r ~/.vim/plugin.vim ~/dotfiles/.vim/
-|3,0,0,1,1,0,1552594644,"cp -r ~/.vim/plugin.vim ~/dotfiles/.vim/"
+	Host edge
+	    Hostname c220g2-011028.wisc.cloudlab.us
+	    Port 22
+	    User gtbai
+|3,0,0,1,4,0,1553728402,"Host edge","    Hostname c220g2-011028.wisc.cloudlab.us","    Port 22","    User gtbai"
 "1	LINE	0
-	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-|3,0,1,1,1,0,1552036084,"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }"
+	
+|3,0,1,1,1,0,1554433716,""
 "2	LINE	0
+	
+|3,0,2,1,1,0,1554433505,""
+"3	LINE	0
+	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+|3,0,3,1,1,0,1552036084,"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }"
+"4	LINE	0
 	:Q
 	:q
 	
@@ -251,29 +260,23 @@ $
 	
 	
 	
-|3,0,2,1,10,0,1551419824,":Q",":q","","","","","","","",""
-"3	LINE	0
+|3,0,4,1,10,0,1551419824,":Q",":q","","","","","","","",""
+"5	LINE	0
 	func handler(fmt.GoStringer)
-|3,0,3,1,1,0,1551418641,"func handler(fmt.GoStringer)"
-"4	LINE	0
+|3,0,5,1,1,0,1551418641,"func handler(fmt.GoStringer)"
+"6	LINE	0
 	import "os"
 	import "f
-|3,0,4,1,2,0,1551417222,"import \"os\"","import \"f"
-"5	LINE	0
-	    LogInfo("here")
-|3,0,5,1,1,0,1551415853,"    LogInfo(\"here\")"
-"6	LINE	0
-	    LogInfo("strconv.Itoa(proxy.Port)")
-|3,0,6,1,1,0,1551415851,"    LogInfo(\"strconv.Itoa(proxy.Port)\")"
+|3,0,6,1,2,0,1551417222,"import \"os\"","import \"f"
 "7	LINE	0
-	    
-|3,0,7,1,1,0,1551415503,"    "
+	    LogInfo("here")
+|3,0,7,1,1,0,1551415853,"    LogInfo(\"here\")"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1551415493,""
+	    LogInfo("strconv.Itoa(proxy.Port)")
+|3,0,8,1,1,0,1551415851,"    LogInfo(\"strconv.Itoa(proxy.Port)\")"
 "9	LINE	0
-	    LogInfo("here...")
-|3,0,9,1,1,0,1551415048,"    LogInfo(\"here...\")"
+	    
+|3,0,9,1,1,0,1551415503,"    "
 "a	CHAR	0
 	xx
 |3,0,10,0,1,0,1512350725,"xx"
@@ -292,242 +295,323 @@ $
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfCGFUnkPvf5zzPxNhOYf/3Vd9V+AiTcfQY3GICNEvlwBs1tkcOtp/wjp1tH5VdQRQZXUNFamtUYb2T2QjcPszCgOEcfGUZ1GFdDTkwb+mVI4VUTFG3mvbH/1CooPqhq/bN9Smp+/akBgnA3ukB6wkjODJtOt1I72adJG7SqOeolA65cmLsXsRZn1SGBzVQOKelkmi6Vz4/nc/9uTXJLBp2NKan7a3VAvTY8FuJYQRw2GjtLoVGnvPvaGmqvQTCq+A2oVflYn067RuFvCSMWSABTUIZGOs5fguk91LMp3CLqYCL8gS1aRB6XWd4RjSD1O38dRyyWw3WUNewR+549GLXUXkTb1dnDR0OlHB2ky1VIqrn6vp90weusxeaBzwYO1d4mxZm24sGQzpultMBzTwEPGJh8k/WA7ZBgxh396fVFwnGsktHPmGdl3l7aoSipkPN
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com"
 ""-	CHAR	0
-	plugin
-|3,1,36,0,1,0,1552594648,"plugin"
+	3
+|3,1,36,0,1,0,1554435641,"3"
 
 # File marks:
-'0  17  0  ~/dotfiles/setup.sh
-|4,48,17,0,1552594666,"~/dotfiles/setup.sh"
-'1  31  18  ~/dotfiles/update.sh
-|4,49,31,18,1552594657,"~/dotfiles/update.sh"
-'2  2  14  ~/.vimrc
-|4,50,2,14,1552594613,"~/.vimrc"
-'3  2  32  ~/.vimrc
-|4,51,2,32,1552594391,"~/.vimrc"
-'4  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,52,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
-'5  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,53,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
-'6  167  18  ~/.tmux.conf
-|4,54,167,18,1552188625,"~/.tmux.conf"
-'7  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,55,1,0,1552099381,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
-'8  110  0  ~/.tmux.conf
-|4,56,110,0,1552038188,"~/.tmux.conf"
-'9  117  23  ~/.zshrc
-|4,57,117,23,1552036270,"~/.zshrc"
+'0  32  0  ~/dotfiles/setup.sh
+|4,48,32,0,1554505715,"~/dotfiles/setup.sh"
+'1  100  38  ~/.zshrc
+|4,49,100,38,1554435643,"~/.zshrc"
+'2  100  38  ~/.zshrc
+|4,50,100,38,1554435202,"~/.zshrc"
+'3  100  38  ~/.zshrc
+|4,51,100,38,1554435180,"~/.zshrc"
+'4  100  38  ~/.zshrc
+|4,52,100,38,1554435180,"~/.zshrc"
+'5  100  38  ~/.zshrc
+|4,53,100,38,1554435166,"~/.zshrc"
+'6  100  38  ~/.zshrc
+|4,54,100,38,1554435166,"~/.zshrc"
+'7  100  38  ~/.zshrc
+|4,55,100,38,1554435166,"~/.zshrc"
+'8  100  38  ~/.zshrc
+|4,56,100,38,1554435166,"~/.zshrc"
+'9  100  0  ~/.zshrc
+|4,57,100,0,1554435139,"~/.zshrc"
 
 # Jumplist (newest first):
--'  17  0  ~/dotfiles/setup.sh
-|4,39,17,0,1552594666,"~/dotfiles/setup.sh"
--'  1  0  ~/dotfiles/setup.sh
-|4,39,1,0,1552594660,"~/dotfiles/setup.sh"
--'  31  18  ~/dotfiles/update.sh
-|4,39,31,18,1552594657,"~/dotfiles/update.sh"
--'  31  18  ~/dotfiles/update.sh
-|4,39,31,18,1552594657,"~/dotfiles/update.sh"
--'  2  14  ~/.vimrc
-|4,39,2,14,1552594613,"~/.vimrc"
--'  2  14  ~/.vimrc
-|4,39,2,14,1552594613,"~/.vimrc"
--'  2  14  ~/.vimrc
-|4,39,2,14,1552594613,"~/.vimrc"
--'  2  14  ~/.vimrc
-|4,39,2,14,1552594613,"~/.vimrc"
--'  2  14  ~/.vimrc
-|4,39,2,14,1552594613,"~/.vimrc"
--'  2  14  ~/.vimrc
-|4,39,2,14,1552594613,"~/.vimrc"
--'  2  14  ~/.vimrc
-|4,39,2,14,1552594613,"~/.vimrc"
--'  2  14  ~/.vimrc
-|4,39,2,14,1552594613,"~/.vimrc"
--'  1  14  ~/.vimrc
-|4,39,1,14,1552594611,"~/.vimrc"
--'  1  14  ~/.vimrc
-|4,39,1,14,1552594611,"~/.vimrc"
--'  1  14  ~/.vimrc
-|4,39,1,14,1552594611,"~/.vimrc"
--'  1  14  ~/.vimrc
-|4,39,1,14,1552594611,"~/.vimrc"
--'  1  14  ~/.vimrc
-|4,39,1,14,1552594611,"~/.vimrc"
--'  1  14  ~/.vimrc
-|4,39,1,14,1552594611,"~/.vimrc"
--'  1  14  ~/.vimrc
-|4,39,1,14,1552594611,"~/.vimrc"
--'  1  14  ~/.vimrc
-|4,39,1,14,1552594611,"~/.vimrc"
--'  2  32  ~/.vimrc
-|4,39,2,32,1552594391,"~/.vimrc"
--'  2  32  ~/.vimrc
-|4,39,2,32,1552594391,"~/.vimrc"
--'  2  32  ~/.vimrc
-|4,39,2,32,1552594391,"~/.vimrc"
--'  2  32  ~/.vimrc
-|4,39,2,32,1552594391,"~/.vimrc"
--'  2  32  ~/.vimrc
-|4,39,2,32,1552594391,"~/.vimrc"
--'  2  32  ~/.vimrc
-|4,39,2,32,1552594391,"~/.vimrc"
--'  2  32  ~/.vimrc
-|4,39,2,32,1552594391,"~/.vimrc"
--'  2  32  ~/.vimrc
-|4,39,2,32,1552594391,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  101  4  ~/.vimrc
-|4,39,101,4,1552594371,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1552594370,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1552594370,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1552594370,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1552594370,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1552594370,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1552594370,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1552594370,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1552594370,"~/.vimrc"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-|4,39,1,0,1552270839,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
--'  48  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
-|4,39,48,0,1552261609,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py"
+-'  32  0  ~/dotfiles/setup.sh
+|4,39,32,0,1554505715,"~/dotfiles/setup.sh"
+-'  30  0  ~/dotfiles/setup.sh
+|4,39,30,0,1554505707,"~/dotfiles/setup.sh"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435643,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435643,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435202,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435202,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435180,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435180,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435166,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435166,"~/.zshrc"
+-'  100  0  ~/.zshrc
+|4,39,100,0,1554435139,"~/.zshrc"
+-'  100  0  ~/.zshrc
+|4,39,100,0,1554435139,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435122,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435122,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435022,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554435022,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434990,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434990,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434965,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434965,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434940,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434940,"~/.zshrc"
+-'  100  36  ~/.zshrc
+|4,39,100,36,1554434884,"~/.zshrc"
+-'  100  36  ~/.zshrc
+|4,39,100,36,1554434884,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434787,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434787,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434770,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434770,"~/.zshrc"
+-'  100  36  ~/.zshrc
+|4,39,100,36,1554434750,"~/.zshrc"
+-'  100  36  ~/.zshrc
+|4,39,100,36,1554434750,"~/.zshrc"
+-'  100  36  ~/.zshrc
+|4,39,100,36,1554434737,"~/.zshrc"
+-'  100  36  ~/.zshrc
+|4,39,100,36,1554434737,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434719,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434719,"~/.zshrc"
+-'  100  0  ~/.zshrc
+|4,39,100,0,1554434689,"~/.zshrc"
+-'  100  0  ~/.zshrc
+|4,39,100,0,1554434689,"~/.zshrc"
+-'  100  36  ~/.zshrc
+|4,39,100,36,1554434685,"~/.zshrc"
+-'  100  36  ~/.zshrc
+|4,39,100,36,1554434685,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434665,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434665,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434665,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434665,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434649,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434649,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434649,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434649,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434630,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434630,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434630,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434630,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434611,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434611,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434611,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434611,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434547,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434547,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434547,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434547,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434484,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434484,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434484,"~/.zshrc"
+-'  100  38  ~/.zshrc
+|4,39,100,38,1554434484,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434422,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434422,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434422,"~/.zshrc"
+-'  100  37  ~/.zshrc
+|4,39,100,37,1554434422,"~/.zshrc"
+-'  100  43  ~/.zshrc
+|4,39,100,43,1554434374,"~/.zshrc"
+-'  100  43  ~/.zshrc
+|4,39,100,43,1554434374,"~/.zshrc"
+-'  100  43  ~/.zshrc
+|4,39,100,43,1554434374,"~/.zshrc"
+-'  100  43  ~/.zshrc
+|4,39,100,43,1554434374,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
+-'  91  0  ~/.zshrc
+|4,39,91,0,1554434356,"~/.zshrc"
 
 # History of marks within files (newest to oldest):
 
 > ~/dotfiles/setup.sh
-	*	1552594665	0
-	"	17	0
+	*	1554505714	0
+	"	32	0
+	.	30	0
+	+	30	9
+	+	15	0
+	+	32	13
+	+	30	0
+
+> ~/.zshrc
+	*	1554435642	0
+	"	100	38
+	^	100	39
+	.	100	38
+	+	106	0
+	+	106	26
+	+	106	19
+	+	106	39
+	+	106	0
+	+	106	19
+	+	10	35
+	+	106	37
+	+	58	7
+	+	59	0
+	+	62	0
+	+	59	17
+	+	106	23
+	+	106	19
+	+	5	15
+	+	95	35
+	+	60	31
+	+	95	35
+	+	11	0
+	+	12	6
+	+	15	0
+	+	14	33
+	+	14	0
+	+	105	0
+	+	106	17
+	+	108	11
+	+	106	82
+	+	108	28
+	+	110	52
+	+	109	15
+	+	109	26
+	+	110	13
+	+	109	26
+	+	110	30
+	+	121	24
+	+	111	0
+	+	80	0
+	+	106	0
+	+	102	45
+	+	121	0
+	+	123	29
+	+	116	0
+	+	106	0
+	+	115	19
+	+	124	23
+	+	61	22
+	+	10	37
+	+	66	20
+	+	67	0
+	+	64	24
+	+	64	23
+	+	95	35
+	+	96	0
+	+	79	0
+	+	97	16
+	+	100	38
+
+> ~/.vim/plugged/vim-colors-solarized/colors/solarized.vim
+	*	1554434349	0
+	"	339	0
+
+> ~/.vim/plugged/vim-colors-solarized/doc/solarized.txt
+	*	1554434212	0
+	"	103	59
+
+> ~/dotfiles/NERD_tree_1
+	*	1554434191	0
+	"	28	0
+	.	1	0
+	+	1	0
 
 > ~/dotfiles/update.sh
-	*	1552594656	0
-	"	31	18
+	*	1554433643	0
+	"	30	27
 	^	19	19
 	.	19	18
 	+	5	80
@@ -611,6 +695,68 @@ $
 	+	31	0
 	+	19	19
 	+	19	18
+
+> ~/.ssh/config
+	*	1553728459	0
+	"	86	13
+	^	84	43
+	.	84	42
+	+	24	0
+	+	17	0
+	+	12	0
+	+	17	0
+	+	12	14
+	+	13	19
+	+	88	0
+	+	42	13
+	+	46	35
+	+	59	9
+	+	67	13
+	+	69	9
+	+	67	13
+	+	70	28
+	+	71	0
+	+	42	10
+	+	70	29
+	+	69	12
+	+	70	32
+	+	69	10
+	+	70	29
+	+	67	42
+	+	69	13
+	+	70	29
+	+	67	42
+	+	48	0
+	+	53	0
+	+	48	12
+	+	49	42
+	+	52	35
+	+	49	42
+	+	48	13
+	+	54	0
+	+	59	0
+	+	54	13
+	+	55	42
+	+	60	0
+	+	65	0
+	+	60	13
+	+	61	13
+	+	72	0
+	+	77	0
+	+	72	9
+	+	73	27
+	+	75	13
+	+	77	0
+	+	78	0
+	+	82	0
+	+	78	8
+	+	79	42
+	+	81	13
+	+	82	0
+	+	83	0
+	+	87	0
+	+	83	10
+	+	84	42
 
 > ~/.vimrc
 	*	1552594612	0
@@ -751,57 +897,6 @@ $
 	+	50	1
 	+	44	0
 	+	64	0
-
-> ~/.zshrc
-	*	1552036269	0
-	"	117	23
-	^	117	24
-	.	117	23
-	+	99	0
-	+	99	26
-	+	99	19
-	+	99	39
-	+	99	0
-	+	99	19
-	+	10	35
-	+	99	37
-	+	58	7
-	+	59	0
-	+	61	0
-	+	59	17
-	+	99	23
-	+	99	19
-	+	5	15
-	+	94	0
-	+	60	31
-	+	94	0
-	+	11	0
-	+	12	6
-	+	15	0
-	+	14	33
-	+	14	0
-	+	98	0
-	+	99	17
-	+	101	11
-	+	99	82
-	+	101	28
-	+	103	52
-	+	102	15
-	+	102	26
-	+	103	13
-	+	102	26
-	+	103	30
-	+	114	24
-	+	104	0
-	+	78	0
-	+	99	0
-	+	95	45
-	+	114	0
-	+	116	29
-	+	109	0
-	+	99	0
-	+	108	19
-	+	117	23
 
 > ~/.oh-my-zsh/oh-my-zsh.sh
 	*	1552036208	0
@@ -965,64 +1060,6 @@ $
 	.	6	28
 	+	3	12
 	+	6	28
-
-> ~/.ssh/config
-	*	1551411034	0
-	"	82	0
-	^	81	14
-	.	82	0
-	+	24	0
-	+	17	0
-	+	12	0
-	+	17	0
-	+	12	14
-	+	13	19
-	+	83	0
-	+	42	13
-	+	46	35
-	+	59	9
-	+	67	13
-	+	69	9
-	+	67	13
-	+	70	28
-	+	71	0
-	+	42	10
-	+	70	29
-	+	69	12
-	+	70	32
-	+	69	10
-	+	70	29
-	+	67	42
-	+	69	13
-	+	70	29
-	+	67	42
-	+	48	0
-	+	53	0
-	+	48	12
-	+	49	42
-	+	52	35
-	+	49	42
-	+	48	13
-	+	54	0
-	+	59	0
-	+	54	13
-	+	55	42
-	+	60	0
-	+	65	0
-	+	60	13
-	+	61	13
-	+	72	0
-	+	77	0
-	+	72	9
-	+	73	27
-	+	75	13
-	+	77	0
-	+	78	0
-	+	82	0
-	+	78	8
-	+	79	42
-	+	81	13
-	+	82	0
 
 > /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
 	*	1551334705	0
@@ -1826,27 +1863,3 @@ $
 	.	5	17
 	+	29	19
 	+	5	17
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/syscall.c
-	*	1517716818	0
-	"	106	0
-	^	106	17
-	.	106	24
-	+	105	0
-	+	107	0
-	+	106	0
-	+	107	0
-	+	106	0
-	+	107	0
-	+	106	24
-
-> ~/Documents/codebase/cs537-projs/xv6/user/usys.S
-	*	1517716524	0
-	"	32	0
-	^	32	20
-	.	32	19
-	+	32	19
-
-> /private/var/folders/p3/t6754x9s6m30hdyy25j0k_vh0000gn/T/v2ZNmtr/3.c
-	*	1517715925	0
-	"	1	0

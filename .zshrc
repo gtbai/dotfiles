@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # only show the last directory
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
@@ -58,6 +58,7 @@ plugins=(
     git
     zsh-syntax-highlighting
     zsh-history-substring-search
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -75,6 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+
 export EDITOR='vim'
 
 # Compilation flags
@@ -91,4 +93,9 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Plugin configs
+
+# zsh-autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 
