@@ -23,7 +23,7 @@ source ~/.zshrc
 vim -c "PlugInstall"
 
 # install YouCompleteMe
-sudo apt install -y cmake
+sudo apt install -y cmake python-dev 
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
 
