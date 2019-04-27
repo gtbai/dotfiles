@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/66
+~MSle0~/vim-ma
 
 # Last Substitute Search Pattern:
 ~MSle0&’
@@ -20,20 +20,26 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1554505715,,"q"
 :wq
-|2,0,1554435643,,"wq"
-:Wq
-|2,0,1554435202,,"Wq"
+|2,0,1556332158,,"wq"
+:w
+|2,0,1556332156,,"w"
+:W
+|2,0,1556314379,,"W"
+:q
+|2,0,1556233520,,"q"
 :Q
-|2,0,1554434689,,"Q"
+|2,0,1555118701,,"Q"
+:Wq
+|2,0,1554744767,,"Wq"
+:PlugStatus
+|2,0,1554606686,,"PlugStatus"
+:bd
+|2,0,1554508021,,"bd"
+:e ~/.vim/plugin.vim
+|2,0,1554508013,,"e ~/.vim/plugin.vim"
 :help solarized
 |2,0,1554434207,,"help solarized"
-:w
-|2,0,1554433863,,"w"
-:e ~/.vim/plugin.vim
-|2,0,1552035865,,"e ~/.vim/plugin.vim"
 :e ~/.vim/plugged/
 |2,0,1552035847,,"e ~/.vim/plugged/"
 :GoRun 3000
@@ -46,8 +52,6 @@ $
 |2,0,1551418100,,"PlugInstall"
 :source ~/.vimrc
 |2,0,1551418096,,"source ~/.vimrc"
-:PlugStatus
-|2,0,1551391671,,"PlugStatus"
 :66
 |2,0,1551334271,,"66"
 :YcmRestartServer
@@ -72,8 +76,6 @@ $
 |2,0,1540923455,,"source ~/.vim/autoload/bclose.vim"
 :Bclose
 |2,0,1540923440,,"Bclose"
-:W
-|2,0,1540922557,,"W"
 :e ~/.vimrc
 |2,0,1540921828,,"e ~/.vimrc"
 :54
@@ -98,8 +100,6 @@ $
 |2,0,1518298716,,"74"
 :help exchange
 |2,0,1518296703,,"help exchange"
-:bd
-|2,0,1518295686,,"bd"
 :61
 |2,0,1518166006,,"61"
 :wqall
@@ -122,6 +122,12 @@ $
 |2,0,1517715925,,"b2"
 
 # Search String History (newest to oldest):
+?/vim-ma
+|2,1,1556332095,47,"vim-ma"
+?/vim-go
+|2,1,1554507984,47,"vim-go"
+?/let
+|2,1,1554507972,47,"let"
 ?/66
 |2,1,1554434360,47,"66"
 ?/comment
@@ -216,12 +222,6 @@ $
 |2,1,1518243890,47,"strrok"
 ?/token
 |2,1,1518241762,47,"token"
-?/argv
-|2,1,1518240467,47,"argv"
-?/cancel
-|2,1,1518203128,47,"cancel"
-?/readcount
-|2,1,1517717927,47,"readcount"
 
 # Expression History (newest to oldest):
 
@@ -235,21 +235,31 @@ $
 
 # Registers:
 "0	LINE	0
-	Host edge
-	    Hostname c220g2-011028.wisc.cloudlab.us
-	    Port 22
-	    User gtbai
-|3,0,0,1,4,0,1553728402,"Host edge","    Hostname c220g2-011028.wisc.cloudlab.us","    Port 22","    User gtbai"
-"1	LINE	0
-	
-|3,0,1,1,1,0,1554433716,""
+	" vim-markdown
+	autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+|3,0,0,1,2,0,1556332097,"\" vim-markdown","autocmd BufNewFile,BufReadPost *.md set filetype=markdown"
+""1	LINE	0
+	autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+|3,1,1,1,1,0,1556332147,"autocmd BufNewFile,BufReadPost *.md set filetype=markdown"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1554433505,""
+	.*\.DS_Store
+|3,0,2,1,1,0,1555118713,".*\\.DS_Store"
 "3	LINE	0
-	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-|3,0,3,1,1,0,1552036084,"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }"
+	ipy
+|3,0,3,1,1,0,1555118710,"ipy"
 "4	LINE	0
+	let g:go_version_warning = 0
+|3,0,4,1,1,0,1554606187,"let g:go_version_warning = 0"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1554433716,""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1554433505,""
+"7	LINE	0
+	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+|3,0,7,1,1,0,1552036084,"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }"
+"8	LINE	0
 	:Q
 	:q
 	
@@ -260,23 +270,10 @@ $
 	
 	
 	
-|3,0,4,1,10,0,1551419824,":Q",":q","","","","","","","",""
-"5	LINE	0
-	func handler(fmt.GoStringer)
-|3,0,5,1,1,0,1551418641,"func handler(fmt.GoStringer)"
-"6	LINE	0
-	import "os"
-	import "f
-|3,0,6,1,2,0,1551417222,"import \"os\"","import \"f"
-"7	LINE	0
-	    LogInfo("here")
-|3,0,7,1,1,0,1551415853,"    LogInfo(\"here\")"
-"8	LINE	0
-	    LogInfo("strconv.Itoa(proxy.Port)")
-|3,0,8,1,1,0,1551415851,"    LogInfo(\"strconv.Itoa(proxy.Port)\")"
+|3,0,8,1,10,0,1551419824,":Q",":q","","","","","","","",""
 "9	LINE	0
-	    
-|3,0,9,1,1,0,1551415503,"    "
+	func handler(fmt.GoStringer)
+|3,0,9,1,1,0,1551418641,"func handler(fmt.GoStringer)"
 "a	CHAR	0
 	xx
 |3,0,10,0,1,0,1512350725,"xx"
@@ -294,235 +291,480 @@ $
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com",>749
 |<"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfCGFUnkPvf5zzPxNhOYf/3Vd9V+AiTcfQY3GICNEvlwBs1tkcOtp/wjp1tH5VdQRQZXUNFamtUYb2T2QjcPszCgOEcfGUZ1GFdDTkwb+mVI4VUTFG3mvbH/1CooPqhq/bN9Smp+/akBgnA3ukB6wkjODJtOt1I72adJG7SqOeolA65cmLsXsRZn1SGBzVQOKelkmi6Vz4/nc/9uTXJLBp2NKan7a3VAvTY8FuJYQRw2GjtLoVGnvPvaGmqvQTCq+A2oVflYn067RuFvCSMWSABTUIZGOs5fguk91LMp3CLqYCL8gS1aRB6XWd4RjSD1O38dRyyWw3WUNewR+549GLXUXkTb1dnDR0OlHB2ky1VIqrn6vp90weusxeaBzwYO1d4mxZm24sGQzpultMBzTwEPGJh8k/WA7ZBgxh396fVFwnGsktHPmGdl3l7aoSipkPN
 |<7fN54s0qU0Fiw47+1tMnit3+AyXhd8BTxd9B6+GbszTYAB3xGAfZKyex313YfYIQq0VC6ZvctRCt2P6UcWb1B4l3y7Pp7ouCXLDYQHeQDFcHN1eTzn3o1ZblBBEdDNh8BzDTFjis8ZDBHyVRNUeHMuguyeAqbSVg7agsbVprLLrjVe+/v80EWk08n64ho8Cpin3E2jhQoIgHYMj5TJJ8VbXYCueBQNKKP8Ex60aw== baiguangtong@gmail.com"
-""-	CHAR	0
-	3
-|3,1,36,0,1,0,1554435641,"3"
+"-	CHAR	0
+	vim-markdown
+|3,0,36,0,1,0,1556332105,"vim-markdown"
 
 # File marks:
-'0  32  0  ~/dotfiles/setup.sh
-|4,48,32,0,1554505715,"~/dotfiles/setup.sh"
-'1  100  38  ~/.zshrc
-|4,49,100,38,1554435643,"~/.zshrc"
-'2  100  38  ~/.zshrc
-|4,50,100,38,1554435202,"~/.zshrc"
-'3  100  38  ~/.zshrc
-|4,51,100,38,1554435180,"~/.zshrc"
-'4  100  38  ~/.zshrc
-|4,52,100,38,1554435180,"~/.zshrc"
-'5  100  38  ~/.zshrc
-|4,53,100,38,1554435166,"~/.zshrc"
-'6  100  38  ~/.zshrc
-|4,54,100,38,1554435166,"~/.zshrc"
-'7  100  38  ~/.zshrc
-|4,55,100,38,1554435166,"~/.zshrc"
-'8  100  38  ~/.zshrc
-|4,56,100,38,1554435166,"~/.zshrc"
-'9  100  0  ~/.zshrc
-|4,57,100,0,1554435139,"~/.zshrc"
+'0  116  27  ~/.vimrc
+|4,48,116,27,1556332158,"~/.vimrc"
+'1  94  42  ~/.ssh/config
+|4,49,94,42,1556314395,"~/.ssh/config"
+'2  89  42  ~/.ssh/config
+|4,50,89,42,1556305811,"~/.ssh/config"
+'3  89  42  ~/.ssh/config
+|4,51,89,42,1556305811,"~/.ssh/config"
+'4  13  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,52,13,0,1556233520,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+'5  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,53,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+'6  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,54,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+'7  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,55,1,0,1555118714,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+'8  2  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,56,2,0,1555118711,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+'9  3  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,57,3,0,1555118711,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 
 # Jumplist (newest first):
--'  32  0  ~/dotfiles/setup.sh
-|4,39,32,0,1554505715,"~/dotfiles/setup.sh"
--'  30  0  ~/dotfiles/setup.sh
-|4,39,30,0,1554505707,"~/dotfiles/setup.sh"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435643,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435643,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435202,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435202,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435180,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435180,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435166,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435166,"~/.zshrc"
--'  100  0  ~/.zshrc
-|4,39,100,0,1554435139,"~/.zshrc"
--'  100  0  ~/.zshrc
-|4,39,100,0,1554435139,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435122,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435122,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435022,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554435022,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434990,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434990,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434965,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434965,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434940,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434940,"~/.zshrc"
--'  100  36  ~/.zshrc
-|4,39,100,36,1554434884,"~/.zshrc"
--'  100  36  ~/.zshrc
-|4,39,100,36,1554434884,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434787,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434787,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434770,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434770,"~/.zshrc"
--'  100  36  ~/.zshrc
-|4,39,100,36,1554434750,"~/.zshrc"
--'  100  36  ~/.zshrc
-|4,39,100,36,1554434750,"~/.zshrc"
--'  100  36  ~/.zshrc
-|4,39,100,36,1554434737,"~/.zshrc"
--'  100  36  ~/.zshrc
-|4,39,100,36,1554434737,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434719,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434719,"~/.zshrc"
--'  100  0  ~/.zshrc
-|4,39,100,0,1554434689,"~/.zshrc"
--'  100  0  ~/.zshrc
-|4,39,100,0,1554434689,"~/.zshrc"
--'  100  36  ~/.zshrc
-|4,39,100,36,1554434685,"~/.zshrc"
--'  100  36  ~/.zshrc
-|4,39,100,36,1554434685,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434665,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434665,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434665,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434665,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434649,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434649,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434649,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434649,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434630,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434630,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434630,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434630,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434611,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434611,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434611,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434611,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434547,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434547,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434547,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434547,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434484,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434484,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434484,"~/.zshrc"
--'  100  38  ~/.zshrc
-|4,39,100,38,1554434484,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434422,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434422,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434422,"~/.zshrc"
--'  100  37  ~/.zshrc
-|4,39,100,37,1554434422,"~/.zshrc"
--'  100  43  ~/.zshrc
-|4,39,100,43,1554434374,"~/.zshrc"
--'  100  43  ~/.zshrc
-|4,39,100,43,1554434374,"~/.zshrc"
--'  100  43  ~/.zshrc
-|4,39,100,43,1554434374,"~/.zshrc"
--'  100  43  ~/.zshrc
-|4,39,100,43,1554434374,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
--'  91  0  ~/.zshrc
-|4,39,91,0,1554434356,"~/.zshrc"
+-'  116  27  ~/.vimrc
+|4,39,116,27,1556332158,"~/.vimrc"
+-'  261  0  ~/.vimrc
+|4,39,261,0,1556332095,"~/.vimrc"
+-'  246  0  ~/.vimrc
+|4,39,246,0,1556332091,"~/.vimrc"
+-'  94  42  ~/.ssh/config
+|4,39,94,42,1556314395,"~/.ssh/config"
+-'  94  42  ~/.ssh/config
+|4,39,94,42,1556314395,"~/.ssh/config"
+-'  89  4  ~/.ssh/config
+|4,39,89,4,1556314369,"~/.ssh/config"
+-'  89  4  ~/.ssh/config
+|4,39,89,4,1556314369,"~/.ssh/config"
+-'  89  42  ~/.ssh/config
+|4,39,89,42,1556305811,"~/.ssh/config"
+-'  89  42  ~/.ssh/config
+|4,39,89,42,1556305811,"~/.ssh/config"
+-'  86  4  ~/.ssh/config
+|4,39,86,4,1556305734,"~/.ssh/config"
+-'  86  4  ~/.ssh/config
+|4,39,86,4,1556305734,"~/.ssh/config"
+-'  86  4  ~/.ssh/config
+|4,39,86,4,1556305734,"~/.ssh/config"
+-'  86  4  ~/.ssh/config
+|4,39,86,4,1556305734,"~/.ssh/config"
+-'  13  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,13,0,1556233520,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  13  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,13,0,1556233520,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  13  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,13,0,1556233520,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  13  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,13,0,1556233520,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  13  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,13,0,1556233520,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  13  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,13,0,1556233520,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  13  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,13,0,1556233520,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  13  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,13,0,1556233520,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,1,0,1556233481,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,1,0,1556233481,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,1,0,1556233481,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,1,0,1556233481,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,1,0,1556233481,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,1,0,1556233481,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,1,0,1556233481,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+|4,39,1,0,1556233481,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  5  4  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,5,4,1555560135,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+|4,39,1,0,1555560123,"~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+|4,39,1,0,1555122134,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,1,0,1555118714,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,1,0,1555118714,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,1,0,1555118714,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,1,0,1555118714,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,1,0,1555118714,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,1,0,1555118714,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
+-'  1  0  ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+|4,39,1,0,1555118714,"~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore"
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	*	1556332157	0
+	"	116	27
+	^	116	28
+	.	116	27
+	+	158	0
+	+	211	25
+	+	209	0
+	+	207	22
+	+	209	28
+	+	212	0
+	+	109	0
+	+	201	11
+	+	256	0
+	+	1	0
+	+	256	7
+	+	257	0
+	+	268	0
+	+	264	0
+	+	265	0
+	+	264	0
+	+	287	0
+	+	250	8
+	+	252	0
+	+	251	0
+	+	250	0
+	+	251	11
+	+	252	10
+	+	252	1
+	+	251	2
+	+	273	0
+	+	293	0
+	+	251	0
+	+	137	0
+	+	136	0
+	+	135	0
+	+	136	25
+	+	69	0
+	+	3	23
+	+	3	0
+	+	27	0
+	+	225	0
+	+	228	0
+	+	225	34
+	+	226	19
+	+	227	14
+	+	228	0
+	+	3	0
+	+	307	16
+	+	307	0
+	+	178	69
+	+	2	14
+	+	1	0
+	+	2	14
+	+	213	51
+	+	215	0
+	+	223	0
+	+	214	0
+	+	114	0
+	+	117	0
+	+	114	8
+	+	115	41
+	+	117	0
+	+	116	27
+
+> ~/.ssh/config
+	*	1556314394	0
+	"	94	42
+	^	94	43
+	.	94	42
+	+	24	0
+	+	17	0
+	+	12	0
+	+	17	0
+	+	12	14
+	+	13	19
+	+	98	0
+	+	42	13
+	+	46	35
+	+	59	9
+	+	67	13
+	+	69	9
+	+	67	13
+	+	70	28
+	+	71	0
+	+	42	10
+	+	70	29
+	+	69	12
+	+	70	32
+	+	69	10
+	+	70	29
+	+	67	42
+	+	69	13
+	+	70	29
+	+	67	42
+	+	48	0
+	+	53	0
+	+	48	12
+	+	49	42
+	+	52	35
+	+	49	42
+	+	48	13
+	+	54	0
+	+	59	0
+	+	54	13
+	+	55	42
+	+	60	0
+	+	65	0
+	+	60	13
+	+	61	13
+	+	72	0
+	+	77	0
+	+	72	9
+	+	73	27
+	+	75	13
+	+	77	0
+	+	78	0
+	+	82	0
+	+	78	8
+	+	79	42
+	+	81	13
+	+	82	0
+	+	83	0
+	+	87	0
+	+	83	10
+	+	84	42
+	+	88	0
+	+	92	0
+	+	88	11
+	+	89	42
+	+	93	0
+	+	97	0
+	+	93	11
+	+	94	42
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/docs/stage3.md
+	*	1556233513	0
+	"	13	0
+
+> ~/Documents/codebase/wisc/s19/cs838_vision/team_repo/ImageCaptioningProject/.gitignore
+	*	1555560134	0
+	"	5	4
+	^	5	5
+	.	5	4
+	+	5	4
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
+	*	1555122133	0
+	"	1	0
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
+	*	1555118714	0
+	"	1	0
+	^	2	18
+	.	1	0
+	+	1	8
+	+	1	12
+	+	2	20
+	+	1	0
+	+	2	3
+	+	2	0
+	+	1	0
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage2/.gitignore
+	*	1554744767	0
+	"	1	3
+	^	1	4
+	.	1	3
+	+	1	3
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage2/src/.gitignore
+	*	1554744748	0
+	"	1	3
+	^	1	5
+	.	1	3
+	+	1	3
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage2/src/.giti
+	*	1554744740	0
+	"	1	0
+
+> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage2/src/.git
+	*	1554744737	0
+	"	1	0
+
+> ~/.vim/plugin.vim
+	*	1554508018	0
+	"	89	0
+	^	22	0
+	.	15	0
+	+	70	15
+	+	73	0
+	+	79	0
+	+	74	20
+	+	73	24
+	+	74	25
+	+	73	0
+	+	44	1
+	+	10	30
+	+	11	54
+	+	21	22
+	+	23	0
+	+	19	0
+	+	21	0
+	+	19	40
+	+	20	0
+	+	76	0
+	+	79	0
+	+	87	0
+	+	77	1
+	+	71	1
+	+	77	33
+	+	79	0
+	+	86	0
+	+	79	23
+	+	34	25
+	+	32	0
+	+	34	0
+	+	33	6
+	+	34	0
+	+	87	0
+	+	80	34
+	+	87	0
+	+	80	2
+	+	80	0
+	+	81	0
+	+	82	0
+	+	81	0
+	+	83	13
+	+	85	4
+	+	11	0
+	+	10	27
+	+	21	0
+	+	22	0
+	+	23	0
+	+	22	49
+	+	22	0
+	+	15	0
+
+> ~/ControlP
+	*	1554507999	0
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/dotfiles/setup.sh
 	*	1554505714	0
@@ -696,127 +938,6 @@ $
 	+	19	19
 	+	19	18
 
-> ~/.ssh/config
-	*	1553728459	0
-	"	86	13
-	^	84	43
-	.	84	42
-	+	24	0
-	+	17	0
-	+	12	0
-	+	17	0
-	+	12	14
-	+	13	19
-	+	88	0
-	+	42	13
-	+	46	35
-	+	59	9
-	+	67	13
-	+	69	9
-	+	67	13
-	+	70	28
-	+	71	0
-	+	42	10
-	+	70	29
-	+	69	12
-	+	70	32
-	+	69	10
-	+	70	29
-	+	67	42
-	+	69	13
-	+	70	29
-	+	67	42
-	+	48	0
-	+	53	0
-	+	48	12
-	+	49	42
-	+	52	35
-	+	49	42
-	+	48	13
-	+	54	0
-	+	59	0
-	+	54	13
-	+	55	42
-	+	60	0
-	+	65	0
-	+	60	13
-	+	61	13
-	+	72	0
-	+	77	0
-	+	72	9
-	+	73	27
-	+	75	13
-	+	77	0
-	+	78	0
-	+	82	0
-	+	78	8
-	+	79	42
-	+	81	13
-	+	82	0
-	+	83	0
-	+	87	0
-	+	83	10
-	+	84	42
-
-> ~/.vimrc
-	*	1552594612	0
-	"	2	14
-	^	1	15
-	.	2	14
-	+	154	0
-	+	207	25
-	+	205	0
-	+	203	22
-	+	205	28
-	+	208	0
-	+	109	0
-	+	197	11
-	+	249	0
-	+	1	0
-	+	249	7
-	+	250	0
-	+	261	0
-	+	257	0
-	+	258	0
-	+	257	0
-	+	280	0
-	+	243	8
-	+	245	0
-	+	244	0
-	+	243	0
-	+	244	11
-	+	245	10
-	+	245	1
-	+	244	2
-	+	266	0
-	+	286	0
-	+	244	0
-	+	133	0
-	+	132	0
-	+	131	0
-	+	132	25
-	+	69	0
-	+	3	23
-	+	3	0
-	+	27	0
-	+	218	0
-	+	221	0
-	+	218	34
-	+	219	19
-	+	220	14
-	+	221	0
-	+	3	0
-	+	300	16
-	+	300	0
-	+	174	69
-	+	2	14
-	+	1	0
-	+	2	14
-
-> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/MERGE_MSG
-	*	1552270837	0
-	"	1	0
-
 > ~/Documents/codebase/wisc/s19/cs839/TeamCSC/stage1/src/filter_docs.py
 	*	1552261609	0
 	"	48	0
@@ -902,60 +1023,6 @@ $
 	*	1552036208	0
 	"	113	0
 
-> ~/.vim/plugin.vim
-	*	1552036115	0
-	"	15	0
-	^	22	0
-	.	15	0
-	+	70	15
-	+	73	0
-	+	79	0
-	+	74	20
-	+	73	24
-	+	74	25
-	+	73	0
-	+	44	1
-	+	10	30
-	+	11	54
-	+	21	22
-	+	23	0
-	+	19	0
-	+	21	0
-	+	19	40
-	+	20	0
-	+	76	0
-	+	79	0
-	+	87	0
-	+	77	1
-	+	71	1
-	+	77	33
-	+	79	0
-	+	86	0
-	+	79	23
-	+	34	25
-	+	32	0
-	+	34	0
-	+	33	6
-	+	34	0
-	+	87	0
-	+	80	34
-	+	87	0
-	+	80	2
-	+	80	0
-	+	81	0
-	+	82	0
-	+	81	0
-	+	83	13
-	+	85	4
-	+	11	0
-	+	10	27
-	+	21	0
-	+	22	0
-	+	23	0
-	+	22	49
-	+	22	0
-	+	15	0
-
 > ~/dotfiles/.gitignore
 	*	1552036015	0
 	"	1	17
@@ -972,15 +1039,6 @@ $
 > ~/Downloads/autograder/results.json
 	*	1552008278	0
 	"	1	0
-
-> ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.gitignore
-	*	1552004005	0
-	"	3	20
-	^	3	21
-	.	3	20
-	+	1	8
-	+	2	12
-	+	3	20
 
 > ~/Documents/codebase/wisc/s19/cs839/TeamCSC/.git/COMMIT_EDITMSG
 	*	1552003919	0
@@ -1810,56 +1868,3 @@ $
 	+	9	4
 	+	10	4
 	+	11	4
-
-> ~/Documents/codebase/cs537-projs/xv6/user/user.h
-	*	1517718996	0
-	"	12	0
-	^	12	15
-	.	12	14
-	+	29	0
-	+	12	14
-
-> ~/Documents/codebase/cs537-projs/xv6/include/syscall.h
-	*	1517718643	0
-	"	28	0
-	^	26	27
-	.	26	26
-	+	26	26
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/sysproc.c
-	*	1517717932	0
-	"	19	2
-	^	7	0
-	.	8	0
-	+	7	0
-	+	8	0
-
-> ~/Documents/codebase/cs537-projs/xv6/ControlP
-	*	1517717921	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/codebase/cs537-projs/xv6/NERD_tree_1
-	*	1517717915	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/sysfile.c
-	*	1517717126	0
-	"	48	12
-	^	63	19
-	.	61	0
-	+	69	13
-	+	61	27
-	+	63	18
-	+	61	0
-
-> ~/Documents/codebase/cs537-projs/xv6/kernel/sysfunc.h
-	*	1517716905	0
-	"	29	0
-	^	5	18
-	.	5	17
-	+	29	19
-	+	5	17

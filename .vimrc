@@ -111,6 +111,10 @@ au Syntax * RainbowParenthesesLoadSquare
 " vim-markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" vim-go
+" get rid of warning about low Vim version
+let g:go_version_warning = 0
+
 " easy-motion
 let g:EasyMotion_leader_key = '<Leader>'
 
@@ -205,6 +209,9 @@ nnoremap <leader>v V`]
 " Keybindings to invoke CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" Get rid of vim-go's warning about old Vim version
+let g:go_version_warning = 0
 
 "------------------
 " Useful Functions
