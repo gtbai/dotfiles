@@ -6,6 +6,12 @@ rm -rf ~/.viminfo
 rm -rf ~/.tmux
 rm -rf ~/.tmux.conf
 rm -rf ~/.zshrc
+rm -rf ~/.oh-my-zsh
+
+# install deps
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo apt update
+sudo apt install -y cmake python-dev 
 
 # copy new ones here
 cp -r ~/dotfiles/.vim ~/
@@ -23,8 +29,6 @@ source ~/.zshrc
 vim -c "PlugInstall"
 
 # install YouCompleteMe
-sudo apt update
-sudo apt install -y cmake python-dev 
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
 
