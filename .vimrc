@@ -14,7 +14,7 @@ syntax on
 " Vim UI
 "--------
 " color scheme
-set background=dark
+set background=light
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
@@ -155,7 +155,7 @@ let g:airline_powerline_fonts=1
 
 
 " nerdtree-git-plugin
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "*",
     \ "Staged"    : "+",
     \ "Untracked" : "%",
@@ -189,6 +189,7 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_loc_list_height = 5
 
 " snipmate
+let g:snipMate = { 'snippet_version' : 1 }
 imap zsc <esc>a<Plug>snipMateNextOrTrigger
 smap zsc <Plug>snipMateNextOrTrigger
 
