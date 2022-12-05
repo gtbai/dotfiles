@@ -108,3 +108,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.fzf/shell/completion.zsh
+source ~/.fzf/shell/fzf-git.sh
+alias rfv="~/.fzf/shell/rfv"
+export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --info=inline"

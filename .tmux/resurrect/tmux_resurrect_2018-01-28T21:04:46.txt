@@ -1,8 +1,0 @@
-pane	1	1	:~	1	:*	1	:/Users/gtbai	1	zsh	:
-pane	cs537	1	:..e/cs537-projs	0	:-	1	:/Users/gtbai/Documents/codebase/cs537-projs	1	zsh	:
-pane	cs537	2	:..537-projs/p1a	1	:*	1	:/Users/gtbai/Documents/codebase/cs537-projs/p1a	0	zsh	:
-pane	cs537	2	:..537-projs/p1a	1	:*	2	:/Users/gtbai/Documents/codebase/cs537-projs/p1a	1	zsh	:
-window	1	1	1	:*	b500,128x32,0,0,3
-window	cs537	1	0	:-	c47e,146x36,0,0,1
-window	cs537	2	1	:*	7902,146x36,0,0{73x36,0,0,2,72x36,74,0,6}
-state	cs537	

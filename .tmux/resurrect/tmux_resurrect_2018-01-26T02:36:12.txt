@@ -1,7 +1,0 @@
-pane	3	1	:~	1	:*	1	:/Users/gtbai	1	zsh	:
-pane	cs537	1	:vim	1	:*	1	:/Users/gtbai/Documents/codebase/cs537-projs/p1a	1	vim	:vim my-cat.c
-pane	cs537	2	:..YouCompleteMe	0	:-	1	:/Users/gtbai/.vim/plugged/YouCompleteMe	1	zsh	:
-window	3	1	1	:*	c4c1,114x27,0,0,4
-window	cs537	1	1	:*	c21d,97x27,0,0,0
-window	cs537	2	0	:-	c223,97x27,0,0,6
-state	cs537	3
