@@ -5,6 +5,7 @@ To sync my dotfiles.
 
 + Unix-like operating system (macOS or Linux)
 + [Zsh](http://www.zsh.org/) should be installed (v4.3.9 or more recent). If not pre-installed (zsh --version to confirm), check the following instruction here: [Installing ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
++ Change `zsh` to default shell with ```chsh -s $(which zsh)```
 + [Oh My Zsh](http://ohmyz.sh/) should be installed. Installation can be done with one line of command:
   + via curl: ```sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
   + via wget: ```sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"```
