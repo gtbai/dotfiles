@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -15,6 +15,9 @@ export ZSH=$HOME/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# only show the last directory
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -60,12 +63,17 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    fzf-tab
     zsh-syntax-highlighting
     zsh-history-substring-search
     zsh-autosuggestions
+    vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# Enable default aliases
+source ~/.oh-my-zsh/templates/zshrc.zsh-template
 
 # User configuration
 
@@ -100,8 +108,11 @@ export EDITOR='vim'
 
 # Plugin configs
 
-# zsh-autosuggestions
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
+ # zsh-autosuggestions
+source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=180"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
 
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -109,9 +120,18 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Make `history` show command timestamp
+HISTTIMEFORMAT="%F %T "        # for e.g. “1999-02-29 23:59:59”
+
+# vi-mode
+bindkey "^[" vi-cmd-mode
+
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source ~/.fzf/shell/completion.zsh
-source ~/.fzf/shell/fzf-git.sh
-alias rfv="~/.fzf/shell/rfv"
-export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --info=inline"
+[ -f ~/.fzf/shell/completion.zsh ] && source ~/.fzf/shell/completion.zsh
+[ -f ~/.fzf/shell/fzf-git.sh ] && source ~/.fzf/shell/fzf-git.sh
+alias pf="fzf --preview='bat --style=numbers --color=always {}' --bind shift-up:preview-page-up,shift-down:preview-page-down"
+
+# fzf-tab
+zstyle ':fzf-tab:*' default-color $'\033[94m'
+zstyle ':fzf-tab:*' fzf-flags '--color=hl:#87AF87'
