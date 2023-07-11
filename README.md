@@ -13,7 +13,7 @@ To sync my dotfiles.
 
 ## Usage
 
-1. Clone this git repo to your local machine: ```git clone https://github.com/gtbai/dotfiles.git```
+1. Clone this git repo to your home directory: ```cd ~ && git clone https://github.com/gtbai/dotfiles.git```
 2. Run ```setup_mac.sh``` to set up the configuration for MacOS machines, ```setup_linux.sh``` for Linux.
 3. ~~As some vim plugins are too big to be uploaded to GitHub, you need to install them by yourself. Do not be terrified though, this can be done with a one-line command as well. In vim, under normal mode, type ```:PlugInstall``` and press Enter, then the beautiful [vim-plug](https://github.com/junegunn/vim-plug) will do the work for you.~~
 4. Enjoy!
