@@ -5,4 +5,4 @@ brew install cmake python wget bat ripgrep
 brew install macvim tmux
 
 cd ~/dotfiles
-sh setup_common.sh
+zsh setup_common.sh
