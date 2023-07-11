@@ -6,4 +6,4 @@ sudo apt install -y cmake python-dev bat ripgrep
 sudo apt install -y tmux
 
 cd ~/dotfiles
-sh setup_common.sh
+zsh setup_common.sh
