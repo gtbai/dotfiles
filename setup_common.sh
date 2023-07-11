@@ -35,8 +35,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Install fzf for command-line fuzzy finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
 # Install fzf-git.sh
 wget -O ~/.fzf/shell/fzf-git.sh https://raw.githubusercontent.com/junegunn/fzf-git.sh/main/fzf-git.sh
+
+# Install fzf-tab
+git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+
 # Create rfv script for fzf+ripgrep integration
 cat <<EOF >>~/.fzf/shell/rfv
 #!/usr/bin/env bash
