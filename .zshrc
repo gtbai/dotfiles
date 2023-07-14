@@ -135,3 +135,12 @@ alias pf="fzf --preview='bat --style=numbers --color=always {}' --bind shift-up:
 # fzf-tab
 zstyle ':fzf-tab:*' default-color $'\033[94m'
 zstyle ':fzf-tab:*' fzf-flags '--color=hl:#87AF87'
+
+# git aliases
+alias gst="git status"
+alias glg="git log"
+alias ga="git add"
+alias gaa="git add --all"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gcam="git commit -am"
