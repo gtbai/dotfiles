@@ -144,6 +144,9 @@ alias gaa="git add --all"
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gcam="git commit -am"
+alias gl="git pull"
+alias gp="git push"
+
 
 # tmux alias
 alias tmux="tmux -2"
