@@ -137,15 +137,14 @@ zstyle ':fzf-tab:*' default-color $'\033[94m'
 zstyle ':fzf-tab:*' fzf-flags '--color=hl:#87AF87'
 
 # git aliases
-alias gst="git status"
-alias glg="git log"
 alias ga="git add"
 alias gaa="git add --all"
 alias gc="git commit"
-alias gcm="git commit -m"
 alias gcam="git commit -am"
-alias gl="git pull"
-alias gp="git push"
+alias gcm="git commit -m"
+alias gd="git diff"
+alias gst="git status"
+alias glg="git log"
 
 
 # tmux alias
