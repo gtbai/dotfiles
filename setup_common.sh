@@ -67,5 +67,5 @@ source ~/.zshrc
 vim -c "PlugInstall"
 
 # Install YouCompleteMe
-cd ~/.vim/plugged/YouCompleteMe
-./install.py
+# cd ~/.vim/plugged/YouCompleteMe
+# ./install.py
