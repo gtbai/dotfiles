@@ -60,6 +60,10 @@ IFS=: read -ra selected < <(
 [ -n "${selected[0]}" ] && vim "${selected[0]}" "+${selected[1]}"
 EOF
 
+# Install iTerm2 Shell Integration to show hostname on title bar
+curl -L https://iterm2.com/shell_integration/zsh \
+-o ~/.iterm2_shell_integration.zsh
+
 # Enforce .zshrc. Errors might occur. To fix them, just comment/delete lines causing error.
 source ~/.zshrc
 
