@@ -7,7 +7,7 @@ call plug#begin('~/.vim/plugged')
 " Code Completions
 "------------------
 "Plug 'Shougo/neocomplcache'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
@@ -42,13 +42,15 @@ Plug 'mileszs/ack.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "Plug 'bronson/vim-trailing-whitespace'
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/syntastic'
+"let g:syntastic_java_checkers = []  
+Plug 'dense-analysis/ale'
 
 "-------------
 " Other Utils
 "-------------
 Plug 'nvie/vim-togglemouse'
-Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter', { 'branch': 'main' }
 
 "----------------------------------------
 " Syntax/Indent for language enhancement

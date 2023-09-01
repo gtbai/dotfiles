@@ -115,7 +115,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=180"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
 
 # Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -141,11 +141,25 @@ alias ga="git add"
 alias gaa="git add --all"
 alias gc="git commit"
 alias gcam="git commit -am"
+alias gck="git checkout"
 alias gcm="git commit -m"
 alias gd="git diff"
+alias gfm="git fetch origin master && git merge origin/master && git submodule update --recursive"
+alias gfr="git fetch origin master && git rebase origin/master && git submodule update --recursive"
 alias gst="git status"
-alias glg="git log"
-
+alias glg="git log --stat"
 
 # tmux alias
 alias tmux="tmux -2"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
+# ===========================
+# =====Pinterest Configs=====
+# ===========================
+
+export HOME=$(readlink -f ~)
+export GOPATH=$HOME/code/magnus
+export GOROOT=$HOME/go/
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
