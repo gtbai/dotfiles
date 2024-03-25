@@ -162,4 +162,5 @@ export HOME=$(readlink -f ~)
 export GOPATH=$HOME/code/magnus
 export GOROOT=$HOME/go/
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export PATH=~/.local/bin:$PATH
 

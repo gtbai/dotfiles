@@ -73,3 +73,6 @@ vim -c "PlugInstall"
 # Install YouCompleteMe
 # cd ~/.vim/plugged/YouCompleteMe
 # ./install.py
+
+# Install TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
