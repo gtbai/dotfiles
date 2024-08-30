@@ -35,6 +35,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Install fzf for command-line fuzzy finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+export PATH="$HOME/.fzf/bin:$PATH"
 
 # Install fzf-git.sh
 wget -O ~/.fzf/shell/fzf-git.sh https://raw.githubusercontent.com/junegunn/fzf-git.sh/main/fzf-git.sh
