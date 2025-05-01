@@ -115,7 +115,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=180"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
 
 # Set PATH, MANPATH, etc., for Homebrew.
-# eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -144,23 +144,88 @@ alias gcam="git commit -am"
 alias gck="git checkout"
 alias gcm="git commit -m"
 alias gd="git diff"
-alias gfm="git fetch origin master && git merge origin/master && git submodule update --recursive"
-alias gfr="git fetch origin master && git rebase origin/master && git submodule update --recursive"
+alias gfm="git fetch origin master && git merge origin/master"
+alias gfr="git fetch origin master && git rebase origin/master"
 alias gst="git status"
 alias glg="git log --stat"
-
-# tmux alias
-alias tmux="tmux -2"
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 # ===========================
 # =====Pinterest Configs=====
 # ===========================
 
-export HOME=$(readlink -f ~)
-export GOPATH=$HOME/code/magnus
-export GOROOT=$HOME/go/
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-export PATH=~/.local/bin:$PATH
+# devapp tmux aliases
+alias cdta="gironde ssh cdevapp -t 'tmux a'"
+alias cdtn="gironde ssh cdevapp -t 'tmux -2'"
+alias cdevapp="gironde ssh cdevapp -t 'zsh -l'"
+alias gdta="gironde ssh gdevapp -t 'tmux a'"
+alias gdtn="gironde ssh gdevapp -t 'tmux -2'"
+alias gdevapp="gironde ssh gdevapp -t 'zsh -l'"
+alias rdta="gironde ssh rdevapp -t 'tmux a'"
+alias rdtn="gironde ssh rdevapp -t 'tmux -2'"
+alias rdevapp="gironde ssh rdevapp -t 'zsh -l'"
+alias rdevapp-1="gironde ssh rdevapp-1 -t 'zsh -l'"
+alias rdevapp-2="gironde ssh rdevapp-2 -t 'zsh -l'"
 
+# gironde ssh aliases
+alias gssh="gironde ssh"
+
+# watcher aliases
+alias watch='~/utils/watch.sh'
+
+export NVM_DIR="/opt/pinterest/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export GIT_SSH_COMMAND='gironde ssh'
+
+# For installing Go
+# if [ "$(sysctl -n sysctl.proc_translated)" = "1" ]; then
+#     local brew_path="/usr/local/homebrew/bin"
+#     local brew_opt_path="/usr/local/opt"
+#     local nvm_path="$HOME/.nvm-x86"
+# else
+#     local brew_path="/opt/homebrew/bin"
+#     local brew_opt_path="/opt/homebrew/opt"
+#     local nvm_path="$HOME/.nvm"
+# fi
+
+# Detect the architecture using Rosetta check (homebrew on ARM)
+if [[ $(uname -m) == 'arm64' ]]; then
+    # Use arm64 Homebrew
+    export PATH="/opt/homebrew/bin:${PATH}"
+    export HOMEBREW_PREFIX="/opt/homebrew"
+    export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
+    export HOMEBREW_REPOSITORY="/opt/homebrew"
+    local nvm_path="$HOME/.nvm"
+else
+    # Use x86_64 Homebrew (Rosetta or Intel)
+    export PATH="/usr/local/homebrew/bin:${PATH}"
+    export HOMEBREW_PREFIX="/usr/local/homebrew"
+    export HOMEBREW_CELLAR="/usr/local/Cellar"
+    export HOMEBREW_REPOSITORY="/usr/local"
+    local nvm_path="$HOME/.nvm-x86"
+fi
+
+# Set up NVM environment
+export NVM_DIR="${nvm_path}"
+if [ -s "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh" ]; then
+    . "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh"  # This loads nvm
+fi
+if [ -s "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm" ]; then
+    . "${HOMEBREW_PREFIX}/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+fi
+
+
+export GOROOT=$HOME/go
+export GOPATH=$HOME/code/magnus
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export TMPDIR=~/tmp
+mkdir -p $TMPDIR
+
+# alias 'watcher=CODE_PATH=$PWD; TRUNC_PATH=${PWD#"$HOME"/}/; python3 ~/code/pinboard/bin/watcher.py -s $CODE_PATH devapp:$TRUNC_PATH --exclude-git --exclude=/go-cache --exclude=/bin --exclude=/pkg --exclude=/go --exclude=/build --exclude=/manaslib --exclude .#\* --exclude \*flymake\* --exclude=dev_files --exclude=/tmp --exclude=/config/yaml/m10ndev'
+
+export EDITOR="vim"
+
+[[ -r "${HOME}/code/optimus/bazel/tools/bazel-complete.bash" ]] && . "${HOME}/code/optimus/bazel/tools/bazel-complete.bash"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
